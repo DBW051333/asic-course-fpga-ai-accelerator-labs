@@ -1,0 +1,865 @@
+{
+  "date": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "verified_github_records_commit": "ba21ed6038ee46ccfb4aec63877755d39aec5691",
+  "recorded_versions": 136,
+  "retained_representative_projects": [
+    "Lab1",
+    "Lab1_re",
+    "Lab2_4_to_1",
+    "Lab2_8_3_encoder",
+    "Lab3_sync_fifo",
+    "Lab4",
+    "Lab4_tree4_1221_full4p3",
+    "Lab5",
+    "Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8",
+    "Lab6",
+    "Lab6_architecture_trials/fc2_interleaved_split11",
+    "Lab6_growth_trials/fc1_128x6_dual",
+    "aync_fifo"
+  ],
+  "removed_candidates": [
+    {
+      "version": "Lab4_csa",
+      "removed_files": 872,
+      "removed_allocated_file_bytes": 131493888,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_final",
+      "removed_files": 1135,
+      "removed_allocated_file_bytes": 204341248,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_final_addr4_clk4p6",
+      "removed_files": 1141,
+      "removed_allocated_file_bytes": 205721600,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_final_clk4p6",
+      "removed_files": 1138,
+      "removed_allocated_file_bytes": 205545472,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_final_clk4p8",
+      "removed_files": 1138,
+      "removed_allocated_file_bytes": 205062144,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_optimized",
+      "removed_files": 812,
+      "removed_allocated_file_bytes": 136015872,
+      "directory_removed": false,
+      "preserved_shared_files": [
+        "fc1.txt",
+        "优化操作报告.md",
+        "并行度对比报告.md"
+      ]
+    },
+    {
+      "version": "Lab4_parallel64",
+      "removed_files": 826,
+      "removed_allocated_file_bytes": 132419584,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_parallel64_packed",
+      "removed_files": 858,
+      "removed_allocated_file_bytes": 130572288,
+      "directory_removed": false,
+      "preserved_shared_files": [
+        "Lab4.runs/fc_input_ram_synth_1/fc_input_ram.tcl",
+        "Lab4.runs/fc_weight_ram_synth_1/fc_weight_ram.tcl",
+        "fc1.0.weight_64.coe",
+        "sel_data_64.coe"
+      ]
+    },
+    {
+      "version": "Lab4_tree222",
+      "removed_files": 872,
+      "removed_allocated_file_bytes": 131366912,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4",
+      "removed_files": 871,
+      "removed_allocated_file_bytes": 131387392,
+      "directory_removed": false,
+      "preserved_shared_files": [
+        "fc1_sim.txt"
+      ]
+    },
+    {
+      "version": "Lab4_tree4_1122_clk4p6",
+      "removed_files": 879,
+      "removed_allocated_file_bytes": 131874816,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4_1221_clk4p3",
+      "removed_files": 891,
+      "removed_allocated_file_bytes": 132059136,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4_1221_clk4p3_explore",
+      "removed_files": 891,
+      "removed_allocated_file_bytes": 132554752,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4_1221_clk4p4",
+      "removed_files": 882,
+      "removed_allocated_file_bytes": 131780608,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4_1221_clk4p6",
+      "removed_files": 882,
+      "removed_allocated_file_bytes": 131850240,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4_1221_clk4p8",
+      "removed_files": 879,
+      "removed_allocated_file_bytes": 131821568,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4_1221_full4p4",
+      "removed_files": 888,
+      "removed_allocated_file_bytes": 132059136,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4_addrfan4",
+      "removed_files": 876,
+      "removed_allocated_file_bytes": 131592192,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4_clk4p4",
+      "removed_files": 875,
+      "removed_allocated_file_bytes": 133185536,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4_clk4p4_explore",
+      "removed_files": 875,
+      "removed_allocated_file_bytes": 133566464,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4_clk4p6",
+      "removed_files": 875,
+      "removed_allocated_file_bytes": 132841472,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4_clk4p8",
+      "removed_files": 875,
+      "removed_allocated_file_bytes": 131674112,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4_clk5p2",
+      "removed_files": 875,
+      "removed_allocated_file_bytes": 131457024,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree4_clk6",
+      "removed_files": 876,
+      "removed_allocated_file_bytes": 131579904,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab4_tree5_11211_clk4p4",
+      "removed_files": 879,
+      "removed_allocated_file_bytes": 131895296,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_64x16",
+      "removed_files": 659,
+      "removed_allocated_file_bytes": 221663232,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/serial_baseline_eval",
+      "removed_files": 160,
+      "removed_allocated_file_bytes": 24182784,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream128_exact",
+      "removed_files": 198,
+      "removed_allocated_file_bytes": 35831808,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream128_full",
+      "removed_files": 193,
+      "removed_allocated_file_bytes": 40509440,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream128_tree1222",
+      "removed_files": 193,
+      "removed_allocated_file_bytes": 35098624,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream128_tree4",
+      "removed_files": 193,
+      "removed_allocated_file_bytes": 34746368,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream64_tree1221",
+      "removed_files": 192,
+      "removed_allocated_file_bytes": 26562560,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair128",
+      "removed_files": 153,
+      "removed_allocated_file_bytes": 30515200,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair128_staged",
+      "removed_files": 164,
+      "removed_allocated_file_bytes": 40112128,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair171",
+      "removed_files": 154,
+      "removed_allocated_file_bytes": 38236160,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair171_staged",
+      "removed_files": 154,
+      "removed_allocated_file_bytes": 40357888,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair171_staged_clk5p0",
+      "removed_files": 117,
+      "removed_allocated_file_bytes": 50507776,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_3221_clk5",
+      "removed_files": 61,
+      "removed_allocated_file_bytes": 3452928,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_banked_exact23_tree7_clk4p8",
+      "removed_files": 232,
+      "removed_allocated_file_bytes": 137744384,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_burst_tree7_clk4p8",
+      "removed_files": 124,
+      "removed_allocated_file_bytes": 10801152,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_dualtail_clk5",
+      "removed_files": 182,
+      "removed_allocated_file_bytes": 46977024,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_eighttail_clk5",
+      "removed_files": 229,
+      "removed_allocated_file_bytes": 139116544,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_fill220_exact23_tree7_clk4p8",
+      "removed_files": 131,
+      "removed_allocated_file_bytes": 10878976,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_five_clk5",
+      "removed_files": 194,
+      "removed_allocated_file_bytes": 64946176,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_hybrid",
+      "removed_files": 155,
+      "removed_allocated_file_bytes": 79908864,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_localinput_exact23_tree7_clk4p8",
+      "removed_files": 183,
+      "removed_allocated_file_bytes": 45449216,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_localinput_unbanked_exact23_tree7_clk4p8",
+      "removed_files": 233,
+      "removed_allocated_file_bytes": 153026560,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_partial5_clk5",
+      "removed_files": 229,
+      "removed_allocated_file_bytes": 128606208,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_quad_tree7_clk4p8",
+      "removed_files": 227,
+      "removed_allocated_file_bytes": 133394432,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_quadtail_clk5",
+      "removed_files": 314,
+      "removed_allocated_file_bytes": 195338240,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_staged",
+      "removed_files": 155,
+      "removed_allocated_file_bytes": 82726912,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_staged_clk5p0",
+      "removed_files": 118,
+      "removed_allocated_file_bytes": 98516992,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_staged_clk6p0",
+      "removed_files": 106,
+      "removed_allocated_file_bytes": 79351808,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_optimization/stream_pair256_theory25_40_tree7_clk4p8",
+      "removed_files": 295,
+      "removed_allocated_file_bytes": 147238912,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/baseline_reference",
+      "removed_files": 69,
+      "removed_allocated_file_bytes": 5804032,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q4_8_8_round_pack_d200",
+      "removed_files": 85,
+      "removed_allocated_file_bytes": 33628160,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q4_lab6_d168",
+      "removed_files": 86,
+      "removed_allocated_file_bytes": 35999744,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q4_lab6_lut_d220",
+      "removed_files": 100,
+      "removed_allocated_file_bytes": 50757632,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q6_6_6_round_pack_d200",
+      "removed_files": 100,
+      "removed_allocated_file_bytes": 52830208,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_6_8_round_pack_d200",
+      "removed_files": 85,
+      "removed_allocated_file_bytes": 33689600,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_8_8_round_pack_d200",
+      "removed_files": 85,
+      "removed_allocated_file_bytes": 33787904,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_lab6_d168",
+      "removed_files": 101,
+      "removed_allocated_file_bytes": 58535936,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_lab6_d180",
+      "removed_files": 86,
+      "removed_allocated_file_bytes": 35258368,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_lab6_pack_d200",
+      "removed_files": 100,
+      "removed_allocated_file_bytes": 53870592,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_lab6_rompack_d200",
+      "removed_files": 102,
+      "removed_allocated_file_bytes": 53850112,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_lab6_tree8_rompack_d200",
+      "removed_files": 101,
+      "removed_allocated_file_bytes": 55857152,
+      "directory_removed": false,
+      "preserved_shared_files": [
+        "data/fc1_expected.mem",
+        "data/fc2_expected.mem",
+        "data/fc3_expected.mem",
+        "tb/tb_quant.v"
+      ]
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_product1_pack_d200",
+      "removed_files": 74,
+      "removed_allocated_file_bytes": 6139904,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_product2_pack_d200",
+      "removed_files": 74,
+      "removed_allocated_file_bytes": 6139904,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_product3_pack_d200",
+      "removed_files": 74,
+      "removed_allocated_file_bytes": 6111232,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_product4_pack_d200",
+      "removed_files": 101,
+      "removed_allocated_file_bytes": 54706176,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_product4_prereg_pack_d200",
+      "removed_files": 86,
+      "removed_allocated_file_bytes": 34492416,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_product6_pack_d200",
+      "removed_files": 74,
+      "removed_allocated_file_bytes": 6012928,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_product6_prereg_pack_d200",
+      "removed_files": 101,
+      "removed_allocated_file_bytes": 52088832,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_product6_prereg_rompack_d200",
+      "removed_files": 103,
+      "removed_allocated_file_bytes": 52600832,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/q8_product8_pack_d200",
+      "removed_files": 74,
+      "removed_allocated_file_bytes": 5890048,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab5_truncation_optimization/recommended",
+      "removed_files": 52,
+      "removed_allocated_file_bytes": 5869568,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_architecture_trials/fc1_simd128_pe4",
+      "removed_files": 144,
+      "removed_allocated_file_bytes": 58843136,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_architecture_trials/fc1_simd64_pe8",
+      "removed_files": 146,
+      "removed_allocated_file_bytes": 62222336,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_architecture_trials/packed_int4_unit",
+      "removed_files": 55,
+      "removed_allocated_file_bytes": 3674112,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_bottleneck_optimization/postroute_fanout",
+      "removed_files": 18,
+      "removed_allocated_file_bytes": 20492288,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_bottleneck_optimization/recommended",
+      "removed_files": 63,
+      "removed_allocated_file_bytes": 5947392,
+      "directory_removed": false,
+      "preserved_shared_files": [
+        "data/fc1_expected.mem",
+        "data/fc2_expected.mem",
+        "data/fc3_expected.mem",
+        "tb/tb_quant.v"
+      ]
+    },
+    {
+      "version": "Lab6_bottleneck_optimization/terminal_tree7",
+      "removed_files": 75,
+      "removed_allocated_file_bytes": 5459968,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_bottleneck_optimization/terminal_tree8",
+      "removed_files": 103,
+      "removed_allocated_file_bytes": 55828480,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_dsp_multipubaseline",
+      "removed_files": 3,
+      "removed_allocated_file_bytes": 20480,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_growth_trials/fc1_csa_tree",
+      "removed_files": 189,
+      "removed_allocated_file_bytes": 64565248,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_growth_trials/tail8",
+      "removed_files": 188,
+      "removed_allocated_file_bytes": 65441792,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_growth_trials/zero_gate",
+      "removed_files": 186,
+      "removed_allocated_file_bytes": 63832064,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/bank_phys_explore",
+      "removed_files": 17,
+      "removed_allocated_file_bytes": 17375232,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/bank_phys_fanout",
+      "removed_files": 17,
+      "removed_allocated_file_bytes": 17432576,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/bram_pipe",
+      "removed_files": 89,
+      "removed_allocated_file_bytes": 36216832,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/bram_pipe_narrow",
+      "removed_files": 89,
+      "removed_allocated_file_bytes": 36126720,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/dsp_mac_lookup_cross",
+      "removed_files": 104,
+      "removed_allocated_file_bytes": 60903424,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/dsp_mac_pipe_bias",
+      "removed_files": 104,
+      "removed_allocated_file_bytes": 57548800,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/dsp_packed_mac_narrow",
+      "removed_files": 89,
+      "removed_allocated_file_bytes": 38678528,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/dual512_hybrid_full_lookup",
+      "removed_files": 135,
+      "removed_allocated_file_bytes": 44441600,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/fc1_prepack_pipe_narrow",
+      "removed_files": 115,
+      "removed_allocated_file_bytes": 62156800,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/free_address_narrow",
+      "removed_files": 89,
+      "removed_allocated_file_bytes": 35168256,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/free_address_pipe_narrow",
+      "removed_files": 104,
+      "removed_allocated_file_bytes": 57016320,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/free_biaspipe_narrow",
+      "removed_files": 107,
+      "removed_allocated_file_bytes": 56258560,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/hybrid7_bias_narrow",
+      "removed_files": 104,
+      "removed_allocated_file_bytes": 53997568,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/narrow",
+      "removed_files": 89,
+      "removed_allocated_file_bytes": 35000320,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/phys_aggressive43",
+      "removed_files": 17,
+      "removed_allocated_file_bytes": 20439040,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/phys_aggressive45",
+      "removed_files": 17,
+      "removed_allocated_file_bytes": 20414464,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/phys_fanout43",
+      "removed_files": 17,
+      "removed_allocated_file_bytes": 20422656,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/prepack_banked_bias",
+      "removed_files": 121,
+      "removed_allocated_file_bytes": 53186560,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/prepack_banked_lookup",
+      "removed_files": 123,
+      "removed_allocated_file_bytes": 55689216,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/prepack_banked_rom",
+      "removed_files": 123,
+      "removed_allocated_file_bytes": 52772864,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/prepack_counter_keep",
+      "removed_files": 110,
+      "removed_allocated_file_bytes": 51822592,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/prepack_hybrid_bias",
+      "removed_files": 109,
+      "removed_allocated_file_bytes": 51642368,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/prepack_phys_explore",
+      "removed_files": 19,
+      "removed_allocated_file_bytes": 18407424,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/prepack_phys_fanout",
+      "removed_files": 17,
+      "removed_allocated_file_bytes": 18370560,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/prepack_ternary_bias",
+      "removed_files": 105,
+      "removed_allocated_file_bytes": 50921472,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/quick_fc2_keep_weight",
+      "removed_files": 121,
+      "removed_allocated_file_bytes": 56000512,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/quick_fc2_rom_pipe",
+      "removed_files": 308,
+      "removed_allocated_file_bytes": 74792960,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    },
+    {
+      "version": "Lab6_limit_search/recommended",
+      "removed_files": 79,
+      "removed_allocated_file_bytes": 6496256,
+      "directory_removed": false,
+      "preserved_shared_files": [
+        "data/fc1_expected.mem",
+        "data/fc2_expected.mem",
+        "data/fc3_expected.mem",
+        "tb/tb_quant.v"
+      ]
+    },
+    {
+      "version": "Lab6_limit_search/ternary6_bias_narrow",
+      "removed_files": 104,
+      "removed_allocated_file_bytes": 53878784,
+      "directory_removed": true,
+      "preserved_shared_files": []
+    }
+  ],
+  "allocated_directory_bytes_before": 10513756160,
+  "removed_allocated_file_bytes": 8125345792,
+  "allocated_directory_bytes_after": 2357514240,
+  "directory_space_reduction_bytes": 8156241920
+}
