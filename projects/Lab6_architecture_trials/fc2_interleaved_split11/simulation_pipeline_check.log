@@ -1,0 +1,212 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Oct  6 22:51:15 2026
+# Process ID         : 139873
+# Current directory  : /home/ding/桌面/Lab
+# Command line       : vivado -mode batch -source /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/tools/check_pipeline.tcl -log /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_pipeline_check.log -journal /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_pipeline_check.jou
+# Log file           : /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_pipeline_check.log
+# Journal file       : /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_pipeline_check.jou
+# Running On         : Yilong
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 2288.637 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 24443 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 24443 MB
+# Available Virtual  : 13329 MB
+#-----------------------------------------------------------
+source /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/tools/check_pipeline.tcl
+# set_param general.maxThreads 8
+# create_project pipeline_check /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_pipeline_check -part xc7z020clg400-1 -force
+# add_files [glob /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/*.v]
+# source /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/tools/view_pipeline.tcl
+## catch {close_sim -force}
+## set pipeline_root [file normalize [file join [file dirname [info script]] ..]]
+## set pipeline_tb [file join $pipeline_root tb tb_pipeline.v]
+## if {[llength [get_files -quiet $pipeline_tb]] == 0} {
+##     add_files -fileset sim_1 $pipeline_tb
+## }
+## set_property file_type SystemVerilog [get_files $pipeline_tb]
+## set_property top tb_pipeline [get_filesets sim_1]
+## set_property top_auto_set 0 [get_filesets sim_1]
+## set_property generic {CLK_PERIOD=4.09} [get_filesets sim_1]
+## set_property xsim.elaborate.debug_level all [get_filesets sim_1]
+## set_property xsim.simulate.runtime {0ns} [get_filesets sim_1]
+## update_compile_order -fileset sim_1
+## launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Project 1-5737] Running on host Yilong (64) - Ubuntu 22.04.5 LTS
+INFO: [Vivado 12-28535] Process started - Tue Oct  6 22:51:19 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_pipeline'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_pipeline_check/pipeline_check.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/vivado/2025.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_pipeline' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_pipeline_check/pipeline_check.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_pipeline_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/adder_tree.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_tree
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/fc1_paired.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc1_paired
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/fc_stream_pair_output.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_stream_pair_output
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/fc_stream_two_inputs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_stream_two_inputs
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/lab5_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab5_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/quantize_signed.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quantize_signed
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/tb/tb_pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_pipeline_check/pipeline_check.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_pipeline_check/pipeline_check.sim/sim_1/behav/xsim'
+xelab --incr --debug all --relax --mt 8 -generic_top CLK_PERIOD=4.09 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_pipeline_behav xil_defaultlib.tb_pipeline xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /vivado/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug all --relax --mt 8 -generic_top CLK_PERIOD=4.09 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_pipeline_behav xil_defaultlib.tb_pipeline xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3532] module 'glbl' does not have a parameter named 'CLK_PERIOD' to override [/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_pipeline_check/pipeline_check.sim/sim_1/behav/xsim/glbl.v:6]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/lab5_top.v" Line 1. Module lab5_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/fc1_paired.v" Line 2. Module fc1_paired(LANES=256,GROUPS=2,ADDER_LANES=256,DSP_LANES=200,WEIGHTS="/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/data/fc1_prepacked.mem",INPUTS="/home/ding/vivado_project/Lab5_optimization/data/stream_pair256_hybrid_inputs.mem",BIASES="/home/ding/vivado_project/Lab5_optimization/data/fc1_paired_bias.mem") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/adder_tree.v" Line 1. Module adder_tree doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/adder_tree.v" Line 1. Module adder_tree doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/quantize_signed.v" Line 2. Module quantize_signed(IW=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/fc_stream_pair_output.v" Line 3. Module fc_stream_pair_output(IW=8,AW=21,OW=23,WEIGHT_FILE="/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/data/fc2_packed_weights.mem",BIAS_FILE="/home/ding/vivado_project/Lab5_optimization/data/fc2_bias.mem") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/quantize_signed.v" Line 2. Module quantize_signed(SHIFT=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/quantize_signed.v" Line 2. Module quantize_signed(SHIFT=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/quantize_signed.v" Line 2. Module quantize_signed(SHIFT=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/quantize_signed.v" Line 2. Module quantize_signed(SHIFT=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/fc_stream_two_inputs.v" Line 3. Module fc_stream_two_inputs(IW=8,NI=8,NO=2,AW=19,OW=21,IA=3,OA=1,RELU=0,WEIGHT_FILE="/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/data/fc3_packed_weights.mem",BIAS_FILE="/home/ding/vivado_project/Lab5_optimization/data/fc3_bias.mem") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/quantize_signed.v" Line 2. Module quantize_signed(IW=21,SHIFT=8) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.adder_tree
+Compiling module xil_defaultlib.fc1_paired(LANES=256,GROUPS=2,AD...
+Compiling module xil_defaultlib.quantize_signed(IW=32)
+Compiling module xil_defaultlib.fc_stream_pair_output(IW=8,AW=21...
+Compiling module xil_defaultlib.quantize_signed(SHIFT=9)
+Compiling module xil_defaultlib.fc_stream_two_inputs(IW=8,NI=8,N...
+Compiling module xil_defaultlib.quantize_signed(IW=21,SHIFT=8)
+Compiling module xil_defaultlib.lab5_top
+Compiling module xil_defaultlib.tb_pipeline
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_pipeline_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_pipeline_check/pipeline_check.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_pipeline_behav -key {Behavioral:sim_1:Functional:tb_pipeline} -tclbatch {tb_pipeline.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_pipeline.tcl
+### set curr_wave [current_wave_config]
+### if { [string length $curr_wave] == 0 } {
+###   if { [llength [get_objects]] > 0} {
+###     add_wave /
+###     set_property needs_save false [current_wave_config]
+###   } else {
+###      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+###   }
+### }
+WARNING: [Wavedata 42-489] Can't add object "/tb_pipeline/inputs_all" to the wave window because it has 196608 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_pipeline/ref1" to the wave window because it has 393216 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_pipeline/ref2" to the wave window because it has 98304 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+### run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_pipeline_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1615.926 ; gain = 0.000 ; free physical = 1572 ; free virtual = 12201
+## create_wave_config pipeline_view
+## set pipeline_signals {
+##     clk reset_n start cycle
+##     fc1_issue_valid fc1_issue_pair fc1_issue_group
+##     fc1_group_valid fc1_compute_pair fc1_compute_group fc1_group_sum0 fc1_group_sum1
+##     fc1_acc0 fc1_acc1 fc1_pair_result0 fc1_pair_result1
+##     fc1_valid fc1_addr fc1_data
+##     fc2_sum_write data_step_valid data_input_index expected_x0 expected_w0 expected_product0 observed_product0 expected_even0 expected_odd0 fc2_even0 fc2_odd0 fc2_merge fc2_snapshot fc2_result0
+##     fc2_valid fc2_addr fc2_data0 fc2_data1 fc2_data2 fc2_data3
+##     fc3_sum_write fc3_sum0 fc3_valid fc3_addr fc3_data done
+## }
+## foreach pipeline_signal $pipeline_signals {
+##     if {$pipeline_signal in {fc1_issue_pair fc1_issue_group fc1_compute_pair fc1_compute_group cycle fc1_addr fc2_addr fc3_addr data_input_index}} {
+##         add_wave -radix unsigned /tb_pipeline/$pipeline_signal
+##     } elseif {$pipeline_signal in {fc1_group_sum0 fc1_group_sum1 fc1_acc0 fc1_acc1 fc1_pair_result0 fc1_pair_result1 fc1_data fc2_data0 fc2_data1 fc2_data2 fc2_data3 fc3_data expected_x0 expected_w0 expected_product0 observed_product0 expected_even0 expected_odd0 fc2_even0 fc2_odd0 fc2_result0 fc3_sum0}} {
+##         add_wave -radix dec /tb_pipeline/$pipeline_signal
+##     } else {
+##         add_wave /tb_pipeline/$pipeline_signal
+##     }
+## }
+## run 800 ns
+PIPE cycle=0 START
+FC1 ISSUE step=0 neurons=0,1 group=0 inputs=0..255
+FC1 ISSUE step=1 neurons=0,1 group=1 inputs=256..511
+FC1 ISSUE step=2 neurons=2,3 group=0 inputs=0..255
+FC1 ISSUE step=3 neurons=2,3 group=1 inputs=256..511
+PACK_DATA x=-2 w0=-13 w1=90 low=26 high_raw=-180 correction=0 high=-180
+FC1 ISSUE step=4 neurons=4,5 group=0 inputs=0..255
+PACK_DATA x=-2 w0=-13 w1=90 low=26 high_raw=-180 correction=0 high=-180
+FC1 ISSUE step=5 neurons=4,5 group=1 inputs=256..511
+PACK_DATA x=-2 w0=-13 w1=90 low=26 high_raw=-180 correction=0 high=-180
+PACK_DATA x=-2 w0=-13 w1=90 low=26 high_raw=-180 correction=0 high=-180
+PACK_DATA x=-3 w0=62 w1=-87 low=-186 high_raw=260 correction=1 high=261
+PACK_DATA x=-3 w0=51 w1=-74 low=-153 high_raw=221 correction=1 high=222
+FC1 DATA pair=0 group0 sums=3612,-693 accum_with_bias=3586,-646
+FC1 DATA pair=0 group1 sums=1302,1897 completed=4888,1251
+PIPE cycle=19 FC1 output addr=0
+FC1 DATA pair=1 group0 sums=-6875,2801 accum_with_bias=-6923,2807
+FC1 DATA pair=1 group1 sums=1618,-6555 completed=-5305,-3748
+PIPE cycle=26 FC2 first partial-sum write; FC1 outputs so far=8
+DATA input=0 x=4 w=28 product=112 actual_product=112 even=30 odd=x
+DATA input=1 x=1 w=-24 product=-24 actual_product=-24 even=30 odd=-24
+DATA input=2 x=0 w=-96 product=0 actual_product=0 even=30 odd=-24
+DATA input=3 x=0 w=9 product=0 actual_product=0 even=30 odd=-24
+FC1 ISSUE step=126 neurons=126,127 group=0 inputs=0..255
+FC1 ISSUE step=127 neurons=126,127 group=1 inputs=256..511
+PIPE cycle=146 FC1 output addr=127
+DATA input=126 x=0 w=-35 product=0 actual_product=0 even=418 odd=1459
+DATA input=127 x=0 w=-54 product=0 actual_product=0 even=418 odd=1459
+DATA FC2 channel0 merged=1877 actual=1877 ReLU=1877 quantized=3
+PIPE cycle=157 FC2 output group addr=0..3
+PIPE cycle=158 FC2 output group addr=4..7
+PIPE cycle=159 FC2 output group addr=8..11
+PIPE cycle=160 FC2 output group addr=12..15
+PIPE cycle=161 FC2 output group addr=16..19
+PIPE cycle=162 FC2 output group addr=20..23
+PIPE cycle=163 FC2 output group addr=24..27
+PIPE cycle=164 FC2 output group addr=28..31
+PIPE cycle=164 FC3 first partial-sum write; FC2 outputs so far=32
+PIPE cycle=173 FC3 output addr=0 score=10
+PIPE cycle=174 FC3 output addr=1 score=-11
+PIPE DONE latency=174 cycles counts=128/32/2 errors=0
+PACK CHECK lane0 comparisons=170 negative_low_cases=92 errors=0
+FC1 CHECK issue_steps=128 completed_groups=128 output_pairs=64
+DATA CHECK products=4096 partial_sums=4096 snapshots=32 errors=0
+PASS: sample 0, all 162 outputs match; FC2 starts before FC1 finishes
+$finish called at time : 754156 ps : File "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/tb/tb_pipeline.v" Line 254
+# close_sim -force
+INFO: xsimkernel Simulation Memory Usage: 292348 KB (Peak: 344800 KB), Simulation CPU Usage: 840 ms
+INFO: [Simtcl 6-16] Simulation closed
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  6 22:51:27 2026...

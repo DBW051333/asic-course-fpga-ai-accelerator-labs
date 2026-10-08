@@ -1,0 +1,96 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Mon Oct  5 18:17:07 2026
+| Host         : Yilong running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_control_sets -verbose -file lab5_impl_top_control_sets_placed.rpt
+| Design       : lab5_impl_top
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    18 |
+|    Minimum number of control sets                        |    18 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    58 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    18 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    14 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |           36506 |         8577 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             165 |           89 |
+| Yes          | No                    | No                     |            2624 |          727 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             175 |           67 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+--------------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+|   Clock Signal   |                Enable Signal               |              Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------+--------------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+|  clk_i_IBUF_BUFG | network/u_fc1/fc_output_data_o[21]_i_2_n_0 | network/u_fc3/p_0_in                       |                3 |              6 |         2.00 |
+|  clk_i_IBUF_BUFG | network/u_fc1/issue_pair[5]_i_1_n_0        | network/u_fc1/issue_pair[0]                |                1 |              6 |         6.00 |
+|  clk_i_IBUF_BUFG | network/u_fc1/issue_addr[7]_i_2_n_0        | network/u_fc1/issue_pair[0]                |                3 |              8 |         2.67 |
+|  clk_i_IBUF_BUFG | rst_n_i_IBUF                               |                                            |                2 |             14 |         7.00 |
+|  clk_i_IBUF_BUFG |                                            | network/u_fc2/data_o[34]_i_1_n_0           |               11 |             35 |         3.18 |
+|  clk_i_IBUF_BUFG | rst_n_i_IBUF                               | network/u_fc2/data_d_o[34]_i_1_n_0         |               12 |             35 |         2.92 |
+|  clk_i_IBUF_BUFG | rst_n_i_IBUF                               | network/u_fc2/data_c_o[34]_i_1_n_0         |               13 |             35 |         2.69 |
+|  clk_i_IBUF_BUFG | rst_n_i_IBUF                               | network/u_fc2/data_b_o[34]_i_1_n_0         |                9 |             35 |         3.89 |
+|  clk_i_IBUF_BUFG | network/u_fc3/read_data_0[0]               |                                            |               10 |             46 |         4.60 |
+|  clk_i_IBUF_BUFG | network/u_fc1/acc0[0]                      |                                            |                9 |             46 |         5.11 |
+|  clk_i_IBUF_BUFG | network/u_fc1/fc_output_data_o[21]_i_2_n_0 | network/u_fc1/fc_output_data_o[21]_i_1_n_0 |               26 |             50 |         1.92 |
+|  clk_i_IBUF_BUFG | network/u_fc1/pair_addr[0]                 |                                            |               14 |             52 |         3.71 |
+|  clk_i_IBUF_BUFG | network/u_fc3/acc[0]                       |                                            |               24 |             90 |         3.75 |
+|  clk_i_IBUF_BUFG |                                            | network/u_fc3/p_0_in                       |               78 |            130 |         1.67 |
+|  clk_i_IBUF_BUFG | network/u_fc2/read_addr[0]                 |                                            |               92 |            143 |         1.55 |
+|  clk_i_IBUF_BUFG | network/u_fc2/snapshot[0][34]_i_1_n_0      |                                            |              288 |           1120 |         3.89 |
+|  clk_i_IBUF_BUFG | network/u_fc2/acc[0]                       |                                            |              288 |           1120 |         3.89 |
+|  clk_i_IBUF_BUFG |                                            |                                            |             8577 |          39513 |         4.61 |
++------------------+--------------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+
+

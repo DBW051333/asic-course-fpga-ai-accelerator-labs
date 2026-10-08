@@ -1,0 +1,29 @@
+{
+  "representative_projects": [
+    "Lab1",
+    "Lab1_re",
+    "Lab2_4_to_1",
+    "Lab2_8_3_encoder",
+    "Lab3_sync_fifo",
+    "aync_fifo",
+    "Lab4",
+    "Lab4_tree4_1221_full4p3",
+    "Lab5",
+    "Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8",
+    "Lab6",
+    "Lab6_architecture_trials/fc2_interleaved_split11",
+    "Lab6_growth_trials/fc1_128x6_dual"
+  ],
+  "shared_dependencies": [
+    "Lab5_optimization/data",
+    "Lab5_optimization/tools",
+    "Lab5_truncation_optimization/data",
+    "Lab6_three_version_comparison"
+  ],
+  "checkpoints": [
+    "Lab4_tree4_1221_full4p3/Lab4.runs/impl_1/fc_top_routed.dcp",
+    "Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/explore_routed.dcp",
+    "Lab6_architecture_trials/fc2_interleaved_split11/results/final_routed.dcp",
+    "Lab6_growth_trials/fc1_128x6_dual/results/final_routed.dcp"
+  ]
+}

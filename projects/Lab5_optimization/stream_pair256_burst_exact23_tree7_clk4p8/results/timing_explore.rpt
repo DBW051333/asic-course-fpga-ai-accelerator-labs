@@ -1,0 +1,356 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Mon Oct  5 16:29:32 2026
+| Host         : Yilong running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_timing_summary -file /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/timing_explore.rpt
+| Design       : lab5_impl_top
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity  Description                                 Violations  
+---------  --------  ------------------------------------------  ----------  
+SYNTH-6    Warning   Timing of a RAM block might be sub-optimal  4           
+TIMING-18  Warning   Missing input or output delay               70          
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (2)
+6. checking no_output_delay (68)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (2)
+------------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (68)
+--------------------------------
+ There are 68 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -0.455      -20.689                    204                56694        0.050        0.000                      0                56694        1.420        0.000                       0                 45337  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)         Period(ns)      Frequency(MHz)
+-----  ------------         ----------      --------------
+clk_i  {0.000 2.400}        4.800           208.333         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_i              -0.455      -20.689                    204                56694        0.050        0.000                      0                56694        1.420        0.000                       0                 45337  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_i
+  To Clock:  clk_i
+
+Setup :          204  Failing Endpoints,  Worst Slack       -0.455ns,  Total Violation      -20.689ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.050ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        1.420ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -0.455ns  (required time - arrival time)
+  Source:                 network/u_fc1/high_product_reg[54][0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_i  {rise@0.000ns fall@2.400ns period=4.800ns})
+  Destination:            network/u_fc1/tree1/s0_reg[13][17]/D
+                            (rising edge-triggered cell FDRE clocked by clk_i  {rise@0.000ns fall@2.400ns period=4.800ns})
+  Path Group:             clk_i
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.800ns  (clk_i rise@4.800ns - clk_i rise@0.000ns)
+  Data Path Delay:        5.145ns  (logic 2.902ns (56.409%)  route 2.243ns (43.591%))
+  Logic Levels:           8  (CARRY4=6 LUT2=2)
+  Clock Path Skew:        -0.137ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.477ns = ( 9.277 - 4.800 ) 
+    Source Clock Delay      (SCD):    5.072ns
+    Clock Pessimism Removal (CPR):    0.458ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_i rise edge)      0.000     0.000 r  
+    U7                                                0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    U7                   IBUF (Prop_ibuf_I_O)         1.058     1.058 r  clk_i_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.229    clk_i_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.330 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=45336, routed)       1.742     5.072    network/u_fc1/clk_i_IBUF_BUFG
+    SLICE_X22Y33         FDRE                                         r  network/u_fc1/high_product_reg[54][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X22Y33         FDRE (Prop_fdre_C_Q)         0.518     5.590 r  network/u_fc1/high_product_reg[54][0]/Q
+                         net (fo=2, routed)           1.278     6.869    network/u_fc1/tree1/high_bus[3211]
+    SLICE_X38Y33         LUT2 (Prop_lut2_I0_O)        0.124     6.993 r  network/u_fc1/tree1/s0[13][3]_i_15__0/O
+                         net (fo=1, routed)           0.000     6.993    network/u_fc1/tree1/s0[13][3]_i_15__0_n_0
+    SLICE_X38Y33         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513     7.506 r  network/u_fc1/tree1/s0_reg[13][3]_i_11__0/CO[3]
+                         net (fo=1, routed)           0.000     7.506    network/u_fc1/tree1/s0_reg[13][3]_i_11__0_n_0
+    SLICE_X38Y34         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.623 r  network/u_fc1/tree1/s0_reg[13][7]_i_11__0/CO[3]
+                         net (fo=1, routed)           0.000     7.623    network/u_fc1/tree1/s0_reg[13][7]_i_11__0_n_0
+    SLICE_X38Y35         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.740 r  network/u_fc1/tree1/s0_reg[13][11]_i_11__0/CO[3]
+                         net (fo=1, routed)           0.000     7.740    network/u_fc1/tree1/s0_reg[13][11]_i_11__0_n_0
+    SLICE_X38Y36         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     8.063 r  network/u_fc1/tree1/s0_reg[13][15]_i_11__0/O[1]
+                         net (fo=1, routed)           0.965     9.027    network/u_fc1/tree1/p_0_in300_out[13]
+    SLICE_X48Y42         LUT2 (Prop_lut2_I1_O)        0.306     9.333 r  network/u_fc1/tree1/s0[13][15]_i_5__0/O
+                         net (fo=1, routed)           0.000     9.333    network/u_fc1/tree1/s0[13][15]_i_5__0_n_0
+    SLICE_X48Y42         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     9.883 r  network/u_fc1/tree1/s0_reg[13][15]_i_1__0/CO[3]
+                         net (fo=1, routed)           0.000     9.883    network/u_fc1/tree1/s0_reg[13][15]_i_1__0_n_0
+    SLICE_X48Y43         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.217 r  network/u_fc1/tree1/s0_reg[13][17]_i_1__0/O[1]
+                         net (fo=1, routed)           0.000    10.217    network/u_fc1/tree1/w0_1[13]_500[17]
+    SLICE_X48Y43         FDRE                                         r  network/u_fc1/tree1/s0_reg[13][17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_i rise edge)      4.800     4.800 r  
+    U7                                                0.000     4.800 r  clk_i (IN)
+                         net (fo=0)                   0.000     4.800    clk_i
+    U7                   IBUF (Prop_ibuf_I_O)         0.924     5.724 r  clk_i_IBUF_inst/O
+                         net (fo=1, routed)           1.972     7.696    clk_i_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     7.787 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=45336, routed)       1.490     9.277    network/u_fc1/tree1/clk_i_IBUF_BUFG
+    SLICE_X48Y43         FDRE                                         r  network/u_fc1/tree1/s0_reg[13][17]/C
+                         clock pessimism              0.458     9.735    
+                         clock uncertainty           -0.035     9.700    
+    SLICE_X48Y43         FDRE (Setup_fdre_C_D)        0.062     9.762    network/u_fc1/tree1/s0_reg[13][17]
+  -------------------------------------------------------------------
+                         required time                          9.762    
+                         arrival time                         -10.217    
+  -------------------------------------------------------------------
+                         slack                                 -0.455    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.050ns  (arrival time - required time)
+  Source:                 network/u_fc1/mult[193].half[0].pp01_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_i  {rise@0.000ns fall@2.400ns period=4.800ns})
+  Destination:            network/u_fc1/mult[193].half[0].cross_r_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_i  {rise@0.000ns fall@2.400ns period=4.800ns})
+  Path Group:             clk_i
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_i rise@0.000ns - clk_i rise@0.000ns)
+  Data Path Delay:        0.423ns  (logic 0.309ns (72.991%)  route 0.114ns (27.009%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.268ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.132ns
+    Source Clock Delay      (SCD):    1.615ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_i rise edge)      0.000     0.000 r  
+    U7                                                0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    U7                   IBUF (Prop_ibuf_I_O)         0.286     0.286 r  clk_i_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.949    clk_i_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.975 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=45336, routed)       0.640     1.615    network/u_fc1/clk_i_IBUF_BUFG
+    SLICE_X107Y49        FDRE                                         r  network/u_fc1/mult[193].half[0].pp01_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X107Y49        FDRE (Prop_fdre_C_Q)         0.128     1.743 r  network/u_fc1/mult[193].half[0].pp01_reg[2]/Q
+                         net (fo=2, routed)           0.114     1.857    network/u_fc1/mult[193].half[0].pp01[2]
+    SLICE_X109Y50        CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.181     2.038 r  network/u_fc1/mult[193].half[0].cross_r_reg[3]_i_1/O[3]
+                         net (fo=1, routed)           0.000     2.038    network/u_fc1/mult[193].half[0].cross_r0[3]
+    SLICE_X109Y50        FDRE                                         r  network/u_fc1/mult[193].half[0].cross_r_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_i rise edge)      0.000     0.000 r  
+    U7                                                0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    U7                   IBUF (Prop_ibuf_I_O)         0.476     0.476 r  clk_i_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.195    clk_i_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.224 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=45336, routed)       0.908     2.132    network/u_fc1/clk_i_IBUF_BUFG
+    SLICE_X109Y50        FDRE                                         r  network/u_fc1/mult[193].half[0].cross_r_reg[3]/C
+                         clock pessimism             -0.249     1.883    
+    SLICE_X109Y50        FDRE (Hold_fdre_C_D)         0.105     1.988    network/u_fc1/mult[193].half[0].cross_r_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.988    
+                         arrival time                           2.038    
+  -------------------------------------------------------------------
+                         slack                                  0.050    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_i
+Waveform(ns):       { 0.000 2.400 }
+Period(ns):         4.800
+Sources:            { clk_i }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         4.800       2.224      RAMB36_X4Y12  network/u_fc1/issue_addr_reg_rep_0/CLKARDCLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         2.400       1.420      SLICE_X34Y56  network/u_fc1/product_r_reg[0][0]_srl2/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         2.400       1.420      SLICE_X34Y56  network/u_fc1/product_r_reg[0][0]_srl2/CLK
+
+
+

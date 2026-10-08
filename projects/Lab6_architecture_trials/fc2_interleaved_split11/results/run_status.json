@@ -1,0 +1,20 @@
+{
+  "sim": {
+    "status": "passed",
+    "started": "2026-10-06T03:49:18+0800",
+    "elapsed_seconds": 18.04,
+    "returncode": 0
+  },
+  "synth": {
+    "status": "passed",
+    "started": "2026-10-06T03:50:42+0800",
+    "elapsed_seconds": 130.88,
+    "returncode": 0
+  },
+  "impl": {
+    "status": "passed",
+    "started": "2026-10-06T03:53:24+0800",
+    "elapsed_seconds": 168.86,
+    "returncode": 0
+  }
+}

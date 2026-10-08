@@ -1,0 +1,143 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Oct  5 16:32:47 2026
+# Process ID         : 794424
+# Current directory  : /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8
+# Command line       : vivado -mode batch -source tools/run_burst.tcl -log results/burst.log -journal results/burst.jou
+# Log file           : /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/burst.log
+# Journal file       : /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/burst.jou
+# Running On         : Yilong
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 2004.493 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 24443 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 24443 MB
+# Available Virtual  : 16401 MB
+#-----------------------------------------------------------
+source tools/run_burst.tcl
+# create_project validation /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/validation_vivado -part xc7z020clg400-1 -force
+# add_files [glob /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/*.v]
+# add_files -fileset sim_1 /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/tb/tb_lab5_burst.v
+# set_property file_type SystemVerilog [get_files *tb_lab5_burst.v]
+# set_property top lab5_top [get_filesets sources_1]
+# set_property top tb_lab5_burst [get_filesets sim_1]
+# set_property xsim.simulate.runtime all [get_filesets sim_1]
+# update_compile_order -fileset sources_1
+# update_compile_order -fileset sim_1
+# launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Project 1-5737] Running on host Yilong (64) - Ubuntu 22.04.5 LTS
+INFO: [Vivado 12-28535] Process started - Mon Oct  5 16:32:52 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_lab5_burst'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/validation_vivado/validation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/vivado/2025.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_lab5_burst' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/validation_vivado/validation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_lab5_burst_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/adder_tree.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_tree
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc1_paired
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_pair_output.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_stream_pair_output
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_two_inputs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_stream_two_inputs
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/lab5_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab5_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/tb/tb_lab5_burst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_lab5_burst
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/validation_vivado/validation.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/validation_vivado/validation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_lab5_burst_behav xil_defaultlib.tb_lab5_burst xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /vivado/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_lab5_burst_behav xil_defaultlib.tb_lab5_burst xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/lab5_top.v" Line 1. Module lab5_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v" Line 2. Module fc1_paired(LANES=256,GROUPS=2,ADDER_LANES=256,DSP_LANES=168,WEIGHTS="/home/ding/vivado_project/Lab5_optimization/data/stream_pair256_hybrid_weights.mem",INPUTS="/home/ding/vivado_project/Lab5_optimization/data/stream_pair256_hybrid_inputs.mem",BIASES="/home/ding/vivado_project/Lab5_optimization/data/fc1_paired_bias.mem") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/adder_tree.v" Line 1. Module adder_tree doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/adder_tree.v" Line 1. Module adder_tree doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_pair_output.v" Line 3. Module fc_stream_pair_output(WEIGHT_FILE="/home/ding/vivado_project/Lab5_optimization/data/fc2_weights.mem",BIAS_FILE="/home/ding/vivado_project/Lab5_optimization/data/fc2_bias.mem") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_two_inputs.v" Line 3. Module fc_stream_two_inputs(IW=35,NI=8,NO=2,AW=45,OW=64,IA=3,OA=1,RELU=0,WEIGHT_FILE="/home/ding/vivado_project/Lab5_optimization/data/fc3_quad_weights.mem",BIAS_FILE="/home/ding/vivado_project/Lab5_optimization/data/fc3_bias.mem") doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.adder_tree
+Compiling module xil_defaultlib.fc1_paired(LANES=256,GROUPS=2,AD...
+Compiling module xil_defaultlib.fc_stream_pair_output(WEIGHT_FIL...
+Compiling module xil_defaultlib.fc_stream_two_inputs(IW=35,NI=8,...
+Compiling module xil_defaultlib.lab5_top
+Compiling module xil_defaultlib.tb_lab5_burst
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_lab5_burst_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/validation_vivado/validation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_lab5_burst_behav -key {Behavioral:sim_1:Functional:tb_lab5_burst} -tclbatch {tb_lab5_burst.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_lab5_burst.tcl
+## set curr_wave [current_wave_config]
+## if { [string length $curr_wave] == 0 } {
+##   if { [llength [get_objects]] > 0} {
+##     add_wave /
+##     set_property needs_save false [current_wave_config]
+##   } else {
+##      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+##   }
+## }
+## run all
+LAYER FC1 ns=84
+FC3[0]=           1444462170
+BURST job=0 latency_ns=883.680 launch_ns=34.190 finish_ns=917.870
+FC3[1]=          -1667237270
+FC3[0]=          61812518299
+BURST job=1 latency_ns=883.680 launch_ns=712.730 finish_ns=1596.410
+FC3[1]=         -70373012403
+FC3[0]=        -240097516783
+BURST job=2 latency_ns=883.680 launch_ns=1391.270 finish_ns=2274.950
+FC3[1]=         175199173165
+FC3[0]=         -95026798550
+BURST job=3 latency_ns=883.680 launch_ns=2069.810 finish_ns=2953.490
+FC3[1]=          67320995898
+FC3[0]=         -76423401231
+BURST job=4 latency_ns=883.680 launch_ns=2748.350 finish_ns=3632.030
+FC3[1]=          47738574167
+FC3[0]=        -256572649284
+BURST job=5 latency_ns=883.680 launch_ns=3426.890 finish_ns=4310.570
+FC3[1]=         171812496095
+PASS: six overlapping different networks, all 972 values and addresses match
+$finish called at time : 4323720 ps : File "/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/tb/tb_lab5_burst.v" Line 33
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_lab5_burst_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1615.922 ; gain = 0.000 ; free physical = 9031 ; free virtual = 15141
+# close_sim
+INFO: xsimkernel Simulation Memory Usage: 299892 KB (Peak: 343816 KB), Simulation CPU Usage: 1250 ms
+INFO: [Simtcl 6-16] Simulation closed
+# exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  5 16:33:00 2026...

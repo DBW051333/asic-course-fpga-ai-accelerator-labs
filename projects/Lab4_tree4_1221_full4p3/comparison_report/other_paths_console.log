@@ -1,0 +1,59 @@
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Oct  4 17:58:19 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /home/ding/vivado_project/Lab4_parallel64_packed/comparison_report/estimate_other_paths.tcl
+# open_checkpoint /home/ding/vivado_project/Lab4_parallel64_packed/Lab4.runs/impl_1/fc_top_routed.dcp
+Command: open_checkpoint /home/ding/vivado_project/Lab4_parallel64_packed/Lab4.runs/impl_1/fc_top_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1551.871 ; gain = 0.000 ; free physical = 9298 ; free virtual = 13827
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1771.582 ; gain = 0.000 ; free physical = 9134 ; free virtual = 13661
+INFO: [Netlist 29-17] Analyzing 422 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1860.332 ; gain = 1.000 ; free physical = 9074 ; free virtual = 13602
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2436.801 ; gain = 0.000 ; free physical = 8565 ; free virtual = 13094
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2436.801 ; gain = 0.000 ; free physical = 8565 ; free virtual = 13094
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2436.801 ; gain = 0.000 ; free physical = 8565 ; free virtual = 13094
+Read placeStorage: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2436.801 ; gain = 0.000 ; free physical = 8568 ; free virtual = 13096
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2436.801 ; gain = 0.000 ; free physical = 8568 ; free virtual = 13096
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2436.801 ; gain = 0.000 ; free physical = 8570 ; free virtual = 13098
+Read Physdb Files: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2436.801 ; gain = 0.000 ; free physical = 8570 ; free virtual = 13098
+Restored from archive | CPU: 0.140000 secs | Memory: 5.232956 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2436.801 ; gain = 6.938 ; free physical = 8570 ; free virtual = 13098
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2436.801 ; gain = 0.000 ; free physical = 8570 ; free virtual = 13098
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2436.836 ; gain = 884.965 ; free physical = 8569 ; free virtual = 13097
+# set from_regs [get_cells -hier -regexp {.*stage1_reg.*}]
+# set to_regs [get_cells -hier -regexp {.*stage2_reg.*}]
+# puts "stage1_regs=[llength $from_regs] stage2_regs=[llength $to_regs]"
+stage1_regs=288 stage2_regs=42
+# set_false_path -from $from_regs -to $to_regs
+# report_timing -max_paths 10 -file /home/ding/vivado_project/Lab4_parallel64_packed/comparison_report/other_paths.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type max -sort_by slack.
+# report_timing_summary -file /home/ding/vivado_project/Lab4_parallel64_packed/comparison_report/other_paths_summary.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 17:58:28 2026...

@@ -1,0 +1,59 @@
+{
+  "widths": [
+    8,
+    8,
+    8
+  ],
+  "shifts": [
+    10,
+    9,
+    8
+  ],
+  "mode": "floor_wrap",
+  "correct": 37,
+  "accuracy": 0.8809523809523809,
+  "ties": 0,
+  "disagreements": 0,
+  "overflow_counts": [
+    0,
+    0,
+    0
+  ],
+  "raw_ranges": [
+    [
+      0,
+      80805
+    ],
+    [
+      0,
+      37683
+    ],
+    [
+      -32166,
+      19709
+    ]
+  ],
+  "wrong_samples": [
+    21,
+    23,
+    25,
+    40,
+    41
+  ],
+  "name": "fc2_interleaved_split11",
+  "dsp1": 200,
+  "tail": "packed_rom",
+  "stress_overflow_counts": [
+    188,
+    9,
+    0
+  ],
+  "tree_stages": 8,
+  "source": "/home/ding/vivado_project/Lab6_limit_search/quick_fc2_rom_pipe",
+  "options": {
+    "architecture_trial": "fc2_interleaved_split11"
+  },
+  "cycles": 174,
+  "interval_cycles": 129,
+  "period_to_beat_735_3": 4.225862068965517
+}

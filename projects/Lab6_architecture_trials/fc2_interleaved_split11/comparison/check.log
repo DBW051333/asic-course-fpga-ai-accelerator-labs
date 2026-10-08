@@ -1,0 +1,402 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Oct  6 22:32:33 2026
+# Process ID         : 128470
+# Current directory  : /home/ding/桌面/Lab
+# Command line       : vivado -mode batch -source /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/tools/check_fc1_compare.tcl -log /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/check.log -journal /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/check.jou
+# Log file           : /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/check.log
+# Journal file       : /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/check.jou
+# Running On         : Yilong
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 2152.222 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 24443 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 24443 MB
+# Available Virtual  : 13397 MB
+#-----------------------------------------------------------
+source /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/tools/check_fc1_compare.tcl
+# set_param general.maxThreads 8
+# create_project fc1_compare_check /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_fc1_compare -part xc7z020clg400-1 -force
+# add_files [glob /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/*.v]
+# source /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/tools/view_fc1_compare.tcl
+## catch {close_sim -force}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc3_output_ram/sim/fc3_output_ram.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc3_output_ram/sim/fc3_output_ram.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc3_bias_ram/sim/fc3_bias_ram.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc3_bias_ram/sim/fc3_bias_ram.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc3_weight_ram/sim/fc3_weight_ram.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc3_weight_ram/sim/fc3_weight_ram.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc3_input_ram/sim/fc3_input_ram.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc3_input_ram/sim/fc3_input_ram.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc2_output_ram/sim/fc2_output_ram.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc2_output_ram/sim/fc2_output_ram.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc2_bias_ram/sim/fc2_bias_ram.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc2_bias_ram/sim/fc2_bias_ram.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc2_weight_ram/sim/fc2_weight_ram.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc2_weight_ram/sim/fc2_weight_ram.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc2_input_ram/sim/fc2_input_ram.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc2_input_ram/sim/fc2_input_ram.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc_output_ram/sim/fc_output_ram.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc_output_ram/sim/fc_output_ram.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc_bias_ram/sim/fc_bias_ram.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc_bias_ram/sim/fc_bias_ram.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc_weight_ram/sim/fc_weight_ram.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc_weight_ram/sim/fc_weight_ram.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc_input_ram/sim/fc_input_ram.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc_input_ram/sim/fc_input_ram.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/adder_tree_original.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/adder_tree_original.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/rtl/cut_adder_tree.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/rtl/cut_adder_tree.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/rtl/cut_fc_layer.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/rtl/cut_fc_layer.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/rtl/cut_mult_array.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/rtl/cut_mult_array.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/fc_original.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/fc_original.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/rtl/fc1_cut_top.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/rtl/fc1_cut_top.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/rtl/lab5_controller.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/rtl/lab5_controller.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/rtl/lab6_top.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/rtl/lab6_top.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab4/mult_array.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab4/mult_array.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/rtl/output_packer.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/rtl/output_packer.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/cut_mult/sim/cut_mult.vhd}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/cut_mult/sim/cut_mult.vhd}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/mult_8/sim/mult_8.vhd}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/mult_8/sim/mult_8.vhd}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_original_trace.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_original_trace.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_current_trace.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_current_trace.v}}
+## if {[llength [get_files -quiet {/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_fc1_compare.v}]] == 0} {add_files -fileset sim_1 {/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_fc1_compare.v}}
+## set_property top tb_fc1_compare [get_filesets sim_1]
+## set_property top_auto_set 0 [get_filesets sim_1]
+## set_property generic {} [get_filesets sim_1]
+## set_property xsim.elaborate.debug_level all [get_filesets sim_1]
+## set_property xsim.elaborate.xelab.more_options { -L blk_mem_gen_v8_4_12 -L xbip_utils_v3_0_15 -L mult_gen_v12_0_24} [get_filesets sim_1]
+## set_property xsim.simulate.runtime {0ns} [get_filesets sim_1]
+## set compare_sim_dir [file join [get_property DIRECTORY [current_project]] [get_property NAME [current_project]].sim sim_1 behav xsim]
+## file mkdir $compare_sim_dir
+## file copy -force {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.sim/sim_1/behav/xsim/fc_weight_ram.mif} $compare_sim_dir
+## file copy -force {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.sim/sim_1/behav/xsim/fc3_weight_ram.mif} $compare_sim_dir
+## file copy -force {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.sim/sim_1/behav/xsim/fc_bias_ram.mif} $compare_sim_dir
+## file copy -force {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.sim/sim_1/behav/xsim/fc_input_ram.mif} $compare_sim_dir
+## file copy -force {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.sim/sim_1/behav/xsim/fc3_bias_ram.mif} $compare_sim_dir
+## file copy -force {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.sim/sim_1/behav/xsim/fc2_weight_ram.mif} $compare_sim_dir
+## file copy -force {/home/ding/vivado_project/Lab6/vivado8/Lab6_8.sim/sim_1/behav/xsim/fc2_bias_ram.mif} $compare_sim_dir
+## update_compile_order -fileset sim_1
+## launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Project 1-5737] Running on host Yilong (64) - Ubuntu 22.04.5 LTS
+INFO: [Vivado 12-28535] Process started - Tue Oct  6 22:32:37 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_fc1_compare'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_fc1_compare/fc1_compare_check.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/vivado/2025.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_fc1_compare' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_fc1_compare/fc1_compare_check.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj tb_fc1_compare_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/adder_tree.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_tree
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/adder_tree_original.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_tree_original
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/rtl/cut_adder_tree.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cut_adder_tree
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/rtl/cut_fc_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cut_fc_layer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/rtl/cut_mult_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cut_mult_array
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/rtl/fc1_cut_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc1_cut_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/fc1_paired.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc1_paired
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc2_bias_ram/sim/fc2_bias_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc2_bias_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc2_input_ram/sim/fc2_input_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc2_input_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc2_output_ram/sim/fc2_output_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc2_output_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc2_weight_ram/sim/fc2_weight_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc2_weight_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc3_bias_ram/sim/fc3_bias_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc3_bias_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc3_input_ram/sim/fc3_input_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc3_input_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc3_output_ram/sim/fc3_output_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc3_output_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc3_weight_ram/sim/fc3_weight_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc3_weight_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc_bias_ram/sim/fc_bias_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_bias_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc_input_ram/sim/fc_input_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_input_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/fc_original.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc_output_ram/sim/fc_output_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_output_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/fc_stream_pair_output.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_stream_pair_output
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/fc_stream_two_inputs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_stream_two_inputs
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/fc_weight_ram/sim/fc_weight_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_weight_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/rtl/lab5_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab5_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/lab5_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab5_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/rtl/lab6_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab6_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab4/mult_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult_array
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6/rtl/output_packer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_packer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/quantize_signed.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quantize_signed
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_current_trace.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_current_trace
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_original_trace.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_original_trace
+WARNING: [VRFC 10-3380] identifier 'clk_i' is used before its declaration [/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_original_trace.v:5]
+WARNING: [VRFC 10-3380] identifier 'rst_n_i' is used before its declaration [/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_original_trace.v:6]
+WARNING: [VRFC 10-3380] identifier 'errors' is used before its declaration [/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_original_trace.v:10]
+WARNING: [VRFC 10-3380] identifier 'start_i' is used before its declaration [/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_original_trace.v:13]
+WARNING: [VRFC 10-3380] identifier 'fc1_wren' is used before its declaration [/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_original_trace.v:17]
+WARNING: [VRFC 10-3380] identifier 'fc1_wren' is used before its declaration [/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_original_trace.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_fc1_compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fc1_compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_fc1_compare/fc1_compare_check.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj tb_fc1_compare_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/cut_mult/sim/cut_mult.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cut_mult'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ding/vivado_project/Lab6/vivado8/Lab6_8.gen/sources_1/ip/mult_8/sim/mult_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult_8'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_fc1_compare/fc1_compare_check.sim/sim_1/behav/xsim'
+xelab --incr --debug all --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_fc1_compare_behav xil_defaultlib.tb_fc1_compare xil_defaultlib.glbl -log elaborate.log  -L blk_mem_gen_v8_4_12 -L xbip_utils_v3_0_15 -L mult_gen_v12_0_24
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /vivado/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug all --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_fc1_compare_behav xil_defaultlib.tb_fc1_compare xil_defaultlib.glbl -log elaborate.log -L blk_mem_gen_v8_4_12 -L xbip_utils_v3_0_15 -L mult_gen_v12_0_24 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/adder_tree.v" Line 1. Module adder_tree doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/rtl/adder_tree.v" Line 1. Module adder_tree doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_15.xbip_utils_v3_0_15_pkg
+Compiling package mult_gen_v12_0_24.mult_gen_v12_0_24_viv_comp
+Compiling package mult_gen_v12_0_24.mult_gen_v12_0_24_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package mult_gen_v12_0_24.dsp_pkg
+Compiling module xil_defaultlib.lab5_controller
+Compiling module xil_defaultlib.adder_tree_original
+Compiling module xil_defaultlib.fc
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="zy...
+Compiling module xil_defaultlib.fc_input_ram
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="zy...
+Compiling module xil_defaultlib.fc_weight_ram
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="zy...
+Compiling module xil_defaultlib.fc_bias_ram
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="zy...
+Compiling module xil_defaultlib.fc_output_ram
+Compiling architecture xilinx of entity mult_gen_v12_0_24.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_24.op_resize [\op_resize(ai_width=8,bi_width=8...]
+Compiling architecture xilinx of entity mult_gen_v12_0_24.dsp [\dsp(c_xdevicefamily="zynq",c_a_...]
+Compiling architecture xilinx of entity mult_gen_v12_0_24.mult_gen_v12_0_24_viv [\mult_gen_v12_0_24_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_24.mult_gen_v12_0_24 [\mult_gen_v12_0_24(c_xdevicefami...]
+Compiling architecture mult_8_arch of entity xil_defaultlib.mult_8 [mult_8_default]
+Compiling module xil_defaultlib.mult_array_default
+Compiling module xil_defaultlib.fc1_cut_top
+Compiling module xil_defaultlib.output_packer(ELEM_WIDTH=8)
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="zy...
+Compiling module xil_defaultlib.fc2_input_ram
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="zy...
+Compiling module xil_defaultlib.fc2_weight_ram
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="zy...
+Compiling module xil_defaultlib.fc2_bias_ram
+Compiling architecture cut_mult_arch of entity xil_defaultlib.cut_mult [cut_mult_default]
+Compiling module xil_defaultlib.cut_mult_array_default
+Compiling module xil_defaultlib.cut_adder_tree
+Compiling module xil_defaultlib.cut_fc_layer_default
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="zy...
+Compiling module xil_defaultlib.fc2_output_ram
+Compiling module xil_defaultlib.output_packer(ELEM_WIDTH=8,ADDR_...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="zy...
+Compiling module xil_defaultlib.fc3_input_ram
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="zy...
+Compiling module xil_defaultlib.fc3_weight_ram
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_output_stage...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_softecc_outp...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="zy...
+Compiling module xil_defaultlib.fc3_bias_ram
+Compiling module xil_defaultlib.cut_fc_layer(SHIFT=8)
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12_mem_module(C...
+Compiling module blk_mem_gen_v8_4_12.blk_mem_gen_v8_4_12(C_FAMILY="zy...
+Compiling module xil_defaultlib.fc3_output_ram
+Compiling module xil_defaultlib.lab6_top_default
+Compiling module xil_defaultlib.tb_original_trace
+Compiling module xil_defaultlib.adder_tree
+Compiling module xil_defaultlib.fc1_paired(LANES=256,GROUPS=2,AD...
+Compiling module xil_defaultlib.quantize_signed(IW=32)
+Compiling module xil_defaultlib.fc_stream_pair_output(IW=8,AW=21...
+Compiling module xil_defaultlib.quantize_signed(SHIFT=9)
+Compiling module xil_defaultlib.fc_stream_two_inputs(IW=8,NI=8,N...
+Compiling module xil_defaultlib.quantize_signed(IW=21,SHIFT=8)
+Compiling module xil_defaultlib.lab5_top
+Compiling module xil_defaultlib.tb_current_trace(CLK_PERIOD=10.0...
+Compiling module xil_defaultlib.tb_fc1_compare
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fc1_compare_behav
+execute_script: Time (s): cpu = 00:00:36 ; elapsed = 00:00:10 . Memory (MB): peak = 1615.922 ; gain = 0.000 ; free physical = 1672 ; free virtual = 12260
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/simulation_fc1_compare/fc1_compare_check.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_fc1_compare_behav -key {Behavioral:sim_1:Functional:tb_fc1_compare} -tclbatch {tb_fc1_compare.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_fc1_compare.tcl
+### set curr_wave [current_wave_config]
+### if { [string length $curr_wave] == 0 } {
+###   if { [llength [get_objects]] > 0} {
+###     add_wave /
+###     set_property needs_save false [current_wave_config]
+###   } else {
+###      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+###   }
+### }
+WARNING: [Simtcl 6-168] No object found for the given pattern.
+WARNING: [Add_Wave-1] No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console.
+### run 0ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_fc1_compare.old.dut.u_fc1.u_input_ram.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_fc1_compare.old.dut.u_fc1.u_weight_ram.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_fc1_compare.old.dut.u_fc1.u_bias_ram.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fc1_compare.old.dut.u_fc1.u_output_ram.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fc1_compare.old.dut.u_fc2_input_ram.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_fc1_compare.old.dut.u_fc2_weight_ram.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_fc1_compare.old.dut.u_fc2_bias_ram.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fc1_compare.old.dut.u_fc2_output_ram.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fc1_compare.old.dut.u_fc3_input_ram.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_fc1_compare.old.dut.u_fc3_weight_ram.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_fc1_compare.old.dut.u_fc3_bias_ram.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fc1_compare.old.dut.u_fc3_output_ram.inst.native_mem_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fc1_compare_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:39 ; elapsed = 00:00:15 . Memory (MB): peak = 1615.922 ; gain = 0.000 ; free physical = 1666 ; free virtual = 12257
+## create_wave_config fc1_comparison
+## foreach path {
+## /tb_fc1_compare/old/clk_i /tb_fc1_compare/old/start_i /tb_fc1_compare/old/relative_cycle
+## /tb_fc1_compare/old/issue_valid /tb_fc1_compare/old/issue_neuron /tb_fc1_compare/old/issue_group
+## /tb_fc1_compare/old/fc1_wren /tb_fc1_compare/old/fc1_addr /tb_fc1_compare/old/fc1_data
+## /tb_fc1_compare/now/start /tb_fc1_compare/now/cycle
+## /tb_fc1_compare/now/fc1_issue_valid /tb_fc1_compare/now/fc1_issue_pair /tb_fc1_compare/now/fc1_issue_group
+## /tb_fc1_compare/now/fc1_group_sum0 /tb_fc1_compare/now/fc1_group_sum1
+## /tb_fc1_compare/now/fc1_pair_result0 /tb_fc1_compare/now/fc1_pair_result1
+## /tb_fc1_compare/now/fc1_valid /tb_fc1_compare/now/fc1_addr /tb_fc1_compare/now/fc1_data
+## } {add_wave -radix dec $path}
+## run 20 us
+PIPE cycle=0 START
+FC1 ISSUE step=0 neurons=0,1 group=0 inputs=0..255
+FC1 ISSUE step=1 neurons=0,1 group=1 inputs=256..511
+FC1 ISSUE step=2 neurons=2,3 group=0 inputs=0..255
+FC1 ISSUE step=3 neurons=2,3 group=1 inputs=256..511
+FC1 ISSUE step=4 neurons=4,5 group=0 inputs=0..255
+FC1 ISSUE step=5 neurons=4,5 group=1 inputs=256..511
+FC1 DATA pair=0 group0 sums=3612,-693 accum_with_bias=3586,-646
+OLD FC1 output cycle=18 addr=0 value=4
+FC1 DATA pair=0 group1 sums=1302,1897 completed=4888,1251
+PIPE cycle=19 FC1 output addr=0
+FC1 DATA pair=1 group0 sums=-6875,2801 accum_with_bias=-6923,2807
+FC1 DATA pair=1 group1 sums=1618,-6555 completed=-5305,-3748
+OLD FC1 output cycle=22 addr=1 value=1
+OLD FC1 output cycle=26 addr=2 value=0
+PIPE cycle=26 FC2 first partial-sum write; FC1 outputs so far=8
+DATA input=0 x=4 w=28 product=112 actual_product=112 even=30 odd=x
+DATA input=1 x=1 w=-24 product=-24 actual_product=-24 even=30 odd=-24
+DATA input=2 x=0 w=-96 product=0 actual_product=0 even=30 odd=-24
+DATA input=3 x=0 w=9 product=0 actual_product=0 even=30 odd=-24
+OLD FC1 output cycle=30 addr=3 value=0
+FC1 ISSUE step=126 neurons=126,127 group=0 inputs=0..255
+FC1 ISSUE step=127 neurons=126,127 group=1 inputs=256..511
+PIPE cycle=146 FC1 output addr=127
+DATA input=126 x=0 w=-35 product=0 actual_product=0 even=418 odd=1459
+DATA input=127 x=0 w=-54 product=0 actual_product=0 even=418 odd=1459
+DATA FC2 channel0 merged=1877 actual=1877 ReLU=1877 quantized=3
+PIPE cycle=157 FC2 output group addr=0..3
+PIPE cycle=158 FC2 output group addr=4..7
+PIPE cycle=159 FC2 output group addr=8..11
+PIPE cycle=160 FC2 output group addr=12..15
+PIPE cycle=161 FC2 output group addr=16..19
+PIPE cycle=162 FC2 output group addr=20..23
+PIPE cycle=163 FC2 output group addr=24..27
+PIPE cycle=164 FC2 output group addr=28..31
+PIPE cycle=164 FC3 first partial-sum write; FC2 outputs so far=32
+PIPE cycle=173 FC3 output addr=0 score=10
+PIPE cycle=174 FC3 output addr=1 score=-11
+PIPE DONE latency=174 cycles counts=128/32/2 errors=0
+FC1 CHECK issue_steps=128 completed_groups=128 output_pairs=64
+DATA CHECK products=4096 partial_sums=4096 snapshots=32 errors=0
+PASS: sample 0, all 162 outputs match; FC2 starts before FC1 finishes
+OLD FC1 last output cycle=526 issue_steps=512
+sample=0 width=8 scores=(10,-11) pred=0 label=0
+SUMMARY width=8 accuracy=1/42 mismatches=0
+COMPARE PASS: old 512 issue steps, current 128 issue steps; outputs checked
+$finish called at time : 18510 ns : File "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/comparison/tb_fc1_compare.v" Line 9
+# close_sim -force
+INFO: xsimkernel Simulation Memory Usage: 318356 KB (Peak: 356920 KB), Simulation CPU Usage: 3670 ms
+INFO: [Simtcl 6-16] Simulation closed
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  6 22:32:55 2026...

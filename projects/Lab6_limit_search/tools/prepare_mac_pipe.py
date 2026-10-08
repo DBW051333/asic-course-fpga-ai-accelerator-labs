@@ -1,0 +1,26 @@
+from pathlib import Path
+import json,shutil
+ROOT=Path('/home/ding/vivado_project/Lab6_limit_search');src=ROOT/'dsp_packed_mac_narrow';d=ROOT/'dsp_mac_pipe_bias';d.mkdir(exist_ok=True)
+for sub in ['rtl','data','tb','tools']:
+ shutil.copytree(src/sub,d/sub,dirs_exist_ok=True)
+ for p in (d/sub).glob('*'):
+  if p.suffix in ['.v','.tcl']:p.write_text(p.read_text().replace(str(src),str(d)).replace(src.name,d.name))
+(d/'results').mkdir(exist_ok=True);shutil.copy2(src/'timing.xdc',d/'timing.xdc')
+p=d/'rtl/fc_stream_pair_output.v';s=p.read_text()
+s=s.replace('reg valid_after,first_after,last_after;', 'reg valid_after,first_after,last_after,snapshot_pending;')
+s=s.replace('reg signed [7:0] quotient;', 'reg signed [4:0] quotient;\n  reg [15:0] final_low;reg signed [AW-1:0] final_upper;')
+s=s.replace('wire signed [7:0] step','wire signed [4:0] step').replace('wire signed [7:0] next_q','wire signed [4:0] next_q').replace("8'sd", "5'sd")
+s=s.replace('wire signed [AW-1:0] exact_low=$signed({next_q,low});', 'wire signed [AW-1:0] exact_low=$signed({quotient,final_low});')
+s=s.replace('wire signed [31:0] exact_high=$signed(packed_acc[47:16])-$signed(next_q);','wire signed [AW-1:0] exact_high=final_upper-$signed(quotient);')
+s=s.replace('if(last_after)begin snapshot[2*g]<=exact_low;snapshot[2*g+1]<=exact_high[AW-1:0];end','if(last_after)begin final_low<=low;final_upper<=packed_acc[AW+15:16];end')
+s=s.replace('end\n  end\n end endgenerate', 'end\n   if(snapshot_pending)begin snapshot[2*g]<=exact_low;snapshot[2*g+1]<=exact_high;end\n  end\n end endgenerate')
+s=s.replace('valid_after<=0;first_after<=0;last_after<=0;', 'valid_after<=0;first_after<=0;last_after<=0;snapshot_pending<=0;')
+s=s.replace('valid_after<=valid_pipe[2];', 'snapshot_pending<=valid_after && last_after;\n   valid_after<=valid_pipe[2];')
+s=s.replace('if(valid_after && last_after)begin emitting<=1;', 'if(snapshot_pending)begin emitting<=1;')
+p.write_text(s)
+p=d/'rtl/fc1_paired.v';s=p.read_text().replace('wire [15:0] bias_pair=biases[tag[15][7:2]];', 'reg [15:0] bias_pipe[0:15];\n wire [15:0] bias_pair=bias_pipe[15];').replace('integer j;','integer j,bi;')
+s=s.replace('weight_r<=weights[issue_addr];', 'bias_pipe[0]<=biases[issue_pair];\n  for(bi=1;bi<16;bi=bi+1)bias_pipe[bi]<=bias_pipe[bi-1];\n  weight_r<=weights[issue_addr];');p.write_text(s)
+cfg=json.loads((src/'config.json').read_text());cfg.update(name=d.name,source=str(src),cycles=171);cfg['options'].update(mac_recovery_pipeline=True,bias_pipeline=True)
+(d/'config.json').write_text(json.dumps(cfg,indent=2))
+p=ROOT/'results/plan.json';cfg=json.loads(p.read_text());cfg['candidates'].append(d.name);p.write_text(json.dumps(cfg,indent=2))
+print('Separated exact quotient correction from final channel recovery; added FC1 bias pipeline')

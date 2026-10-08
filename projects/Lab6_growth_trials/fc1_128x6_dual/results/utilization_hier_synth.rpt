@@ -1,0 +1,46 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Tue Oct  6 23:08:09 2026
+| Host         : Yilong running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_utilization -hierarchical -file /home/ding/vivado_project/Lab6_growth_trials/fc1_128x6_dual/results/utilization_hier_synth.rpt
+| Design       : lab5_impl_top
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------+-------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+|      Instance     |             Module            | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++-------------------+-------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+| lab5_impl_top     |                         (top) |      35397 |      34112 |       0 | 1285 | 70807 |    103 |      1 |        220 |
+|   (lab5_impl_top) |                         (top) |          0 |          0 |       0 |    0 |     0 |      0 |      0 |          0 |
+|   network         |                      lab5_top |      35397 |      34112 |       0 | 1285 | 70807 |    103 |      1 |        220 |
+|     u_fc1         |                    fc1_paired |      32886 |      31609 |       0 | 1277 | 66564 |     96 |      0 |        184 |
+|       (u_fc1)     |                    fc1_paired |         26 |         26 |       0 |    0 |    80 |      0 |      0 |          0 |
+|       c0          |                 fc1_lane_core |       4716 |       4691 |       0 |   25 | 12980 |     32 |      0 |        128 |
+|         (c0)      |                 fc1_lane_core |        274 |        249 |       0 |   25 |  8422 |     32 |      0 |        128 |
+|         tree0     |                  adder_tree_3 |       2221 |       2221 |       0 |    0 |  2279 |      0 |      0 |          0 |
+|         tree1     |                  adder_tree_4 |       2221 |       2221 |       0 |    0 |  2279 |      0 |      0 |          0 |
+|       c1          | fc1_lane_core__parameterized0 |      11463 |      11012 |       0 |  451 | 22891 |     32 |      0 |         56 |
+|         (c1)      | fc1_lane_core__parameterized0 |       7021 |       6570 |       0 |  451 | 18333 |     32 |      0 |         56 |
+|         tree0     |                  adder_tree_1 |       2221 |       2221 |       0 |    0 |  2279 |      0 |      0 |          0 |
+|         tree1     |                  adder_tree_2 |       2221 |       2221 |       0 |    0 |  2279 |      0 |      0 |          0 |
+|       c2          | fc1_lane_core__parameterized1 |      16681 |      15880 |       0 |  801 | 30613 |     32 |      0 |          0 |
+|         (c2)      | fc1_lane_core__parameterized1 |      12239 |      11438 |       0 |  801 | 26055 |     32 |      0 |          0 |
+|         tree0     |                    adder_tree |       2221 |       2221 |       0 |    0 |  2279 |      0 |      0 |          0 |
+|         tree1     |                  adder_tree_0 |       2221 |       2221 |       0 |    0 |  2279 |      0 |      0 |          0 |
+|     u_fc2         |         fc_stream_pair_output |       2366 |       2361 |       0 |    5 |  3958 |      7 |      1 |         32 |
+|     u_fc3         |          fc_stream_two_inputs |        145 |        142 |       0 |    3 |   285 |      0 |      0 |          4 |
++-------------------+-------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+
+

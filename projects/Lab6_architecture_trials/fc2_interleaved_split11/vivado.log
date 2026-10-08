@@ -1,0 +1,110 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Oct  6 04:48:12 2026
+# Process ID         : 58
+# Current directory  : /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11
+# Command line       : vivado -mode batch -source tools/physopt_baseline.tcl -nojournal
+# Log file           : /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/vivado.log
+# Journal file       : 
+# Running On         : Yilong
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 400.000 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 24443 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 24443 MB
+# Available Virtual  : 20325 MB
+#-----------------------------------------------------------
+source tools/physopt_baseline.tcl
+# set_param general.maxThreads 8
+# open_checkpoint /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/results/baseline_final_routed.dcp
+Command: open_checkpoint /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/results/baseline_final_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1551.883 ; gain = 0.000 ; free physical = 14888 ; free virtual = 18953
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1802.625 ; gain = 0.000 ; free physical = 14679 ; free virtual = 18745
+INFO: [Netlist 29-17] Analyzing 5456 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1925.562 ; gain = 13.375 ; free physical = 14561 ; free virtual = 18626
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2559.305 ; gain = 2.711 ; free physical = 13975 ; free virtual = 18041
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2562.305 ; gain = 3.000 ; free physical = 13975 ; free virtual = 18041
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2562.305 ; gain = 0.000 ; free physical = 13975 ; free virtual = 18041
+Read placeStorage: Time (s): cpu = 00:00:00.54 ; elapsed = 00:00:00.54 . Memory (MB): peak = 2589.305 ; gain = 27.000 ; free physical = 13943 ; free virtual = 18009
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2589.305 ; gain = 0.000 ; free physical = 13943 ; free virtual = 18009
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2613.789 ; gain = 24.484 ; free physical = 13926 ; free virtual = 17992
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.78 . Memory (MB): peak = 2613.789 ; gain = 57.195 ; free physical = 13926 ; free virtual = 17992
+Restored from archive | CPU: 1.080000 secs | Memory: 43.866486 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.81 . Memory (MB): peak = 2613.789 ; gain = 60.164 ; free physical = 13926 ; free virtual = 17992
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2631.930 ; gain = 0.000 ; free physical = 13911 ; free virtual = 17977
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+open_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 2639.965 ; gain = 1088.082 ; free physical = 13911 ; free virtual = 17977
+# phys_opt_design -directive AggressiveExplore
+Command: phys_opt_design -directive AggressiveExplore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode 
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: AggressiveExplore
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:02 . Memory (MB): peak = 2735.047 ; gain = 15.000 ; free physical = 13801 ; free virtual = 17867
+INFO: [Vivado_Tcl 4-2280] Estimated Timing Summary | WNS= 0.000 | TNS= 0.000 | WHS= 0.008 |
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-2291] Design worst hold slack (WHS) is greater than or equal to 0.000 ns. Hold fix optimization will be skipped.
+ 
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+# report_timing_summary -file /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/results/physopt_baseline_timing.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+# set orig [get_property PERIOD [get_clocks -of_objects [get_ports clk_i]]]
+# set slack [get_property SLACK [get_timing_paths -delay_type max -max_paths 1]]
+# set chosen [expr {ceil(($orig-$slack)*100.0)/100.0}]
+# create_clock -period $chosen [get_ports clk_i]
+WARNING: [Constraints 18-619] A clock with name 'clk_i' already exists, overwriting the previous clock with the same name.
+# set wns [get_property SLACK [get_timing_paths -delay_type max -max_paths 1]]
+# while {$wns<0} {set chosen [expr {$chosen+0.01}];create_clock -period $chosen [get_ports clk_i];set wns [get_property SLACK [get_timing_paths -delay_type max -max_paths 1]]}
+# set whs [get_property SLACK [get_timing_paths -delay_type min -max_paths 1]]
+# report_timing_summary -file /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/results/physopt_baseline_final.rpt
+# write_checkpoint -force /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/results/physopt_baseline_routed.dcp
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2828.391 ; gain = 0.000 ; free physical = 13741 ; free virtual = 17807
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2828.391 ; gain = 0.000 ; free physical = 13741 ; free virtual = 17807
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2840.891 ; gain = 12.500 ; free physical = 13733 ; free virtual = 17805
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2842.891 ; gain = 14.500 ; free physical = 13720 ; free virtual = 17807
+Wrote PlaceStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.82 . Memory (MB): peak = 2845.891 ; gain = 3.000 ; free physical = 13677 ; free virtual = 17795
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2845.891 ; gain = 0.000 ; free physical = 13669 ; free virtual = 17793
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2845.891 ; gain = 0.000 ; free physical = 13669 ; free virtual = 17794
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2845.891 ; gain = 17.500 ; free physical = 13669 ; free virtual = 17794
+INFO: [Common 17-1381] The checkpoint '/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/results/physopt_baseline_routed.dcp' has been generated.
+# set fh [open /home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11/results/physopt_baseline_clock.json w]
+# puts $fh [format {{"period": %.3f, "wns": %.3f, "whs": %.3f, "route_target": %.3f}} $chosen $wns $whs $orig]
+# close $fh
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  6 04:48:34 2026...

@@ -1,0 +1,36 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Mon Oct  5 16:01:20 2026
+| Host         : Yilong running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_utilization -hierarchical -file /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/utilization_hier_synth.rpt
+| Design       : lab5_impl_top
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------+-----------------------+------------+------------+---------+------+-------+--------+--------+------------+
+|      Instance     |         Module        | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++-------------------+-----------------------+------------+------------+---------+------+-------+--------+--------+------------+
+| lab5_impl_top     |                 (top) |      25382 |      22320 |       0 | 3062 | 36747 |     61 |      0 |        216 |
+|   (lab5_impl_top) |                 (top) |          0 |          0 |       0 |    0 |     0 |      0 |      0 |          0 |
+|   network         |              lab5_top |      25382 |      22320 |       0 | 3062 | 36747 |     61 |      0 |        216 |
+|     u_fc1         |            fc1_paired |      21789 |      18733 |       0 | 3056 | 33583 |     57 |      0 |        168 |
+|       (u_fc1)     |            fc1_paired |      12999 |       9943 |       0 | 3056 | 28773 |     57 |      0 |        168 |
+|       tree0       |            adder_tree |       4396 |       4396 |       0 |    0 |  2405 |      0 |      0 |          0 |
+|       tree1       |          adder_tree_0 |       4396 |       4396 |       0 |    0 |  2405 |      0 |      0 |          0 |
+|     u_fc2         | fc_stream_pair_output |       3210 |       3207 |       0 |    3 |  2569 |      4 |      0 |         32 |
+|     u_fc3         |  fc_stream_two_inputs |        383 |        380 |       0 |    3 |   595 |      0 |      0 |         16 |
++-------------------+-----------------------+------------+------------+---------+------+-------+--------+--------+------------+
+
+

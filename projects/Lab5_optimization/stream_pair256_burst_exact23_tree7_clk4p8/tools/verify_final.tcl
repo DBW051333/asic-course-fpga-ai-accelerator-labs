@@ -1,0 +1,4 @@
+open_checkpoint /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/final_routed.dcp
+report_timing_summary -file /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/timing_verified.rpt
+report_utilization -file /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/utilization_verified.rpt
+exit

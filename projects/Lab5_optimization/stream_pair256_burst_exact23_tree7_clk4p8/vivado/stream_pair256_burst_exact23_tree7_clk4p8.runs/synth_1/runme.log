@@ -1,0 +1,736 @@
+
+*** Running vivado
+    with args -log lab5_impl_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab5_impl_top.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Oct  5 18:14:20 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source lab5_impl_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/vivado/stream_pair256_burst_exact23_tree7_clk4p8.srcs/utils_1/imports/synth_1/lab5_impl_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/vivado/stream_pair256_burst_exact23_tree7_clk4p8.srcs/utils_1/imports/synth_1/lab5_impl_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top lab5_impl_top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1008204
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2228.969 ; gain = 481.188 ; free physical = 5085 ; free virtual = 10460
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab5_impl_top' [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/lab5_impl_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'lab5_top' [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/lab5_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fc1_paired' [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:2]
+	Parameter LANES bound to: 256 - type: integer 
+	Parameter GROUPS bound to: 2 - type: integer 
+	Parameter ADDER_LANES bound to: 256 - type: integer 
+	Parameter DSP_LANES bound to: 168 - type: integer 
+	Parameter WEIGHTS bound to: /home/ding/vivado_project/Lab5_optimization/data/stream_pair256_hybrid_weights.mem - type: string 
+	Parameter INPUTS bound to: /home/ding/vivado_project/Lab5_optimization/data/stream_pair256_hybrid_inputs.mem - type: string 
+	Parameter BIASES bound to: /home/ding/vivado_project/Lab5_optimization/data/fc1_paired_bias.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file '/home/ding/vivado_project/Lab5_optimization/data/stream_pair256_hybrid_weights.mem' is read successfully [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:8]
+INFO: [Synth 8-3876] $readmem data file '/home/ding/vivado_project/Lab5_optimization/data/stream_pair256_hybrid_inputs.mem' is read successfully [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:8]
+INFO: [Synth 8-3876] $readmem data file '/home/ding/vivado_project/Lab5_optimization/data/fc1_paired_bias.mem' is read successfully [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:8]
+INFO: [Synth 8-6157] synthesizing module 'adder_tree' [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/adder_tree.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder_tree' (0#1) [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/adder_tree.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fc1_paired' (0#1) [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fc_stream_pair_output' [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_pair_output.v:3]
+	Parameter IW bound to: 23 - type: integer 
+	Parameter NI bound to: 128 - type: integer 
+	Parameter NO bound to: 32 - type: integer 
+	Parameter AW bound to: 35 - type: integer 
+	Parameter OW bound to: 48 - type: integer 
+	Parameter IA bound to: 7 - type: integer 
+	Parameter OA bound to: 5 - type: integer 
+	Parameter RELU bound to: 1 - type: integer 
+	Parameter WEIGHT_FILE bound to: /home/ding/vivado_project/Lab5_optimization/data/fc2_weights.mem - type: string 
+	Parameter BIAS_FILE bound to: /home/ding/vivado_project/Lab5_optimization/data/fc2_bias.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file '/home/ding/vivado_project/Lab5_optimization/data/fc2_weights.mem' is read successfully [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_pair_output.v:22]
+INFO: [Synth 8-3876] $readmem data file '/home/ding/vivado_project/Lab5_optimization/data/fc2_bias.mem' is read successfully [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_pair_output.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fc_stream_pair_output' (0#1) [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_pair_output.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fc_stream_two_inputs' [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_two_inputs.v:3]
+	Parameter IW bound to: 35 - type: integer 
+	Parameter NI bound to: 8 - type: integer 
+	Parameter NO bound to: 2 - type: integer 
+	Parameter AW bound to: 45 - type: integer 
+	Parameter OW bound to: 64 - type: integer 
+	Parameter IA bound to: 3 - type: integer 
+	Parameter OA bound to: 1 - type: integer 
+	Parameter RELU bound to: 0 - type: integer 
+	Parameter WEIGHT_FILE bound to: /home/ding/vivado_project/Lab5_optimization/data/fc3_quad_weights.mem - type: string 
+	Parameter BIAS_FILE bound to: /home/ding/vivado_project/Lab5_optimization/data/fc3_bias.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file '/home/ding/vivado_project/Lab5_optimization/data/fc3_quad_weights.mem' is read successfully [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_two_inputs.v:22]
+INFO: [Synth 8-3876] $readmem data file '/home/ding/vivado_project/Lab5_optimization/data/fc3_bias.mem' is read successfully [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_two_inputs.v:23]
+WARNING: [Synth 8-693] zero replication count - replication ignored [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_two_inputs.v:65]
+WARNING: [Synth 8-693] zero replication count - replication ignored [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_two_inputs.v:68]
+WARNING: [Synth 8-693] zero replication count - replication ignored [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_two_inputs.v:65]
+WARNING: [Synth 8-693] zero replication count - replication ignored [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_two_inputs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'fc_stream_two_inputs' (0#1) [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_two_inputs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'lab5_top' (0#1) [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/lab5_top.v:1]
+WARNING: [Synth 8-7071] port 'fc2_data_b_o' of module 'lab5_top' is unconnected for instance 'network' [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/lab5_impl_top.v:4]
+WARNING: [Synth 8-7071] port 'fc2_data_c_o' of module 'lab5_top' is unconnected for instance 'network' [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/lab5_impl_top.v:4]
+WARNING: [Synth 8-7071] port 'fc2_data_d_o' of module 'lab5_top' is unconnected for instance 'network' [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/lab5_impl_top.v:4]
+WARNING: [Synth 8-7023] instance 'network' of module 'lab5_top' has 17 connections declared, but only 14 given [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/lab5_impl_top.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'lab5_impl_top' (0#1) [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/lab5_impl_top.v:2]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[168] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[169] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[170] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[171] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[172] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[173] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[174] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[175] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[176] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[177] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[178] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[179] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[180] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[181] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[182] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[183] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[184] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[185] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[186] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[187] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[188] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[189] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[190] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[191] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[192] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[193] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[194] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[195] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[196] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[197] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[198] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[199] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[200] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[201] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[202] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[203] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[204] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[205] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[206] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[207] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[208] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[209] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[210] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[211] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[212] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[213] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[214] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[215] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[216] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[217] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[218] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[219] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[220] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[221] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[222] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[223] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[224] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[225] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[226] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[227] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[228] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[229] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[230] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[231] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[232] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[233] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[234] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[235] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[236] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[237] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[238] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[239] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[240] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[241] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[242] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[243] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[244] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[245] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[246] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[247] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[248] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[249] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[250] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[251] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[252] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[253] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[254] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element packed_w_reg[255] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:66]
+WARNING: [Synth 8-6014] Unused sequential element w0_p_reg[0] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:42]
+WARNING: [Synth 8-6014] Unused sequential element w0_p_reg[1] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:42]
+WARNING: [Synth 8-6014] Unused sequential element w0_p_reg[2] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:42]
+WARNING: [Synth 8-6014] Unused sequential element w0_p_reg[3] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:42]
+WARNING: [Synth 8-6014] Unused sequential element w0_p_reg[4] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:42]
+WARNING: [Synth 8-6014] Unused sequential element w0_p_reg[5] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:42]
+WARNING: [Synth 8-6014] Unused sequential element w0_p_reg[6] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:42]
+WARNING: [Synth 8-6014] Unused sequential element w0_p_reg[7] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:42]
+WARNING: [Synth 8-6014] Unused sequential element w0_p_reg[8] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:42]
+WARNING: [Synth 8-6014] Unused sequential element w0_p_reg[9] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:42]
+WARNING: [Synth 8-6014] Unused sequential element w0_p_reg[10] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:42]
+WARNING: [Synth 8-6014] Unused sequential element w0_p_reg[11] was removed.  [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc1_paired.v:42]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-4767] Trying to implement RAM 'product_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_two_inputs.v:48]
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: Write port has constant address. 
+	3: Write port has constant address. 
+	4: Write port has constant address. 
+	5: Write port has constant address. 
+	6: Write port has constant address. 
+	7: Write port has constant address. 
+	8: Write port has constant address. 
+	9: No valid read/write found for RAM. 
+WARNING: [Synth 8-4767] Trying to implement RAM 'product_r_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/fc_stream_two_inputs.v:51]
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: Write port has constant address. 
+	3: Write port has constant address. 
+	4: Write port has constant address. 
+	5: Write port has constant address. 
+	6: Write port has constant address. 
+	7: Write port has constant address. 
+	8: Write port has constant address. 
+	9: No valid read/write found for RAM. 
+WARNING: [Synth 8-7129] Port rst_n in module adder_tree is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2468.938 ; gain = 721.156 ; free physical = 4897 ; free virtual = 10276
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2468.938 ; gain = 721.156 ; free physical = 4902 ; free virtual = 10281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2468.938 ; gain = 721.156 ; free physical = 4902 ; free virtual = 10281
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.32 . Memory (MB): peak = 2468.938 ; gain = 0.000 ; free physical = 4970 ; free virtual = 10349
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/timing.xdc]
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/timing.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2576.738 ; gain = 0.000 ; free physical = 5034 ; free virtual = 10413
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2576.773 ; gain = 0.000 ; free physical = 5034 ; free virtual = 10413
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2576.773 ; gain = 828.992 ; free physical = 4802 ; free virtual = 10190
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2584.742 ; gain = 836.961 ; free physical = 4802 ; free virtual = 10190
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2584.742 ; gain = 836.961 ; free physical = 4796 ; free virtual = 10186
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2584.742 ; gain = 836.961 ; free physical = 4700 ; free virtual = 10137
+---------------------------------------------------------------------------------
+lab5_top__GC0fc1_paired__GCB0adder_treefc1_paired__GCB6fc1_paired__GCB7fc1_paired__GCB2fc1_paired__GCB8fc1_paired__GCB3fc1_paired__GCB9fc1_paired__GCB10fc1_paired__GCB1fc1_paired__GCB4fc1_paired__GCB5---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2584.742 ; gain = 836.961 ; free physical = 4574 ; free virtual = 10014
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 2584.742 ; gain = 836.961 ; free physical = 4588 ; free virtual = 10032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Mimic Skeleton from Reference
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2584.742 ; gain = 836.961 ; free physical = 4588 ; free virtual = 10032
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: yes
+
+   Stitch points used : changed
+
+
+2. Change Summary
+
+Report Incremental Modules: 
++-+----------------+------------+----------+----------+
+| |Changed Modules |Replication |Instances |Changed % |
++-+----------------+------------+----------+----------+
++-+----------------+------------+----------+----------+
+
+
+   Full Design Size (number of cells) : 200791
+   Resynthesis Design Size (number of cells) : 0
+   Resynth % : 0.0000,  Reuse % : 100.0000
+
+3. Reference Checkpoint Information
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DCP Location:  | /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/vivado/stream_pair256_burst_exact23_tree7_clk4p8.srcs/utils_1/imports/synth_1/lab5_impl_top.dcp |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+------------------------------+
+|         DCP Information        |             Value            |
++--------------------------------+------------------------------+
+| Vivado Version                 |                    v2025.2 |
+| DCP State                      |                              |
++--------------------------------+------------------------------+
+
+
+
+Report RTL Partitions: 
++------+--------------------------+------------+----------+
+|      |RTL Partition             |Replication |Instances |
++------+--------------------------+------------+----------+
+|1     |adder_tree_#REUSE#        |           2|         0|
+|2     |fc1_paired__GCB0_#REUSE#  |           1|         0|
+|3     |fc1_paired__GCB1_#REUSE#  |           1|         0|
+|4     |fc1_paired__GCB2_#REUSE#  |           1|         0|
+|5     |fc1_paired__GCB3_#REUSE#  |           1|         0|
+|6     |fc1_paired__GCB4_#REUSE#  |           1|         0|
+|7     |fc1_paired__GCB5_#REUSE#  |           1|         0|
+|8     |fc1_paired__GCB6_#REUSE#  |           1|         0|
+|9     |fc1_paired__GCB7_#REUSE#  |           1|         0|
+|10    |fc1_paired__GCB8_#REUSE#  |           1|         0|
+|11    |fc1_paired__GCB9_#REUSE#  |           1|         0|
+|12    |fc1_paired__GCB10_#REUSE# |           1|         0|
+|13    |lab5_top__GC0_#REUSE#     |           1|         0|
++------+--------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2584.742 ; gain = 836.961 ; free physical = 4619 ; free virtual = 10121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged AreaOpt Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2584.742 ; gain = 836.961 ; free physical = 4603 ; free virtual = 10106
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2776.742 ; gain = 1028.961 ; free physical = 4370 ; free virtual = 9904
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2776.742 ; gain = 1028.961 ; free physical = 4335 ; free virtual = 9869
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2786.859 ; gain = 1039.078 ; free physical = 4321 ; free virtual = 9855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged Partitions : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2796.859 ; gain = 1049.078 ; free physical = 4274 ; free virtual = 9810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance network/u_fc2/weight_r_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance network/u_fc2/weight_r_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance network/u_fc2/weight_r_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance network/u_fc2/weight_r_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance network/u_fc2/weight_r_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance network/u_fc2/weight_r_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance network/u_fc2/weight_r_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance network/u_fc2/weight_r_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 3009.305 ; gain = 1261.523 ; free physical = 4120 ; free virtual = 9698
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 3009.305 ; gain = 1261.523 ; free physical = 4112 ; free virtual = 9690
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 3021.867 ; gain = 1274.086 ; free physical = 4090 ; free virtual = 9668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 3021.867 ; gain = 1274.086 ; free physical = 4090 ; free virtual = 9668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 3035.742 ; gain = 1287.961 ; free physical = 4095 ; free virtual = 9673
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 3035.742 ; gain = 1287.961 ; free physical = 4095 ; free virtual = 9673
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|lab5_impl_top | network/u_fc1/high_product_reg[230][2] | 5      | 264   | NO           | YES                | YES               | 264    | 0       | 
+|lab5_impl_top | network/u_fc1/low_product_reg[253][2]  | 5      | 264   | NO           | YES                | YES               | 264    | 0       | 
+|lab5_impl_top | network/u_fc1/low_product_reg[81][14]  | 3      | 2520  | NO           | NO                 | YES               | 2520   | 0       | 
+|lab5_impl_top | network/u_fc1/tag_reg[13][7]           | 14     | 7     | NO           | NO                 | YES               | 7      | 0       | 
+|lab5_impl_top | network/u_fc1/valid_pipe_reg[13]       | 14     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|lab5_impl_top | network/u_fc2/last_pipe_reg[3]         | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|lab5_impl_top | network/u_fc2/valid_pipe_reg[3]        | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|lab5_impl_top | network/u_fc2/first_pipe_reg[3]        | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|lab5_impl_top | network/u_fc3/last_pipe_reg[5]         | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|lab5_impl_top | network/u_fc3/valid_pipe_reg[5]        | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|lab5_impl_top | network/u_fc3/first_pipe_reg[5]        | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++--------------+----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name           | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|lab5_impl_top         | ((A'*B'')')'           | 30     | 18     | -      | -      | 30     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired__GCB7      | ((A'*B'')')'           | 30     | 18     | -      | -      | 30     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired            | ((A'*B'')')'           | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired__GCB9      | ((A'*B'')')'           | 30     | 18     | -      | -      | 30     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired__GCB9      | ((A'*B'')')'           | 30     | 18     | -      | -      | 30     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc1_paired__GCB9      | ((A'*B'')')'           | 30     | 18     | -      | -      | 30     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|fc_stream_pair_output | ((A''*B')')'           | 30     | 18     | -      | -      | 31     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | ((A'*B')')'            | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | (PCIN>>17+(A''*B')')'  | 30     | 0      | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | ((A'*B')')'            | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | (PCIN>>17+(A''*B'')')' | 30     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | ((A'*B')')'            | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | (PCIN>>17+(A''*B'')')' | 30     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | ((A'*B')')'            | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | (PCIN>>17+(A''*B'')')' | 30     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | ((A'*B')')'            | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | (PCIN>>17+(A''*B'')')' | 30     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | ((A'*B')')'            | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | (PCIN>>17+(A''*B'')')' | 30     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | ((A'*B')')'            | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | (PCIN>>17+(A''*B'')')' | 30     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | ((A'*B')')'            | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|lab5_top__GC0         | (PCIN>>17+(A''*B'')')' | 30     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
++----------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |  7343|
+|3     |DSP48E1  |   216|
+|7     |LUT1     |  3627|
+|8     |LUT2     | 16619|
+|9     |LUT3     |  1978|
+|10    |LUT4     |  2655|
+|11    |LUT5     |   659|
+|12    |LUT6     |   779|
+|13    |MUXF7    |   140|
+|14    |RAMB36E1 |    61|
+|15    |SRL16E   |  3062|
+|16    |FDRE     | 36747|
+|17    |IBUF     |     3|
+|18    |OBUF     |    68|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 3035.742 ; gain = 1287.961 ; free physical = 4095 ; free virtual = 9673
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 3035.742 ; gain = 1180.125 ; free physical = 4095 ; free virtual = 9673
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 3035.750 ; gain = 1287.961 ; free physical = 4095 ; free virtual = 9673
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:00.5 . Memory (MB): peak = 3035.750 ; gain = 0.000 ; free physical = 4275 ; free virtual = 9853
+INFO: [Netlist 29-17] Analyzing 7760 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3091.770 ; gain = 0.000 ; free physical = 4290 ; free virtual = 9868
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 1291b888
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:00:58 . Memory (MB): peak = 3091.805 ; gain = 1475.883 ; free physical = 4293 ; free virtual = 9871
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2233.967; main = 2167.830; forked = 281.966
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3869.953; main = 3091.773; forked = 1003.027
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3115.781 ; gain = 0.000 ; free physical = 4281 ; free virtual = 9871
+INFO: [Common 17-1381] The checkpoint '/home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/vivado/stream_pair256_burst_exact23_tree7_clk4p8.runs/synth_1/lab5_impl_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file lab5_impl_top_utilization_synth.rpt -pb lab5_impl_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  5 18:15:25 2026...

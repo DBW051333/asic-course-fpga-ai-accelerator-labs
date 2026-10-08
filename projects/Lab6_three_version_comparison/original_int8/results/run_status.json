@@ -1,0 +1,20 @@
+{
+  "synth": {
+    "status": "passed",
+    "started": "2026-10-06T23:50:23+0800",
+    "elapsed_seconds": 422.2,
+    "returncode": 0
+  },
+  "impl": {
+    "status": "passed",
+    "started": "2026-10-06T23:57:26+0800",
+    "elapsed_seconds": 310.68,
+    "returncode": 0
+  },
+  "final_verify": {
+    "status": "passed",
+    "started": "2026-10-07T00:02:40+0800",
+    "elapsed_seconds": 108.7,
+    "returncode": 0
+  }
+}

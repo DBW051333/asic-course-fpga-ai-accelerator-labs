@@ -1,0 +1,7 @@
+other 1614
+fc1_mult/cross_r 1968
+fc1_mult/p 2624
+fc1_mult/pp00 1312
+fc1_mult/pp11 1312
+tree0 2592
+tree1 2592

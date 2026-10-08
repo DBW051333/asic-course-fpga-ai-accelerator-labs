@@ -1,0 +1,832 @@
+
+*** Running vivado
+    with args -log lab5_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab5_top.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Oct  4 22:19:45 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source lab5_top.tcl -notrace
+Command: synth_design -top lab5_top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1787907
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2238.062 ; gain = 482.273 ; free physical = 7680 ; free virtual = 10285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab5_top' [/home/ding/vivado_project/Lab5/rtl/lab5_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'lab5_controller' [/home/ding/vivado_project/Lab5/rtl/lab5_controller.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'lab5_controller' (0#1) [/home/ding/vivado_project/Lab5/rtl/lab5_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fc_top' [/home/ding/vivado_project/Lab4/fc_top.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fc' [/home/ding/vivado_project/Lab4/fc.v:4]
+INFO: [Synth 8-6157] synthesizing module 'adder_tree' [/home/ding/vivado_project/Lab4/Lab4.srcs/sources_1/new/adder_tree.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder_tree' (0#1) [/home/ding/vivado_project/Lab4/Lab4.srcs/sources_1/new/adder_tree.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fc' (0#1) [/home/ding/vivado_project/Lab4/fc.v:4]
+INFO: [Synth 8-6157] synthesizing module 'fc_input_ram' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc_input_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc_input_ram' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc_input_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fc_weight_ram' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc_weight_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc_weight_ram' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc_weight_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fc_bias_ram' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc_bias_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc_bias_ram' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc_bias_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fc_output_ram' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc_output_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc_output_ram' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc_output_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mult_array' [/home/ding/vivado_project/Lab4/mult_array.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mult_8' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/mult_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_8' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/mult_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_array' (0#1) [/home/ding/vivado_project/Lab4/mult_array.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'fc_top' (0#1) [/home/ding/vivado_project/Lab4/fc_top.v:6]
+INFO: [Synth 8-6157] synthesizing module 'output_packer' [/home/ding/vivado_project/Lab5/rtl/output_packer.v:4]
+	Parameter ELEM_WIDTH bound to: 32 - type: integer 
+	Parameter ELEMENTS bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'output_packer' (0#1) [/home/ding/vivado_project/Lab5/rtl/output_packer.v:4]
+INFO: [Synth 8-6157] synthesizing module 'fc2_input_ram' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc2_input_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc2_input_ram' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc2_input_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fc2_weight_ram' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc2_weight_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc2_weight_ram' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc2_weight_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fc2_bias_ram' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc2_bias_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc2_bias_ram' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc2_bias_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fc2_mult_array' [/home/ding/vivado_project/Lab5/rtl/fc2_mult_array.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fc2_mult_32x8' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc2_mult_32x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc2_mult_32x8' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc2_mult_32x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc2_mult_array' (0#1) [/home/ding/vivado_project/Lab5/rtl/fc2_mult_array.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fc2' [/home/ding/vivado_project/Lab5/rtl/fc2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fc2_adder_tree' [/home/ding/vivado_project/Lab5/rtl/fc2_adder_tree.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'fc2_adder_tree' (0#1) [/home/ding/vivado_project/Lab5/rtl/fc2_adder_tree.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'fc2' (0#1) [/home/ding/vivado_project/Lab5/rtl/fc2.v:3]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/ding/vivado_project/Lab5/rtl/lab5_top.v:87]
+INFO: [Synth 8-6157] synthesizing module 'fc2_output_ram' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc2_output_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc2_output_ram' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc2_output_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'output_packer__parameterized0' [/home/ding/vivado_project/Lab5/rtl/output_packer.v:4]
+	Parameter ELEM_WIDTH bound to: 48 - type: integer 
+	Parameter ELEMENTS bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'output_packer__parameterized0' (0#1) [/home/ding/vivado_project/Lab5/rtl/output_packer.v:4]
+INFO: [Synth 8-6157] synthesizing module 'fc3_input_ram' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc3_input_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc3_input_ram' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc3_input_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fc3_weight_ram' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc3_weight_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc3_weight_ram' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc3_weight_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fc3_bias_ram' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc3_bias_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc3_bias_ram' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc3_bias_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fc3_mult_array' [/home/ding/vivado_project/Lab5/rtl/fc3_mult_array.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fc3_mult_48x8' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc3_mult_48x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc3_mult_48x8' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc3_mult_48x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc3_mult_array' (0#1) [/home/ding/vivado_project/Lab5/rtl/fc3_mult_array.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fc3' [/home/ding/vivado_project/Lab5/rtl/fc3.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fc3_adder_tree' [/home/ding/vivado_project/Lab5/rtl/fc3_adder_tree.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'fc3_adder_tree' (0#1) [/home/ding/vivado_project/Lab5/rtl/fc3_adder_tree.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'fc3' (0#1) [/home/ding/vivado_project/Lab5/rtl/fc3.v:2]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/ding/vivado_project/Lab5/rtl/lab5_top.v:141]
+INFO: [Synth 8-6157] synthesizing module 'fc3_output_ram' [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc3_output_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fc3_output_ram' (0#1) [/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/.Xil/Vivado-1787791-Yilong/realtime/fc3_output_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'lab5_top' (0#1) [/home/ding/vivado_project/Lab5/rtl/lab5_top.v:2]
+WARNING: [Synth 8-6014] Unused sequential element finish_r_reg was removed.  [/home/ding/vivado_project/Lab4/fc.v:94]
+WARNING: [Synth 8-6014] Unused sequential element out_channel_dly_reg[13] was removed.  [/home/ding/vivado_project/Lab4/fc.v:108]
+WARNING: [Synth 8-6014] Unused sequential element out_channel_dly_reg[14] was removed.  [/home/ding/vivado_project/Lab4/fc.v:108]
+WARNING: [Synth 8-6014] Unused sequential element group_idx_dly_reg[13] was removed.  [/home/ding/vivado_project/Lab4/fc.v:109]
+WARNING: [Synth 8-6014] Unused sequential element group_idx_dly_reg[14] was removed.  [/home/ding/vivado_project/Lab4/fc.v:109]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2376.000 ; gain = 620.211 ; free physical = 7540 ; free virtual = 10139
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2376.000 ; gain = 620.211 ; free physical = 7539 ; free virtual = 10138
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2376.000 ; gain = 620.211 ; free physical = 7539 ; free virtual = 10138
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2376.000 ; gain = 0.000 ; free physical = 7540 ; free virtual = 10139
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_output_ram/fc3_output_ram/fc3_output_ram_in_context.xdc] for cell 'u_fc3_output_ram'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_output_ram/fc3_output_ram/fc3_output_ram_in_context.xdc] for cell 'u_fc3_output_ram'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[0].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[0].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[1].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[1].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[2].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[2].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[3].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[3].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[4].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[4].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[5].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[5].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[6].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[6].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[7].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[7].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[8].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[8].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[9].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[9].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[10].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[10].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[11].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[11].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[12].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[12].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[13].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[13].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[14].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[14].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[15].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[15].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[16].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[16].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[17].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[17].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[18].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[18].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[19].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[19].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[20].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[20].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[21].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[21].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[22].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[22].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[23].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[23].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[24].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[24].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[25].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[25].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[26].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[26].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[27].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[27].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[28].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[28].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[29].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[29].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[30].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[30].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[31].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_mult_48x8/fc3_mult_48x8/fc3_mult_48x8_in_context.xdc] for cell 'u_fc3_mult_array/gen_mult[31].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_input_ram/fc3_input_ram/fc3_input_ram_in_context.xdc] for cell 'u_fc3_input_ram'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_input_ram/fc3_input_ram/fc3_input_ram_in_context.xdc] for cell 'u_fc3_input_ram'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_weight_ram/fc3_weight_ram/fc3_weight_ram_in_context.xdc] for cell 'u_fc3_weight_ram'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_weight_ram/fc3_weight_ram/fc3_weight_ram_in_context.xdc] for cell 'u_fc3_weight_ram'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_bias_ram/fc3_bias_ram/fc3_bias_ram_in_context.xdc] for cell 'u_fc3_bias_ram'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc3_bias_ram/fc3_bias_ram/fc3_bias_ram_in_context.xdc] for cell 'u_fc3_bias_ram'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc_input_ram/fc_input_ram/fc_input_ram_in_context.xdc] for cell 'u_fc1/u_input_ram'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc_input_ram/fc_input_ram/fc_input_ram_in_context.xdc] for cell 'u_fc1/u_input_ram'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc_weight_ram/fc_weight_ram/fc_weight_ram_in_context.xdc] for cell 'u_fc1/u_weight_ram'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc_weight_ram/fc_weight_ram/fc_weight_ram_in_context.xdc] for cell 'u_fc1/u_weight_ram'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc_bias_ram/fc_bias_ram/fc_bias_ram_in_context.xdc] for cell 'u_fc1/u_bias_ram'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc_bias_ram/fc_bias_ram/fc_bias_ram_in_context.xdc] for cell 'u_fc1/u_bias_ram'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc_output_ram/fc_output_ram/fc_output_ram_in_context.xdc] for cell 'u_fc1/u_output_ram'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc_output_ram/fc_output_ram/fc_output_ram_in_context.xdc] for cell 'u_fc1/u_output_ram'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[0].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[0].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[1].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[1].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[2].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[2].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[3].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[3].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[4].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[4].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[5].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[5].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[6].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[6].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[7].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[7].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[8].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[8].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[9].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[9].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[10].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[10].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[11].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[11].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[12].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[12].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[13].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[13].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[14].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[14].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[15].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[15].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[16].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[16].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[17].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[17].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[18].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[18].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[19].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[19].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[20].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[20].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[21].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[21].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[22].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[22].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[23].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[23].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[24].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[24].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[25].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[25].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[26].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[26].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[27].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[27].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[28].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[28].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[29].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[29].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[30].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[30].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[31].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[31].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[32].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[32].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[33].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[33].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[34].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[34].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[35].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[35].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[36].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[36].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[37].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[37].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[38].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[38].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[39].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[39].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[40].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[40].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[41].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[41].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[42].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[42].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[43].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[43].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[44].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[44].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[45].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[45].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[46].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[46].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[47].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[47].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[48].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[48].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[49].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[49].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[50].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[50].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[51].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[51].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[52].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[52].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[53].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[53].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[54].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[54].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[55].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[55].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[56].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[56].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[57].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[57].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[58].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[58].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[59].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[59].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[60].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[60].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[61].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[61].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[62].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[62].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[63].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[63].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[64].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[64].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[65].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[65].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[66].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[66].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[67].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[67].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[68].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[68].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[69].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[69].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[70].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[70].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[71].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[71].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[72].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[72].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[73].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[73].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[74].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[74].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[75].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[75].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[76].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[76].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[77].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[77].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[78].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[78].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[79].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[79].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[80].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[80].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[81].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[81].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[82].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[82].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[83].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[83].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[84].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[84].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[85].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[85].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[86].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[86].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[87].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[87].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[88].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[88].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[89].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[89].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[90].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[90].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[91].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[91].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[92].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[92].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[93].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[93].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[94].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[94].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[95].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[95].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[96].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[96].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[97].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[97].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[98].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[98].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[99].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[99].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[100].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[100].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[101].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[101].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[102].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[102].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[103].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[103].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[104].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[104].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[105].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[105].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[106].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[106].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[107].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[107].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[108].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[108].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[109].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[109].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[110].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[110].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[111].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[111].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[112].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[112].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[113].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[113].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[114].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[114].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[115].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[115].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[116].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[116].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[117].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[117].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[118].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[118].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[119].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[119].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[120].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[120].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[121].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[121].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[122].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[122].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[123].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[123].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[124].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[124].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[125].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[125].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[126].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[126].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[127].u_mult_8'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/mult_8/mult_8/mult_8_in_context.xdc] for cell 'u_fc1/u_mult_array/gen_mult[127].u_mult_8'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_input_ram/fc2_input_ram/fc2_input_ram_in_context.xdc] for cell 'u_fc2_input_ram'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_input_ram/fc2_input_ram/fc2_input_ram_in_context.xdc] for cell 'u_fc2_input_ram'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_weight_ram/fc2_weight_ram/fc2_weight_ram_in_context.xdc] for cell 'u_fc2_weight_ram'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_weight_ram/fc2_weight_ram/fc2_weight_ram_in_context.xdc] for cell 'u_fc2_weight_ram'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_bias_ram/fc2_bias_ram/fc2_bias_ram_in_context.xdc] for cell 'u_fc2_bias_ram'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_bias_ram/fc2_bias_ram/fc2_bias_ram_in_context.xdc] for cell 'u_fc2_bias_ram'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[0].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[0].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[1].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[1].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[2].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[2].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[3].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[3].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[4].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[4].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[5].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[5].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[6].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[6].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[7].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[7].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[8].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[8].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[9].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[9].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[10].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[10].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[11].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[11].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[12].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[12].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[13].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[13].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[14].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[14].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[15].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[15].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[16].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[16].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[17].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[17].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[18].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[18].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[19].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[19].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[20].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[20].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[21].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[21].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[22].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[22].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[23].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[23].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[24].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[24].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[25].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[25].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[26].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[26].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[27].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[27].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[28].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[28].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[29].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[29].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[30].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[30].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[31].u_mult'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_mult_32x8/fc2_mult_32x8/fc2_mult_32x8_in_context.xdc] for cell 'u_fc2_mult_array/gen_mult[31].u_mult'
+Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_output_ram/fc2_output_ram/fc2_output_ram_in_context.xdc] for cell 'u_fc2_output_ram'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab5/vivado/Lab5.gen/sources_1/ip/fc2_output_ram/fc2_output_ram/fc2_output_ram_in_context.xdc] for cell 'u_fc2_output_ram'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2468.465 ; gain = 0.000 ; free physical = 7476 ; free virtual = 10116
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2468.500 ; gain = 0.000 ; free physical = 7474 ; free virtual = 10115
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2468.500 ; gain = 712.711 ; free physical = 7466 ; free virtual = 10109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2476.469 ; gain = 720.680 ; free physical = 7466 ; free virtual = 10109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2476.469 ; gain = 720.680 ; free physical = 7465 ; free virtual = 10108
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lab5_controller'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fc2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fc3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                             0000
+                     FC1 |                           000010 |                             0001
+                    GAP1 |                           000100 |                             0010
+                     FC2 |                           001000 |                             0011
+                    GAP2 |                           010000 |                             0100
+                     FC3 |                           100000 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'lab5_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                               00
+                   ISSUE |                             0010 |                               01
+             WAIT_RESULT |                             0100 |                               10
+                   ACCUM |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fc2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                               00
+                   ISSUE |                             0010 |                               01
+             WAIT_RESULT |                             0100 |                               10
+            WRITE_RESULT |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fc3'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2476.469 ; gain = 720.680 ; free physical = 7467 ; free virtual = 10112
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   61 Bit       Adders := 1     
+	   2 Input   60 Bit       Adders := 2     
+	   2 Input   59 Bit       Adders := 4     
+	   2 Input   58 Bit       Adders := 8     
+	   2 Input   57 Bit       Adders := 16    
+	   2 Input   48 Bit       Adders := 2     
+	   2 Input   45 Bit       Adders := 1     
+	   2 Input   44 Bit       Adders := 2     
+	   2 Input   43 Bit       Adders := 4     
+	   2 Input   42 Bit       Adders := 8     
+	   2 Input   41 Bit       Adders := 16    
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   23 Bit       Adders := 1     
+	   2 Input   22 Bit       Adders := 2     
+	   2 Input   21 Bit       Adders := 4     
+	   2 Input   20 Bit       Adders := 8     
+	   2 Input   19 Bit       Adders := 16    
+	   2 Input   18 Bit       Adders := 32    
+	   2 Input   17 Bit       Adders := 64    
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 3     
+	   2 Input    1 Bit       Adders := 1     
++---Registers : 
+	             1536 Bit    Registers := 1     
+	             1488 Bit    Registers := 1     
+	             1024 Bit    Registers := 1     
+	              992 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 131   
+	               23 Bit    Registers := 1     
+	               21 Bit    Registers := 4     
+	               18 Bit    Registers := 32    
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                7 Bit    Registers := 16    
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 19    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input 1488 Bit        Muxes := 1     
+	   2 Input  992 Bit        Muxes := 1     
+	   2 Input   48 Bit        Muxes := 2     
+	   4 Input   48 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   4 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 15    
+	   6 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:09 ; elapsed = 00:02:11 . Memory (MB): peak = 2620.578 ; gain = 864.789 ; free physical = 7316 ; free virtual = 10041
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:12 ; elapsed = 00:02:15 . Memory (MB): peak = 2620.578 ; gain = 864.789 ; free physical = 7316 ; free virtual = 10041
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:12 ; elapsed = 00:02:15 . Memory (MB): peak = 2620.578 ; gain = 864.789 ; free physical = 7316 ; free virtual = 10041
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:15 ; elapsed = 00:02:17 . Memory (MB): peak = 2655.172 ; gain = 899.383 ; free physical = 7288 ; free virtual = 10013
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:18 ; elapsed = 00:02:21 . Memory (MB): peak = 2805.984 ; gain = 1050.195 ; free physical = 7627 ; free virtual = 10385
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:18 ; elapsed = 00:02:21 . Memory (MB): peak = 2805.984 ; gain = 1050.195 ; free physical = 7627 ; free virtual = 10385
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:19 ; elapsed = 00:02:21 . Memory (MB): peak = 2805.984 ; gain = 1050.195 ; free physical = 7621 ; free virtual = 10379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:19 ; elapsed = 00:02:22 . Memory (MB): peak = 2805.984 ; gain = 1050.195 ; free physical = 7621 ; free virtual = 10378
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:20 ; elapsed = 00:02:23 . Memory (MB): peak = 2805.984 ; gain = 1050.195 ; free physical = 7623 ; free virtual = 10381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:20 ; elapsed = 00:02:23 . Memory (MB): peak = 2805.984 ; gain = 1050.195 ; free physical = 7623 ; free virtual = 10381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|lab5_top    | u_fc1/u_fc/out_channel_dly_reg[9][6] | 10     | 7     | YES          | NO                 | YES               | 7      | 0       | 
+|lab5_top    | u_fc1/u_fc/group_idx_dly_reg[9][1]   | 10     | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|lab5_top    | u_fc1/u_fc/bias_reg_reg[8][7]        | 9      | 8     | YES          | NO                 | YES               | 8      | 0       | 
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |fc3_output_ram |         1|
+|2     |fc3_bias_ram   |         1|
+|3     |fc3_weight_ram |         1|
+|4     |fc3_input_ram  |         1|
+|5     |fc2_output_ram |         1|
+|6     |fc2_bias_ram   |         1|
+|7     |fc2_weight_ram |         1|
+|8     |fc2_input_ram  |         1|
+|9     |fc_input_ram   |         1|
+|10    |fc_weight_ram  |         1|
+|11    |fc_bias_ram    |         1|
+|12    |fc_output_ram  |         1|
+|13    |mult_8         |       128|
+|14    |fc2_mult_32x8  |        32|
+|15    |fc3_mult_48x8  |        32|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |fc2_bias_ram   |     1|
+|2     |fc2_input_ram  |     1|
+|3     |fc2_mult_32x8  |    32|
+|35    |fc2_output_ram |     1|
+|36    |fc2_weight_ram |     1|
+|37    |fc3_bias_ram   |     1|
+|38    |fc3_input_ram  |     1|
+|39    |fc3_mult_48x8  |    32|
+|71    |fc3_output_ram |     1|
+|72    |fc3_weight_ram |     1|
+|73    |fc_bias_ram    |     1|
+|74    |fc_input_ram   |     1|
+|75    |fc_output_ram  |     1|
+|76    |fc_weight_ram  |     1|
+|77    |mult           |     1|
+|78    |mult_8         |   127|
+|205   |BUFG           |     1|
+|206   |CARRY4         |  1506|
+|207   |LUT1           |   141|
+|208   |LUT2           |  5495|
+|209   |LUT3           |    58|
+|210   |LUT4           |    73|
+|211   |LUT5           |    45|
+|212   |LUT6           |  4758|
+|213   |MUXF7          |  1024|
+|214   |MUXF8          |   512|
+|215   |SRL16E         |    17|
+|216   |FDCE           | 10172|
+|217   |FDPE           |     3|
+|218   |FDRE           |    17|
+|219   |IBUF           |     3|
+|220   |OBUF           |   161|
++------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:20 ; elapsed = 00:02:23 . Memory (MB): peak = 2805.984 ; gain = 1050.195 ; free physical = 7623 ; free virtual = 10381
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:17 ; elapsed = 00:02:20 . Memory (MB): peak = 2805.984 ; gain = 957.695 ; free physical = 7623 ; free virtual = 10381
+Synthesis Optimization Complete : Time (s): cpu = 00:02:20 ; elapsed = 00:02:23 . Memory (MB): peak = 2805.992 ; gain = 1050.195 ; free physical = 7623 ; free virtual = 10381
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2805.992 ; gain = 0.000 ; free physical = 7815 ; free virtual = 10573
+INFO: [Netlist 29-17] Analyzing 3042 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2862.012 ; gain = 0.000 ; free physical = 7827 ; free virtual = 10585
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6de7c0ab
+INFO: [Common 17-83] Releasing license: Synthesis
+78 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:27 ; elapsed = 00:02:28 . Memory (MB): peak = 2862.047 ; gain = 1246.117 ; free physical = 7827 ; free virtual = 10585
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2370.085; main = 2208.642; forked = 339.918
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3809.145; main = 2862.016; forked = 1003.156
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2886.023 ; gain = 0.000 ; free physical = 7825 ; free virtual = 10584
+INFO: [Common 17-1381] The checkpoint '/home/ding/vivado_project/Lab5/vivado/Lab5.runs/synth_1/lab5_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file lab5_top_utilization_synth.rpt -pb lab5_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 22:22:17 2026...

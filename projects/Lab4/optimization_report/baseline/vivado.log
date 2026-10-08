@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Oct  4 15:29:22 2026
+# Process ID         : 90994
+# Current directory  : /home/ding/桌面/Lab
+# Command line       : vivado -mode batch -source /tmp/lab4_baseline.tcl -log /home/ding/vivado_project/Lab4/optimization_report/baseline/vivado.log -journal /home/ding/vivado_project/Lab4/optimization_report/baseline/vivado.jou
+# Log file           : /home/ding/vivado_project/Lab4/optimization_report/baseline/vivado.log
+# Journal file       : /home/ding/vivado_project/Lab4/optimization_report/baseline/vivado.jou
+# Running On         : Yilong
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 2404.773 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 24443 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 24443 MB
+# Available Virtual  : 15323 MB
+#-----------------------------------------------------------
+source /tmp/lab4_baseline.tcl
+# open_checkpoint /home/ding/vivado_project/Lab4/Lab4.runs/synth_1/fc_top.dcp
+Command: open_checkpoint /home/ding/vivado_project/Lab4/Lab4.runs/synth_1/fc_top.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1551.871 ; gain = 0.000 ; free physical = 4693 ; free virtual = 14228
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1771.574 ; gain = 0.000 ; free physical = 4482 ; free virtual = 14017
+INFO: [Netlist 29-17] Analyzing 2194 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1858.293 ; gain = 2.000 ; free physical = 4372 ; free virtual = 13907
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'fc_bias_ram' instantiated as 'u_bias_ram' [/home/ding/vivado_project/Lab4/fc_top.v:82]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'fc_input_ram' instantiated as 'u_input_ram' [/home/ding/vivado_project/Lab4/fc_top.v:63]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'fc_output_ram' instantiated as 'u_output_ram' [/home/ding/vivado_project/Lab4/fc_top.v:92]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'fc_weight_ram' instantiated as 'u_weight_ram' [/home/ding/vivado_project/Lab4/fc_top.v:73]
+CRITICAL WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'mult_8' instantiated as 'u_mult_array/gen_mult[0].u_mult_8'. 128 instances of this cell are unresolved black boxes. [/home/ding/vivado_project/Lab4/mult_array.v:13]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1858.293 ; gain = 0.000 ; free physical = 4372 ; free virtual = 13907
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+# read_xdc /home/ding/vivado_project/Lab4/Lab4.srcs/constrs_1/new/time1.xdc
+Parsing XDC File [/home/ding/vivado_project/Lab4/Lab4.srcs/constrs_1/new/time1.xdc]
+Finished Parsing XDC File [/home/ding/vivado_project/Lab4/Lab4.srcs/constrs_1/new/time1.xdc]
+# report_timing_summary -file /home/ding/vivado_project/Lab4/optimization_report/baseline/timing_synth.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+# report_utilization -file /home/ding/vivado_project/Lab4/optimization_report/baseline/utilization_synth.rpt
+# puts "CLOCKS: [get_clocks]"
+CLOCKS: clk_i
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 15:29:31 2026...

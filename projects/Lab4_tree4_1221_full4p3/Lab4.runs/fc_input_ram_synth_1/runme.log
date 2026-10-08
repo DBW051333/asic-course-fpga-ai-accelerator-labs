@@ -1,0 +1,310 @@
+
+*** Running vivado
+    with args -log fc_input_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fc_input_ram.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Oct  4 17:27:38 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fc_input_ram.tcl -notrace
+Command: synth_design -top fc_input_ram -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 296883
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2234.004 ; gain = 483.156 ; free physical = 321 ; free virtual = 10289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7129] Port CLKB in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[511] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[510] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[509] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[508] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[507] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[506] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[505] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[504] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[503] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[502] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[501] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[500] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[499] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[498] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[497] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[496] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[495] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[494] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[493] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[492] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[491] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[490] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[489] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[488] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[487] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[486] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[485] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[484] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[483] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[482] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[481] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[480] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[479] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[478] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[477] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[476] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[475] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[474] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[473] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[472] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[471] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[470] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[469] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[468] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[467] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[466] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[465] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[464] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[463] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[462] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[461] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[460] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[459] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[458] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[457] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[456] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[455] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[454] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[453] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[452] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[451] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[450] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[449] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[448] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[447] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[446] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[445] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[444] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[443] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[442] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[441] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[440] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[439] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[438] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[437] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[436] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[435] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[434] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[433] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[432] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[431] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[430] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[429] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[428] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[427] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[426] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[425] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[424] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[423] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[422] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[421] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[420] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[419] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[418] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[417] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[416] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[415] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[414] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTB_I[413] in module blk_mem_output_block is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:36 . Memory (MB): peak = 2571.531 ; gain = 820.684 ; free physical = 198 ; free virtual = 613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:36 . Memory (MB): peak = 2571.531 ; gain = 820.684 ; free physical = 192 ; free virtual = 626
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:36 . Memory (MB): peak = 2571.531 ; gain = 820.684 ; free physical = 192 ; free virtual = 626
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2571.531 ; gain = 0.000 ; free physical = 204 ; free virtual = 748
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ding/vivado_project/Lab4_parallel64_packed/Lab4.gen/sources_1/ip/fc_input_ram/fc_input_ram_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/ding/vivado_project/Lab4_parallel64_packed/Lab4.gen/sources_1/ip/fc_input_ram/fc_input_ram_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/ding/vivado_project/Lab4_parallel64_packed/Lab4.runs/fc_input_ram_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ding/vivado_project/Lab4_parallel64_packed/Lab4.runs/fc_input_ram_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2623.641 ; gain = 0.000 ; free physical = 213 ; free virtual = 759
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2623.676 ; gain = 0.000 ; free physical = 187 ; free virtual = 731
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:45 . Memory (MB): peak = 2623.676 ; gain = 872.828 ; free physical = 172 ; free virtual = 612
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:45 . Memory (MB): peak = 2631.645 ; gain = 880.797 ; free physical = 178 ; free virtual = 615
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:45 . Memory (MB): peak = 2631.645 ; gain = 880.797 ; free physical = 182 ; free virtual = 620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:46 . Memory (MB): peak = 2631.645 ; gain = 880.797 ; free physical = 184 ; free virtual = 784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:47 . Memory (MB): peak = 2631.645 ; gain = 880.797 ; free physical = 189 ; free virtual = 643
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:03 . Memory (MB): peak = 2635.562 ; gain = 884.715 ; free physical = 235 ; free virtual = 1711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:04 . Memory (MB): peak = 2635.562 ; gain = 884.715 ; free physical = 209 ; free virtual = 1673
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:01:04 . Memory (MB): peak = 2635.562 ; gain = 884.715 ; free physical = 223 ; free virtual = 1643
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:01:06 . Memory (MB): peak = 2737.457 ; gain = 986.609 ; free physical = 230 ; free virtual = 1208
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:01:06 . Memory (MB): peak = 2737.457 ; gain = 986.609 ; free physical = 239 ; free virtual = 1214
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:01:06 . Memory (MB): peak = 2737.457 ; gain = 986.609 ; free physical = 279 ; free virtual = 1207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:01:06 . Memory (MB): peak = 2737.457 ; gain = 986.609 ; free physical = 291 ; free virtual = 1213
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:01:06 . Memory (MB): peak = 2737.457 ; gain = 986.609 ; free physical = 295 ; free virtual = 1214
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:01:06 . Memory (MB): peak = 2737.457 ; gain = 986.609 ; free physical = 294 ; free virtual = 1214
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |RAMB18E1 |     1|
+|2     |RAMB36E1 |     7|
+|9     |FDRE     |   512|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:01:06 . Memory (MB): peak = 2737.457 ; gain = 986.609 ; free physical = 293 ; free virtual = 1214
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 2741.371 ; gain = 938.379 ; free physical = 10615 ; free virtual = 11913
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:01:10 . Memory (MB): peak = 2741.371 ; gain = 990.523 ; free physical = 10613 ; free virtual = 11913
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2741.371 ; gain = 0.000 ; free physical = 10598 ; free virtual = 11906
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2741.371 ; gain = 0.000 ; free physical = 10514 ; free virtual = 11898
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 24c5d09c
+INFO: [Common 17-83] Releasing license: Synthesis
+121 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:01:13 . Memory (MB): peak = 2741.371 ; gain = 1127.383 ; free physical = 10501 ; free virtual = 11890
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 7279.007; main = 1605.394; forked = 5805.942
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 17193.215; main = 2737.461; forked = 14561.566
+INFO: [Common 17-1381] The checkpoint '/home/ding/vivado_project/Lab4_parallel64_packed/Lab4.runs/fc_input_ram_synth_1/fc_input_ram.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP fc_input_ram, cache-ID = a6b2d6e280f61df3
+INFO: [Coretcl 2-1174] Renamed 20 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ding/vivado_project/Lab4_parallel64_packed/Lab4.runs/fc_input_ram_synth_1/fc_input_ram.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fc_input_ram_utilization_synth.rpt -pb fc_input_ram_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 17:28:55 2026...

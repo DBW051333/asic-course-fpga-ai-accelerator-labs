@@ -1,0 +1,5 @@
+{
+  "all_42_three_layer_references_identical": true,
+  "original_vs_feature_rtl_final_scores_identical": true,
+  "standard_rtl_csv_note": "Single-sample teaching simulation overwrote rtl_samples.csv; full verification evidence is retained in final_verify_console.log."
+}

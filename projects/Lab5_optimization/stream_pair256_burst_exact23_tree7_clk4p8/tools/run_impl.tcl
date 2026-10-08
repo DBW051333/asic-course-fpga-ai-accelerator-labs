@@ -1,0 +1,18 @@
+open_project /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/vivado/stream_pair256_burst_exact23_tree7_clk4p8.xpr
+add_files /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/rtl/lab5_impl_top.v
+set_property top lab5_impl_top [get_filesets sources_1]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1
+report_utilization -hierarchical -file /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/utilization_hier_synth.rpt
+report_utilization -file /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/utilization_synth.rpt
+report_timing_summary -file /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/timing_synth.rpt
+close_design
+launch_runs impl_1 -to_step route_design -jobs 2
+wait_on_run impl_1
+open_run impl_1
+report_utilization -file /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/utilization_impl.rpt
+report_timing_summary -file /home/ding/vivado_project/Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/timing_impl.rpt
+exit
