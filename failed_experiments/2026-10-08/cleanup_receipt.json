@@ -1,0 +1,53 @@
+{
+  "executed_at": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "github_archive_commit": "10780113651c61a8b6ae103081b31f68205127dd",
+  "removed": [
+    {
+      "path": "/home/ding/vivado_project/Lab4_tree4_1221_clk4p2",
+      "allocated_file_bytes_before": 132153344,
+      "archived_record": "Lab4_tree4_1221_clk4p2.tar.gz",
+      "archive_sha256": "f74e510768eafeb97e575754a9910d9e82901a798c0fce74ff4b998dd5395ed7"
+    },
+    {
+      "path": "/home/ding/vivado_project/Lab6_limit_search/dual512_lookup",
+      "allocated_file_bytes_before": 445349888,
+      "archived_record": "Lab6_limit_search__dual512_lookup.tar.gz",
+      "archive_sha256": "be656dca7ace2c6da3c4b4e0b9f1feaf082d87c9207d24dd2bc3638407740ce7"
+    },
+    {
+      "path": "/home/ding/vivado_project/Lab6_limit_search/dual512_hybrid",
+      "allocated_file_bytes_before": 95694848,
+      "archived_record": "Lab6_limit_search__dual512_hybrid.tar.gz",
+      "archive_sha256": "952f82554c7b44b2228e699be327e837c9a3b78b9870e68e554ce530bc35acf9"
+    },
+    {
+      "path": "/home/ding/vivado_project/Lab6_limit_search/dual512_full_lookup",
+      "allocated_file_bytes_before": 114360320,
+      "archived_record": "Lab6_limit_search__dual512_full_lookup.tar.gz",
+      "archive_sha256": "229c61e993395e02a46fde8eda3fba8dba590dfabcb58c78dd6f3e0472161169"
+    },
+    {
+      "path": "/home/ding/vivado_project/Lab6_limit_search/phys_bram_register",
+      "allocated_file_bytes_before": 32768,
+      "archived_record": "Lab6_limit_search__phys_bram_register.tar.gz",
+      "archive_sha256": "11e40e544400cc7f5cd8ed638c2633b5153771c125bfefa806fd9c28edd5858d"
+    },
+    {
+      "path": "/home/ding/vivado_project/Lab6_limit_search/prepack_address_banks",
+      "allocated_file_bytes_before": 175415296,
+      "archived_record": "Lab6_limit_search__prepack_address_banks.tar.gz",
+      "archive_sha256": "740daa3e8e1fd165902f033d86168735bf7630d268493aa5779b6fc03125cbc4"
+    },
+    {
+      "path": "/home/ding/vivado_project/Lab6_dsp_multipump_probe",
+      "allocated_file_bytes_before": 9793536,
+      "archived_record": "Lab6_dsp_multipump_probe.tar.gz",
+      "archive_sha256": "6ef350ec179d617f07aa687ad83cd910ad449ec3226a979335bd148fe961fd15"
+    }
+  ],
+  "retained_record_directory": "/home/ding/vivado_project/失败试验记录/2026-10-08",
+  "removed_allocated_file_bytes": 972800000,
+  "local_record_allocated_bytes": 2555904,
+  "net_reclaimed_file_bytes_approx": 970244096
+}
