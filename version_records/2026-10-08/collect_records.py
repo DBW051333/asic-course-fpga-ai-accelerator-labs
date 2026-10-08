@@ -1,6 +1,7 @@
 from pathlib import Path
 import json,hashlib,tarfile,csv,io,re,subprocess
 BASE=Path('/home/ding/vivado_project');OUT=Path(__file__).resolve().parent;REPO=Path('/home/ding/桌面/Lab_代表版本备份')
+if (OUT/'versions.json').exists():raise SystemExit('Historical records already exist; refusing to overwrite them after cleanup.')
 selection=json.loads((REPO/'manifests/selection.json').read_text());KEEP=selection['representative_projects']
 GROUPS=['Lab5_optimization','Lab5_truncation_optimization','Lab6_bottleneck_optimization','Lab6_limit_search','Lab6_architecture_trials','Lab6_growth_trials']
 versions=[]
