@@ -1,4 +1,6 @@
-# FPGA Lab1–Lab6 代表版本备份
+# ASIC 课程设计：基于 FPGA 的 AI 加速器设计（Lab1–6）
+
+课程名称依据配套《ASIC课程项目报告模板》中的“ASIC课程设计报告”，项目名称依据 Lab1 课件“基于 FPGA 的 AI 加速器设计”。
 
 备份日期：2026-10-08。保存各 Lab 原版与有代表性的阶段成果、课程原始数据和课件，按原目录名对应工程。
 
@@ -31,8 +33,8 @@ Lab6 三版本的指标、数值校验及验证范围见 [对比说明](course_m
 ## 获取和校验
 
 ```bash
-git clone git@github.com:DBW051333/fpga-lab-backup.git
-cd fpga-lab-backup
+git clone git@github.com:DBW051333/asic-course-fpga-ai-accelerator-labs.git
+cd asic-course-fpga-ai-accelerator-labs
 python3 tools/verify.py
 ```
 
