@@ -1,0 +1,7 @@
+{
+  "user_reminder": "Stop once no meaningful optimization space remains",
+  "clear_latency_gain_percent": 1.0,
+  "current_phase": "Finish already prepared candidates and the 107-cycle architecture; do not add trials merely to increase count",
+  "stop_when": "Major feasible architecture directions evaluated and consecutive follow-up attempts fail to improve best latency by at least 1%; retain area alternatives",
+  "scope": "Tested directions under fixed course model and xc7z020 resources, not a proof of global optimum"
+}

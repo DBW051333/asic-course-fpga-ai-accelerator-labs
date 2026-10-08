@@ -1,0 +1,17 @@
+{
+  "name": "stream_pair256_burst_exact23_tree7_clk4p8",
+  "correct": 37,
+  "ties": 0,
+  "max_abs": [
+    80805,
+    39386422,
+    17379948761
+  ],
+  "wrong_samples": [
+    21,
+    23,
+    25,
+    40,
+    41
+  ]
+}

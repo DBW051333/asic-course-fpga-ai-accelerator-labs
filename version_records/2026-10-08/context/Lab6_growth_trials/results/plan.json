@@ -1,0 +1,20 @@
+{
+  "baseline": "/home/ding/vivado_project/Lab6_architecture_trials/fc2_interleaved_split11",
+  "baseline_ns": 711.66,
+  "candidates": [
+    "fc1_128x6_dual",
+    "zero_gate",
+    "tail8",
+    "fc1_csa_tree"
+  ],
+  "budget": {
+    "dsp_max": 220,
+    "lut_max": 53200,
+    "ff_max": 106400,
+    "bram_max": 140,
+    "carry4_max": 13300,
+    "max_threads_each": 4,
+    "full_implementations_per_candidate": 1
+  },
+  "notes": "Only exact INT8 candidates; zeros gating preserves schedule; no model change or new multipump attempt."
+}

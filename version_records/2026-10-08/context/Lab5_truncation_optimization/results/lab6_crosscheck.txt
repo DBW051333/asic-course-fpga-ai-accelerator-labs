@@ -1,0 +1,6 @@
+PASS Lab6 width=4 FC1: 5376 outputs exactly match existing Lab6 reference
+PASS Lab6 width=4 FC2: 1344 outputs exactly match existing Lab6 reference
+PASS Lab6 width=4 FC3: 84 outputs exactly match existing Lab6 reference
+PASS Lab6 width=8 FC1: 5376 outputs exactly match existing Lab6 reference
+PASS Lab6 width=8 FC2: 1344 outputs exactly match existing Lab6 reference
+PASS Lab6 width=8 FC3: 84 outputs exactly match existing Lab6 reference

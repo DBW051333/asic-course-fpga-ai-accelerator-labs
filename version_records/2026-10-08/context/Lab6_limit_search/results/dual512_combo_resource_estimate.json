@@ -1,0 +1,47 @@
+{
+  "method": "First-order sum of independently measured hybrid-tree and full-lookup deltas; prediction, not a synthesis or placement result",
+  "source_statistics": {
+    "dual512_lookup": {
+      "lut": 44732.0,
+      "ff": 98499.0,
+      "bram": 135.5,
+      "dsp": 220.0,
+      "carry4": 14014.0
+    },
+    "dual512_hybrid": {
+      "lut": 38259.0,
+      "ff": 91050.0,
+      "bram": 135.5,
+      "dsp": 220.0,
+      "carry4": 11794.0
+    },
+    "dual512_full_lookup": {
+      "lut": 39282.0,
+      "ff": 92132.0,
+      "bram": 135.5,
+      "dsp": 220.0,
+      "carry4": 11390.0
+    }
+  },
+  "estimated_combo": {
+    "lut": 32809.0,
+    "ff": 84683.0,
+    "bram": 135.5,
+    "dsp": 220.0,
+    "carry4": 9170.0
+  },
+  "estimated_percent": {
+    "lut": 61.67,
+    "ff": 79.59,
+    "bram": 96.79,
+    "dsp": 100.0,
+    "carry4": 68.95
+  },
+  "cycles": 106,
+  "clock_target_ns": 5.5,
+  "target_latency_ns": 583.0,
+  "break_even_clock_ns": 6.9925,
+  "clear_1pct_gain_clock_ns": 6.9225,
+  "risk": "BRAM 96.79% and DSP 100%; synthesis counts do not guarantee legal slice packing",
+  "implementation_status": "Paused at user request; no new run started"
+}

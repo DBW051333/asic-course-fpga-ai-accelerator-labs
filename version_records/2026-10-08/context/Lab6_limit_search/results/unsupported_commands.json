@@ -1,0 +1,7 @@
+[
+  {
+    "name": "phys_bram_register",
+    "reason": "Vivado 2025.2 rejects -bram_register_opt in post-route physical synthesis; error 4-265",
+    "log": "/home/ding/vivado_project/Lab6_limit_search/phys_bram_register/results/impl_console.log"
+  }
+]

@@ -1,0 +1,51 @@
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Oct  6 01:25:25 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source tools/count_carry.tcl
+# set_param general.maxThreads 4
+# open_checkpoint /home/ding/vivado_project/Lab6_limit_search/dual512_lookup/results/synth.dcp
+Command: open_checkpoint /home/ding/vivado_project/Lab6_limit_search/dual512_lookup/results/synth.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1551.867 ; gain = 0.000 ; free physical = 9257 ; free virtual = 14864
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.46 . Memory (MB): peak = 1898.086 ; gain = 0.000 ; free physical = 8831 ; free virtual = 14442
+INFO: [Netlist 29-17] Analyzing 14406 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.2 . Memory (MB): peak = 2050.352 ; gain = 29.859 ; free physical = 8646 ; free virtual = 14255
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2546.359 ; gain = 0.000 ; free physical = 8113 ; free virtual = 13723
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+open_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2546.395 ; gain = 994.527 ; free physical = 8113 ; free virtual = 13723
+# set groups [dict create]
+# foreach cell [get_cells -hier -filter {REF_NAME == CARRY4}] {
+#  set n [get_property NAME $cell]
+#  if {[regexp {network/u_fc1/mult\[[0-9]+\]\.half\[[0-9]+\]\.([^/]+)} $n -> node]} {
+#   regsub {(_reg|\[[0-9]+\]|_i_[0-9]+|__.*).*} $node {} node
+#   set key "fc1_mult/$node"
+#  } elseif {[regexp {network/u_fc1/(tree[01])} $n -> node]} {set key $node
+#  } else {set key other}
+#  dict incr groups $key
+# }
+# set f [open /home/ding/vivado_project/Lab6_limit_search/results/carry_breakdown.txt w]
+# dict for {key value} $groups {puts $f "$key $value"}
+# close $f
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  6 01:25:40 2026...

@@ -1,0 +1,16 @@
+{
+  "scheme": "(w0+(w1<<16))*(x0+(x1<<8)); peel signed 8-bit fields with residual correction",
+  "signed_operands_bits": [
+    21,
+    13
+  ],
+  "DSP48E1_capacity_bits": [
+    25,
+    18
+  ],
+  "combinations": 65536,
+  "products": 262144,
+  "errors": 0,
+  "nonzero_residuals": 0,
+  "scope": "Exhaustive mathematical proof only; correction hardware, timing, MAC accumulation and integration not implemented. Requires true INT4 inputs and weights, not existing INT8."
+}

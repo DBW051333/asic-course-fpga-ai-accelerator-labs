@@ -1,0 +1,2 @@
+PASS: all 65536 FC1 accumulation prefixes and all 256 group sums fit signed 23 bits for every signed 8-bit input.
+Fixed supplied weights: minimum -3575930, maximum 3574270.

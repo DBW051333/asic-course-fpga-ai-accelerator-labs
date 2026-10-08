@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {
+      "url": "https://docs.amd.com/r/en-US/ug949-vivado-design-methodology/Performance-Considerations-When-Implementing-RAM",
+      "use": "Same-hierarchy BRAM output pipeline and address pipeline"
+    },
+    {
+      "url": "https://docs.amd.com/r/2025.2-English/ug835-vivado-tcl-commands/phys_opt_design",
+      "use": "BRAM/DSP register movement, retiming, iterative post-route optimization"
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+[
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80936
+      ],
+      [
+        0,
+        37760
+      ],
+      [
+        -32118,
+        19742
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "product_cut": 1
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        81076
+      ],
+      [
+        0,
+        38163
+      ],
+      [
+        -32579,
+        19922
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "product_cut": 2
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        81208
+      ],
+      [
+        0,
+        38265
+      ],
+      [
+        -32441,
+        19963
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "product_cut": 3
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        81304
+      ],
+      [
+        0,
+        38552
+      ],
+      [
+        -32683,
+        19963
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "product_cut": 4
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80920
+      ],
+      [
+        0,
+        38657
+      ],
+      [
+        -32719,
+        20005
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "product_cut": 5
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        81080
+      ],
+      [
+        0,
+        38708
+      ],
+      [
+        -32683,
+        20148
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "product_cut": 6
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        82232
+      ],
+      [
+        0,
+        38291
+      ],
+      [
+        -32345,
+        20061
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "product_cut": 7
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 38,
+    "accuracy": 0.9047619047619048,
+    "ties": 0,
+    "disagreements": 1,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        81720
+      ],
+      [
+        0,
+        38925
+      ],
+      [
+        -32381,
+        19918
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      40,
+      41
+    ],
+    "product_cut": 8
+  }
+]

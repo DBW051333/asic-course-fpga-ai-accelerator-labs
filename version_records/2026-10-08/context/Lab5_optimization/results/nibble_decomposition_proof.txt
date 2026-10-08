@@ -1,0 +1,1 @@
+PASS: all 65,536 signed 8x8 products decompose exactly into four 4x4 partial products.

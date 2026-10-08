@@ -1,0 +1,21 @@
+name,widths,shifts,mode,product_cut,product_cut_stage,tree_stages,dsp1,tail,correct,ties,disagreements,overflow_counts,sim_status,synth_status,impl_status,cycles,interval_cycles,period,wns,whs,wpws,physical_pass,latency_ns,interval_ns,speedup_vs_baseline,lut,ff,bram,dsp,sim_elapsed_seconds,synth_elapsed_seconds,impl_elapsed_seconds
+q8_lab6_d168,"[8, 8, 8]","[10, 9, 8]",floor_wrap,,,,168,standard,37,0,0,"[0, 0, 0]",passed,passed,passed,168,129,5.18,0.006,0.011,1.61,True,870.24,668.22,1.0154,23003.0,40211.0,61.0,200.0,18.72,141.15,470.64
+q4_lab6_d168,"[4, 4, 4]","[14, 8, 9]",floor_wrap,,,,168,standard,36,27,1,"[0, 0, 0]",passed,passed,not_run,168,129,,,,,,,,,23620.0,34800.0,61.0,200.0,19.86,139.25,
+q8_lab6_d180,"[8, 8, 8]","[10, 9, 8]",floor_wrap,,,,180,standard,37,0,0,"[0, 0, 0]",passed,passed,not_run,168,129,,,,,,,,,23597.0,33743.0,61.0,212.0,16.94,138.02,
+q8_lab6_pack_d200,"[8, 8, 8]","[10, 9, 8]",floor_wrap,,,,200,packed,37,0,0,"[0, 0, 0]",passed,passed,passed,168,129,5.33,0.002,0.05,1.685,True,895.44,687.57,0.9869,20229.0,36366.0,61.0,220.0,16.38,139.84,361.02
+q4_lab6_lut_d220,"[4, 4, 4]","[14, 8, 9]",floor_wrap,,,,220,lut,36,27,1,"[0, 0, 0]",passed,passed,passed,168,129,5.3,0.004,0.007,1.67,True,890.4,683.7,0.9925,19304.0,34533.0,61.0,220.0,17.22,111.16,377.15
+q6_6_6_round_pack_d200,"[6, 6, 6]","[12, 10, 7]",round_sat,,,,200,packed,38,0,1,"[0, 0, 0]",passed,passed,passed,168,129,6.94,0.003,0.015,2.49,True,1165.92,895.26,0.7579,20270.0,32358.0,61.0,220.0,16.73,144.37,236.64
+q8_8_8_round_pack_d200,"[8, 8, 8]","[12, 7, 8]",round_sat,,,,200,packed,38,0,1,"[0, 0, 1]",passed,passed,not_run,168,129,,,,,,,,,21995.0,31679.0,61.0,220.0,17.45,137.49,
+q8_6_8_round_pack_d200,"[8, 6, 8]","[12, 10, 5]",round_sat,,,,200,packed,38,0,1,"[0, 0, 0]",passed,passed,not_run,168,129,,,,,,,,,21952.0,31529.0,61.0,220.0,17.23,138.41,
+q4_8_8_round_pack_d200,"[4, 8, 8]","[13, 6, 8]",round_sat,,,,200,packed,38,0,1,"[7, 0, 0]",passed,passed,not_run,168,129,,,,,,,,,21619.0,31297.0,61.0,220.0,16.31,134.49,
+q8_product1_pack_d200,"[8, 8, 8]","[10, 9, 8]",floor_wrap,1,,,200,packed,37,0,0,"[0, 0, 0]",passed,not_run,not_run,168,129,,,,,,,,,,,,,17.32,,
+q8_product2_pack_d200,"[8, 8, 8]","[10, 9, 8]",floor_wrap,2,,,200,packed,37,0,0,"[0, 0, 0]",passed,not_run,not_run,168,129,,,,,,,,,,,,,17.79,,
+q8_product3_pack_d200,"[8, 8, 8]","[10, 9, 8]",floor_wrap,3,,,200,packed,37,0,0,"[0, 0, 0]",passed,not_run,not_run,168,129,,,,,,,,,,,,,17.47,,
+q8_product4_pack_d200,"[8, 8, 8]","[10, 9, 8]",floor_wrap,4,,,200,packed,37,0,0,"[0, 0, 0]",passed,passed,passed,168,129,6.67,0.001,0.014,2.355,True,1120.56,860.43,0.7886,18618.0,30219.0,61.0,220.0,16.94,124.22,228.56
+q8_product6_pack_d200,"[8, 8, 8]","[10, 9, 8]",floor_wrap,6,,,200,packed,37,0,0,"[0, 0, 0]",passed,not_run,not_run,168,129,,,,,,,,,,,,,19.9,,
+q8_product8_pack_d200,"[8, 8, 8]","[10, 9, 8]",floor_wrap,8,,,200,packed,38,0,1,"[0, 0, 0]",passed,not_run,not_run,168,129,,,,,,,,,,,,,20.21,,
+q8_product4_prereg_pack_d200,"[8, 8, 8]","[10, 9, 8]",floor_wrap,4,register,,200,packed,37,0,0,"[0, 0, 0]",passed,passed,not_run,168,129,,,,,,,,,16990.0,33309.0,61.0,220.0,17.22,116.1,
+q8_product6_prereg_pack_d200,"[8, 8, 8]","[10, 9, 8]",floor_wrap,6,register,,200,packed,37,0,0,"[0, 0, 0]",passed,passed,passed,168,129,6.68,0.009,0.008,2.36,True,1122.24,861.72,0.7874,15779.0,32787.0,61.0,220.0,18.42,111.32,230.69
+q8_lab6_rompack_d200,"[8, 8, 8]","[10, 9, 8]",floor_wrap,,,,200,packed_rom,37,0,0,"[0, 0, 0]",passed,passed,passed,168,129,5.08,0.008,0.008,1.196,True,853.44,655.32,1.0354,20059.0,36442.0,61.0,220.0,18.59,136.05,394.45
+q8_product6_prereg_rompack_d200,"[8, 8, 8]","[10, 9, 8]",floor_wrap,6,register,,200,packed_rom,37,0,0,"[0, 0, 0]",passed,passed,passed,168,129,5.22,0.002,0.05,1.336,True,876.96,673.38,1.0077,15610.0,35700.0,61.0,220.0,18.83,111.27,363.33
+q8_lab6_tree8_rompack_d200,"[8, 8, 8]","[10, 9, 8]",floor_wrap,,,8,200,packed_rom,37,0,0,"[0, 0, 0]",passed,passed,passed,169,129,5.04,0.007,0.05,1.156,True,851.76,650.16,1.0375,20075.0,40600.0,61.0,220.0,19.25,124.01,448.62

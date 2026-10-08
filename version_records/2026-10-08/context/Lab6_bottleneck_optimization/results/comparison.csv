@@ -1,0 +1,5 @@
+name,sim,synth,impl,correct,ties,errors,values,cycles,interval_cycles,lut,ff,bram,dsp,period,wns,whs,route_target,latency_ns,interval_ns,tns,ths,wpws,timing_pass,route_errors,improvement_percent,sim_scope
+previous_best,passed,passed,passed,37,0,0,7776,169,129,20075.0,40600.0,61.0,220.0,5.04,0.007,0.05,4.8,851.76,650.16,0.0,0.0,1.156,True,0,0.0,
+terminal_tree8,passed,passed,passed,37,0,0,7776,169,129,20129.0,40653.0,61.0,220.0,4.9,0.008,0.05,4.8,828.1,632.1,0.0,0.0,1.016,True,0,2.778,
+terminal_tree7,passed,not_run,not_run,37,0,0,7776,168,129,,,,,,,,,,,,,,,,,
+postroute_fanout,passed,not_run,passed,37,0,0,7776,169,129,20075.0,40600.0,61.0,220.0,4.74,0.003,0.05,4.8,801.06,611.46,0.0,0.0,0.856,True,0,5.952,Exported identical RTL verified at final clock; not gate-level simulation

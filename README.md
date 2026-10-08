@@ -36,6 +36,12 @@ Lab6 三版本的指标、数值校验及验证范围见 [对比说明](course_m
 
 可运行 `python3 failed_experiments/2026-10-08/verify_records.py` 校验失败记录归档。
 
+## 全版本数据记录与最终保留范围
+
+[全部版本的数据与保留清单](version_records/2026-10-08/README.md) 汇总 136 个版本（含前一轮已清理的 7 个），保留 13 个代表工程，其余版本仅留配置、输入/输出、校验日志和资源/时序报告。本轮继续精简 116 个候选工程；旧 recommended 导出副本、功能通过但重复/较慢的版本以及暂停试验均已纳入数据记录。工程删除不等于功能失败。
+
+[版本指标表](version_records/2026-10-08/versions.csv) 和 [逐份报告测量表](version_records/2026-10-08/report_measurements.csv) 保留原报告来源与不同阶段口径；空值不当作零。可运行 `python3 version_records/2026-10-08/verify_records.py` 核验所有数据归档。
+
 ## 获取和校验
 
 ```bash

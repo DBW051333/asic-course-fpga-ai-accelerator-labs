@@ -1,0 +1,194 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Oct  5 20:10:27 2026
+# Process ID         : 1693309
+# Current directory  : /home/ding/vivado_project/Lab6_bottleneck_optimization
+# Command line       : vivado -mode batch -source /home/ding/vivado_project/Lab6_bottleneck_optimization/tools/verify_and_export.tcl -log /home/ding/vivado_project/Lab6_bottleneck_optimization/results/final_verification_vivado.log -journal /home/ding/vivado_project/Lab6_bottleneck_optimization/results/final_verification_vivado.jou
+# Log file           : /home/ding/vivado_project/Lab6_bottleneck_optimization/results/final_verification_vivado.log
+# Journal file       : /home/ding/vivado_project/Lab6_bottleneck_optimization/results/final_verification_vivado.jou
+# Running On         : Yilong
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 2218.153 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 24443 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 24443 MB
+# Available Virtual  : 9102 MB
+#-----------------------------------------------------------
+source /home/ding/vivado_project/Lab6_bottleneck_optimization/tools/verify_and_export.tcl
+# set_param general.maxThreads 8
+# open_checkpoint /home/ding/vivado_project/Lab6_bottleneck_optimization/postroute_fanout/results/final_routed.dcp
+Command: open_checkpoint /home/ding/vivado_project/Lab6_bottleneck_optimization/postroute_fanout/results/final_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1551.902 ; gain = 0.000 ; free physical = 4808 ; free virtual = 8231
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1811.699 ; gain = 0.000 ; free physical = 4557 ; free virtual = 7999
+INFO: [Netlist 29-17] Analyzing 6633 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1925.230 ; gain = 3.000 ; free physical = 4437 ; free virtual = 7880
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2573.660 ; gain = 8.336 ; free physical = 3844 ; free virtual = 7286
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2576.660 ; gain = 3.000 ; free physical = 3844 ; free virtual = 7286
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2576.660 ; gain = 0.000 ; free physical = 3844 ; free virtual = 7286
+Read placeStorage: Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:00.76 . Memory (MB): peak = 2608.660 ; gain = 32.000 ; free physical = 3807 ; free virtual = 7252
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2608.660 ; gain = 0.000 ; free physical = 3807 ; free virtual = 7252
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2635.660 ; gain = 27.000 ; free physical = 3782 ; free virtual = 7228
+Read Physdb Files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2635.660 ; gain = 70.336 ; free physical = 3782 ; free virtual = 7227
+Restored from archive | CPU: 1.650000 secs | Memory: 50.687561 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2635.660 ; gain = 70.336 ; free physical = 3782 ; free virtual = 7227
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2654.480 ; gain = 0.000 ; free physical = 3758 ; free virtual = 7203
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+open_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2662.516 ; gain = 1110.613 ; free physical = 3758 ; free virtual = 7203
+# report_timing_summary -file /home/ding/vivado_project/Lab6_bottleneck_optimization/postroute_fanout/results/timing_verified.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 2828.605 ; gain = 166.090 ; free physical = 3580 ; free virtual = 7026
+# report_route_status -file /home/ding/vivado_project/Lab6_bottleneck_optimization/postroute_fanout/results/route_status_verified.rpt
+# set wns [get_property SLACK [get_timing_paths -delay_type max -max_paths 1]]
+# set whs [get_property SLACK [get_timing_paths -delay_type min -max_paths 1]]
+# if {$wns < 0 || $whs < 0} {error "Saved checkpoint failed timing"}
+# close_design
+# catch {close_project}
+# create_project Lab6_bottleneck_recommended /home/ding/vivado_project/Lab6_bottleneck_optimization/recommended -part xc7z020clg400-1 -force
+# set_property target_language Verilog [current_project]
+# add_files [glob /home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/*.v]
+# add_files -fileset constrs_1 /home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/timing.xdc
+# add_files -fileset sim_1 /home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/tb/tb_quant.v
+# set_property file_type SystemVerilog [get_files *tb_quant.v]
+# set_property top lab5_impl_top [get_filesets sources_1]
+# set_property top tb_quant [get_filesets sim_1]
+# set_property strategy Performance_Explore [get_runs impl_1]
+# set_property generic "CLK_PERIOD=4.74" [get_filesets sim_1]
+# set_property xsim.simulate.runtime all [get_filesets sim_1]
+# update_compile_order -fileset sources_1
+# update_compile_order -fileset sim_1
+# launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Project 1-5737] Running on host Yilong (64) - Ubuntu 22.04.5 LTS
+INFO: [Vivado 12-28535] Process started - Mon Oct  5 20:10:50 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_quant'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/Lab6_bottleneck_recommended.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/vivado/2025.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_quant' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/Lab6_bottleneck_recommended.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_quant_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/adder_tree.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_tree
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/fc1_paired.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc1_paired
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/fc_stream_pair_output.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_stream_pair_output
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/fc_stream_two_inputs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_stream_two_inputs
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/lab5_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab5_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/quantize_signed.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quantize_signed
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/tb/tb_quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/Lab6_bottleneck_recommended.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/Lab6_bottleneck_recommended.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -generic_top CLK_PERIOD=4.74 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_quant_behav xil_defaultlib.tb_quant xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /vivado/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -generic_top CLK_PERIOD=4.74 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_quant_behav xil_defaultlib.tb_quant xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3532] module 'glbl' does not have a parameter named 'CLK_PERIOD' to override [/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/Lab6_bottleneck_recommended.sim/sim_1/behav/xsim/glbl.v:6]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/lab5_top.v" Line 1. Module lab5_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/fc1_paired.v" Line 2. Module fc1_paired(LANES=256,GROUPS=2,ADDER_LANES=256,DSP_LANES=200,WEIGHTS="/home/ding/vivado_project/Lab5_optimization/data/stream_pair256_hybrid_weights.mem",INPUTS="/home/ding/vivado_project/Lab5_optimization/data/stream_pair256_hybrid_inputs.mem",BIASES="/home/ding/vivado_project/Lab5_optimization/data/fc1_paired_bias.mem") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/adder_tree.v" Line 1. Module adder_tree doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/adder_tree.v" Line 1. Module adder_tree doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/quantize_signed.v" Line 2. Module quantize_signed(IW=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/fc_stream_pair_output.v" Line 3. Module fc_stream_pair_output(IW=8,AW=23,OW=23,WEIGHT_FILE="/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/data/fc2_packed_weights.mem",BIAS_FILE="/home/ding/vivado_project/Lab5_optimization/data/fc2_bias.mem") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/quantize_signed.v" Line 2. Module quantize_signed(SHIFT=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/quantize_signed.v" Line 2. Module quantize_signed(SHIFT=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/quantize_signed.v" Line 2. Module quantize_signed(SHIFT=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/quantize_signed.v" Line 2. Module quantize_signed(SHIFT=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/fc_stream_two_inputs.v" Line 3. Module fc_stream_two_inputs(IW=8,NI=8,NO=2,AW=21,OW=21,IA=3,OA=1,RELU=0,WEIGHT_FILE="/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/data/fc3_packed_weights.mem",BIAS_FILE="/home/ding/vivado_project/Lab5_optimization/data/fc3_bias.mem") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/rtl/quantize_signed.v" Line 2. Module quantize_signed(IW=21,SHIFT=8) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.adder_tree
+Compiling module xil_defaultlib.fc1_paired(LANES=256,GROUPS=2,AD...
+Compiling module xil_defaultlib.quantize_signed(IW=32)
+Compiling module xil_defaultlib.fc_stream_pair_output(IW=8,AW=23...
+Compiling module xil_defaultlib.quantize_signed(SHIFT=9)
+Compiling module xil_defaultlib.fc_stream_two_inputs(IW=8,NI=8,N...
+Compiling module xil_defaultlib.quantize_signed(IW=21,SHIFT=8)
+Compiling module xil_defaultlib.lab5_top
+Compiling module xil_defaultlib.tb_quant
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_quant_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/Lab6_bottleneck_recommended.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_quant_behav -key {Behavioral:sim_1:Functional:tb_quant} -tclbatch {tb_quant.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_quant.tcl
+## set curr_wave [current_wave_config]
+## if { [string length $curr_wave] == 0 } {
+##   if { [llength [get_objects]] > 0} {
+##     add_wave /
+##     set_property needs_save false [current_wave_config]
+##   } else {
+##      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+##   }
+## }
+WARNING: [Wavedata 42-489] Can't add object "/tb_quant/ref1" to the wave window because it has 393216 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_quant/ref2" to the wave window because it has 98304 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_quant/input_bytes" to the wave window because it has 196608 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+## run all
+WARNING: file /home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/results/rtl_samples.csv could not be opened
+SUMMARY correct=37/42 ties=0 errors=0 values=7776 latency_cycles=169..169 interval_cycles=129..129
+PASS: 48 overlapping requests, 7776 layer outputs and addresses match
+$finish called at time : 29582340 ps : File "/home/ding/vivado_project/Lab6_bottleneck_optimization/recommended/tb/tb_quant.v" Line 31
+run: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:05 . Memory (MB): peak = 2902.875 ; gain = 0.000 ; free physical = 3343 ; free virtual = 6977
+xsim: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:06 . Memory (MB): peak = 2902.875 ; gain = 55.840 ; free physical = 3343 ; free virtual = 6977
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_quant_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2902.875 ; gain = 61.234 ; free physical = 3343 ; free virtual = 6977
+# close_sim
+INFO: xsimkernel Simulation Memory Usage: 291468 KB (Peak: 344076 KB), Simulation CPU Usage: 5730 ms
+INFO: [Simtcl 6-16] Simulation closed
+# exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  5 20:11:02 2026...

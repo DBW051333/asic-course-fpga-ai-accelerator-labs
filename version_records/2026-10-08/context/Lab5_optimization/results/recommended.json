@@ -1,0 +1,19 @@
+{
+  "name": "stream_pair256_burst_exact23_tree7_clk4p8",
+  "period": 4.8,
+  "cycles": 168,
+  "latency_ns": 806.4,
+  "wns": -0.455,
+  "tns": -20.689,
+  "whs": 0.05,
+  "ths": 0.0,
+  "wpws": 1.42,
+  "lut": 23944.0,
+  "ff": 41984.0,
+  "bram": 61.0,
+  "dsp": 216.0,
+  "final_period": 5.26,
+  "final_wns": 0.005,
+  "final_whs": 0.05,
+  "final_latency_ns": 883.68
+}

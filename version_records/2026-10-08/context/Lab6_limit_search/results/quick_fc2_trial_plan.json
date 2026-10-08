@@ -1,0 +1,17 @@
+{
+  "baseline_latency_ns": 741.2,
+  "baseline_period_ns": 4.36,
+  "baseline_cycles": 170,
+  "candidates": [
+    "quick_fc2_rom_pipe",
+    "quick_fc2_keep_weight"
+  ],
+  "budget": {
+    "dsp": 220,
+    "bram": 68,
+    "added_logical_register_bits_max": 416,
+    "pipeline_cycles": 171,
+    "pipeline_period_to_beat_ns": 4.334502923976609
+  },
+  "stopping_rule": "Only these two short FC2 trials in this round; preserve baseline unless numerical checks and routed timing show improvement."
+}

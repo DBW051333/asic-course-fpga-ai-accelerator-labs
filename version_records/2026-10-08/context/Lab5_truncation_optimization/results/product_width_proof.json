@@ -1,0 +1,514 @@
+[
+  {
+    "product_cut": 1,
+    "status": "pass",
+    "tree_nodes": [
+      {
+        "products_per_node": 1,
+        "width": 15,
+        "min": -8128,
+        "max": 8192
+      },
+      {
+        "products_per_node": 2,
+        "width": 16,
+        "min": -14922,
+        "max": 14913
+      },
+      {
+        "products_per_node": 4,
+        "width": 17,
+        "min": -26139,
+        "max": 26136
+      },
+      {
+        "products_per_node": 8,
+        "width": 18,
+        "min": -44947,
+        "max": 44939
+      },
+      {
+        "products_per_node": 16,
+        "width": 19,
+        "min": -79631,
+        "max": 79490
+      },
+      {
+        "products_per_node": 32,
+        "width": 20,
+        "min": -139891,
+        "max": 139339
+      },
+      {
+        "products_per_node": 64,
+        "width": 21,
+        "min": -259414,
+        "max": 259006
+      },
+      {
+        "products_per_node": 128,
+        "width": 22,
+        "min": -495566,
+        "max": 495493
+      },
+      {
+        "products_per_node": 256,
+        "width": 23,
+        "min": -914313,
+        "max": 913658
+      }
+    ],
+    "accumulator_width": 23,
+    "prefix_min": -3575800,
+    "prefix_max": 3574416,
+    "fc1_absolute_error_bound": 512
+  },
+  {
+    "product_cut": 2,
+    "status": "pass",
+    "tree_nodes": [
+      {
+        "products_per_node": 1,
+        "width": 14,
+        "min": -4064,
+        "max": 4096
+      },
+      {
+        "products_per_node": 2,
+        "width": 15,
+        "min": -7461,
+        "max": 7456
+      },
+      {
+        "products_per_node": 4,
+        "width": 16,
+        "min": -13070,
+        "max": 13067
+      },
+      {
+        "products_per_node": 8,
+        "width": 17,
+        "min": -22474,
+        "max": 22471
+      },
+      {
+        "products_per_node": 16,
+        "width": 18,
+        "min": -39816,
+        "max": 39745
+      },
+      {
+        "products_per_node": 32,
+        "width": 19,
+        "min": -69946,
+        "max": 69668
+      },
+      {
+        "products_per_node": 64,
+        "width": 20,
+        "min": -129704,
+        "max": 129500
+      },
+      {
+        "products_per_node": 128,
+        "width": 21,
+        "min": -247783,
+        "max": 247745
+      },
+      {
+        "products_per_node": 256,
+        "width": 22,
+        "min": -457160,
+        "max": 456826
+      }
+    ],
+    "accumulator_width": 23,
+    "prefix_min": -3575818,
+    "prefix_max": 3574370,
+    "fc1_absolute_error_bound": 1024
+  },
+  {
+    "product_cut": 3,
+    "status": "pass",
+    "tree_nodes": [
+      {
+        "products_per_node": 1,
+        "width": 13,
+        "min": -2032,
+        "max": 2048
+      },
+      {
+        "products_per_node": 2,
+        "width": 14,
+        "min": -3731,
+        "max": 3728
+      },
+      {
+        "products_per_node": 4,
+        "width": 15,
+        "min": -6535,
+        "max": 6534
+      },
+      {
+        "products_per_node": 8,
+        "width": 16,
+        "min": -11237,
+        "max": 11234
+      },
+      {
+        "products_per_node": 16,
+        "width": 17,
+        "min": -19906,
+        "max": 19872
+      },
+      {
+        "products_per_node": 32,
+        "width": 18,
+        "min": -34972,
+        "max": 34837
+      },
+      {
+        "products_per_node": 64,
+        "width": 19,
+        "min": -64855,
+        "max": 64753
+      },
+      {
+        "products_per_node": 128,
+        "width": 20,
+        "min": -123895,
+        "max": 123872
+      },
+      {
+        "products_per_node": 256,
+        "width": 21,
+        "min": -228578,
+        "max": 228415
+      }
+    ],
+    "accumulator_width": 23,
+    "prefix_min": -3575782,
+    "prefix_max": 3574386,
+    "fc1_absolute_error_bound": 2048
+  },
+  {
+    "product_cut": 4,
+    "status": "pass",
+    "tree_nodes": [
+      {
+        "products_per_node": 1,
+        "width": 12,
+        "min": -1016,
+        "max": 1024
+      },
+      {
+        "products_per_node": 2,
+        "width": 13,
+        "min": -1865,
+        "max": 1864
+      },
+      {
+        "products_per_node": 4,
+        "width": 14,
+        "min": -3267,
+        "max": 3267
+      },
+      {
+        "products_per_node": 8,
+        "width": 15,
+        "min": -5618,
+        "max": 5618
+      },
+      {
+        "products_per_node": 16,
+        "width": 16,
+        "min": -9954,
+        "max": 9937
+      },
+      {
+        "products_per_node": 32,
+        "width": 17,
+        "min": -17486,
+        "max": 17416
+      },
+      {
+        "products_per_node": 64,
+        "width": 18,
+        "min": -32427,
+        "max": 32377
+      },
+      {
+        "products_per_node": 128,
+        "width": 19,
+        "min": -61948,
+        "max": 61937
+      },
+      {
+        "products_per_node": 256,
+        "width": 20,
+        "min": -114300,
+        "max": 114210
+      }
+    ],
+    "accumulator_width": 23,
+    "prefix_min": -3576070,
+    "prefix_max": 3574474,
+    "fc1_absolute_error_bound": 4096
+  },
+  {
+    "product_cut": 5,
+    "status": "pass",
+    "tree_nodes": [
+      {
+        "products_per_node": 1,
+        "width": 11,
+        "min": -508,
+        "max": 512
+      },
+      {
+        "products_per_node": 2,
+        "width": 12,
+        "min": -933,
+        "max": 932
+      },
+      {
+        "products_per_node": 4,
+        "width": 13,
+        "min": -1634,
+        "max": 1633
+      },
+      {
+        "products_per_node": 8,
+        "width": 14,
+        "min": -2809,
+        "max": 2809
+      },
+      {
+        "products_per_node": 16,
+        "width": 15,
+        "min": -4976,
+        "max": 4969
+      },
+      {
+        "products_per_node": 32,
+        "width": 16,
+        "min": -8743,
+        "max": 8709
+      },
+      {
+        "products_per_node": 64,
+        "width": 17,
+        "min": -16213,
+        "max": 16188
+      },
+      {
+        "products_per_node": 128,
+        "width": 18,
+        "min": -30974,
+        "max": 30966
+      },
+      {
+        "products_per_node": 256,
+        "width": 19,
+        "min": -57143,
+        "max": 57107
+      }
+    ],
+    "accumulator_width": 23,
+    "prefix_min": -3575782,
+    "prefix_max": 3574650,
+    "fc1_absolute_error_bound": 8192
+  },
+  {
+    "product_cut": 6,
+    "status": "pass",
+    "tree_nodes": [
+      {
+        "products_per_node": 1,
+        "width": 10,
+        "min": -254,
+        "max": 256
+      },
+      {
+        "products_per_node": 2,
+        "width": 11,
+        "min": -466,
+        "max": 466
+      },
+      {
+        "products_per_node": 4,
+        "width": 12,
+        "min": -817,
+        "max": 817
+      },
+      {
+        "products_per_node": 8,
+        "width": 13,
+        "min": -1406,
+        "max": 1405
+      },
+      {
+        "products_per_node": 16,
+        "width": 14,
+        "min": -2489,
+        "max": 2483
+      },
+      {
+        "products_per_node": 32,
+        "width": 15,
+        "min": -4372,
+        "max": 4355
+      },
+      {
+        "products_per_node": 64,
+        "width": 16,
+        "min": -8107,
+        "max": 8093
+      },
+      {
+        "products_per_node": 128,
+        "width": 17,
+        "min": -15488,
+        "max": 15485
+      },
+      {
+        "products_per_node": 256,
+        "width": 18,
+        "min": -28573,
+        "max": 28556
+      }
+    ],
+    "accumulator_width": 23,
+    "prefix_min": -3576166,
+    "prefix_max": 3575002,
+    "fc1_absolute_error_bound": 16384
+  },
+  {
+    "product_cut": 7,
+    "status": "pass",
+    "tree_nodes": [
+      {
+        "products_per_node": 1,
+        "width": 9,
+        "min": -127,
+        "max": 128
+      },
+      {
+        "products_per_node": 2,
+        "width": 10,
+        "min": -233,
+        "max": 233
+      },
+      {
+        "products_per_node": 4,
+        "width": 11,
+        "min": -408,
+        "max": 408
+      },
+      {
+        "products_per_node": 8,
+        "width": 12,
+        "min": -701,
+        "max": 701
+      },
+      {
+        "products_per_node": 16,
+        "width": 13,
+        "min": -1245,
+        "max": 1240
+      },
+      {
+        "products_per_node": 32,
+        "width": 14,
+        "min": -2185,
+        "max": 2175
+      },
+      {
+        "products_per_node": 64,
+        "width": 15,
+        "min": -4054,
+        "max": 4046
+      },
+      {
+        "products_per_node": 128,
+        "width": 16,
+        "min": -7739,
+        "max": 7741
+      },
+      {
+        "products_per_node": 256,
+        "width": 17,
+        "min": -14286,
+        "max": 14273
+      }
+    ],
+    "accumulator_width": 23,
+    "prefix_min": -3576038,
+    "prefix_max": 3573914,
+    "fc1_absolute_error_bound": 32768
+  },
+  {
+    "product_cut": 8,
+    "status": "pass",
+    "tree_nodes": [
+      {
+        "products_per_node": 1,
+        "width": 8,
+        "min": -63,
+        "max": 64
+      },
+      {
+        "products_per_node": 2,
+        "width": 9,
+        "min": -116,
+        "max": 117
+      },
+      {
+        "products_per_node": 4,
+        "width": 10,
+        "min": -203,
+        "max": 205
+      },
+      {
+        "products_per_node": 8,
+        "width": 11,
+        "min": -351,
+        "max": 354
+      },
+      {
+        "products_per_node": 16,
+        "width": 12,
+        "min": -620,
+        "max": 623
+      },
+      {
+        "products_per_node": 32,
+        "width": 13,
+        "min": -1087,
+        "max": 1090
+      },
+      {
+        "products_per_node": 64,
+        "width": 14,
+        "min": -2016,
+        "max": 2028
+      },
+      {
+        "products_per_node": 128,
+        "width": 15,
+        "min": -3851,
+        "max": 3885
+      },
+      {
+        "products_per_node": 256,
+        "width": 16,
+        "min": -7101,
+        "max": 7165
+      }
+    ],
+    "accumulator_width": 23,
+    "prefix_min": -3553766,
+    "prefix_max": 3587098,
+    "fc1_absolute_error_bound": 65536
+  }
+]

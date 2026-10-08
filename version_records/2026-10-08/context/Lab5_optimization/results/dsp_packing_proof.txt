@@ -1,0 +1,2 @@
+PASS: all 16,777,216 signed 8-bit input/weight0/weight1 combinations are exactly reconstructed.
+A=(w1<<16)+w0 fits signed25. Product fits signed33. p0=signed(P[15:0]); p1=(P>>>16)+(p0<0).

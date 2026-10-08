@@ -1,0 +1,13 @@
+{
+  "name": "fc1_128x6_dual",
+  "project": "/home/ding/vivado_project/Lab6_growth_trials/fc1_128x6_dual",
+  "checkpoint": "/home/ding/vivado_project/Lab6_growth_trials/fc1_128x6_dual/results/final_routed.dcp",
+  "clock_xdc": "/home/ding/vivado_project/Lab6_growth_trials/fc1_128x6_dual/results/final_clock.xdc",
+  "period_ns": 4.91,
+  "latency_cycles": 135,
+  "latency_ns": 662.85,
+  "interval_cycles": 89,
+  "interval_ns": 436.99,
+  "baseline_retained": true,
+  "verified": true
+}

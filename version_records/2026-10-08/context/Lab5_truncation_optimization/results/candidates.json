@@ -1,0 +1,1032 @@
+[
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80805
+      ],
+      [
+        0,
+        37683
+      ],
+      [
+        -32166,
+        19709
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "name": "q8_lab6_d168",
+    "dsp1": 168,
+    "tail": "standard",
+    "stress_overflow_counts": [
+      188,
+      9,
+      0
+    ]
+  },
+  {
+    "widths": [
+      4,
+      4,
+      4
+    ],
+    "shifts": [
+      14,
+      8,
+      9
+    ],
+    "mode": "floor_wrap",
+    "correct": 36,
+    "accuracy": 0.8571428571428571,
+    "ties": 27,
+    "disagreements": 1,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80805
+      ],
+      [
+        0,
+        1716
+      ],
+      [
+        -2588,
+        1632
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      34,
+      40,
+      41
+    ],
+    "name": "q4_lab6_d168",
+    "dsp1": 168,
+    "tail": "standard",
+    "stress_overflow_counts": [
+      188,
+      23,
+      0
+    ]
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80805
+      ],
+      [
+        0,
+        37683
+      ],
+      [
+        -32166,
+        19709
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "name": "q8_lab6_d180",
+    "dsp1": 180,
+    "tail": "standard",
+    "stress_overflow_counts": [
+      188,
+      9,
+      0
+    ]
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80805
+      ],
+      [
+        0,
+        37683
+      ],
+      [
+        -32166,
+        19709
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "name": "q8_lab6_pack_d200",
+    "dsp1": 200,
+    "tail": "packed",
+    "stress_overflow_counts": [
+      188,
+      9,
+      0
+    ]
+  },
+  {
+    "widths": [
+      4,
+      4,
+      4
+    ],
+    "shifts": [
+      14,
+      8,
+      9
+    ],
+    "mode": "floor_wrap",
+    "correct": 36,
+    "accuracy": 0.8571428571428571,
+    "ties": 27,
+    "disagreements": 1,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80805
+      ],
+      [
+        0,
+        1716
+      ],
+      [
+        -2588,
+        1632
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      34,
+      40,
+      41
+    ],
+    "name": "q4_lab6_lut_d220",
+    "dsp1": 220,
+    "tail": "lut",
+    "stress_overflow_counts": [
+      188,
+      23,
+      0
+    ]
+  },
+  {
+    "widths": [
+      6,
+      6,
+      6
+    ],
+    "shifts": [
+      12,
+      10,
+      7
+    ],
+    "mode": "round_sat",
+    "correct": 38,
+    "accuracy": 0.9047619047619048,
+    "ties": 0,
+    "disagreements": 1,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80805
+      ],
+      [
+        0,
+        9717
+      ],
+      [
+        -4034,
+        2538
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      40,
+      41
+    ],
+    "name": "q6_6_6_round_pack_d200",
+    "dsp1": 200,
+    "tail": "packed",
+    "stress_overflow_counts": [
+      188,
+      7,
+      10
+    ]
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      12,
+      7,
+      8
+    ],
+    "mode": "round_sat",
+    "correct": 38,
+    "accuracy": 0.9047619047619048,
+    "ties": 0,
+    "disagreements": 1,
+    "overflow_counts": [
+      0,
+      0,
+      1
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80805
+      ],
+      [
+        0,
+        9717
+      ],
+      [
+        -33325,
+        20266
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      40,
+      41
+    ],
+    "name": "q8_8_8_round_pack_d200",
+    "dsp1": 200,
+    "tail": "packed",
+    "stress_overflow_counts": [
+      9,
+      41,
+      11
+    ]
+  },
+  {
+    "widths": [
+      8,
+      6,
+      8
+    ],
+    "shifts": [
+      12,
+      10,
+      5
+    ],
+    "mode": "round_sat",
+    "correct": 38,
+    "accuracy": 0.9047619047619048,
+    "ties": 0,
+    "disagreements": 1,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80805
+      ],
+      [
+        0,
+        9717
+      ],
+      [
+        -4034,
+        2538
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      40,
+      41
+    ],
+    "name": "q8_6_8_round_pack_d200",
+    "dsp1": 200,
+    "tail": "packed",
+    "stress_overflow_counts": [
+      9,
+      18,
+      10
+    ]
+  },
+  {
+    "widths": [
+      4,
+      8,
+      8
+    ],
+    "shifts": [
+      13,
+      6,
+      8
+    ],
+    "mode": "round_sat",
+    "correct": 38,
+    "accuracy": 0.9047619047619048,
+    "ties": 0,
+    "disagreements": 1,
+    "overflow_counts": [
+      7,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80805
+      ],
+      [
+        0,
+        4668
+      ],
+      [
+        -32615,
+        20289
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      41
+    ],
+    "name": "q4_8_8_round_pack_d200",
+    "dsp1": 200,
+    "tail": "packed",
+    "stress_overflow_counts": [
+      261,
+      7,
+      8
+    ]
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80936
+      ],
+      [
+        0,
+        37760
+      ],
+      [
+        -32118,
+        19742
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "name": "q8_product1_pack_d200",
+    "dsp1": 200,
+    "tail": "packed",
+    "product_cut": 1,
+    "stress_overflow_counts": [
+      188,
+      9,
+      0
+    ]
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        81076
+      ],
+      [
+        0,
+        38163
+      ],
+      [
+        -32579,
+        19922
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "name": "q8_product2_pack_d200",
+    "dsp1": 200,
+    "tail": "packed",
+    "product_cut": 2,
+    "stress_overflow_counts": [
+      188,
+      9,
+      0
+    ]
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        81208
+      ],
+      [
+        0,
+        38265
+      ],
+      [
+        -32441,
+        19963
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "name": "q8_product3_pack_d200",
+    "dsp1": 200,
+    "tail": "packed",
+    "product_cut": 3,
+    "stress_overflow_counts": [
+      188,
+      9,
+      0
+    ]
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        81304
+      ],
+      [
+        0,
+        38552
+      ],
+      [
+        -32683,
+        19963
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "name": "q8_product4_pack_d200",
+    "dsp1": 200,
+    "tail": "packed",
+    "product_cut": 4,
+    "stress_overflow_counts": [
+      188,
+      9,
+      1
+    ]
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        81080
+      ],
+      [
+        0,
+        38708
+      ],
+      [
+        -32683,
+        20148
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "name": "q8_product6_pack_d200",
+    "dsp1": 200,
+    "tail": "packed",
+    "product_cut": 6,
+    "stress_overflow_counts": [
+      188,
+      9,
+      1
+    ]
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 38,
+    "accuracy": 0.9047619047619048,
+    "ties": 0,
+    "disagreements": 1,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        81720
+      ],
+      [
+        0,
+        38925
+      ],
+      [
+        -32381,
+        19918
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      40,
+      41
+    ],
+    "name": "q8_product8_pack_d200",
+    "dsp1": 200,
+    "tail": "packed",
+    "product_cut": 8,
+    "stress_overflow_counts": [
+      198,
+      9,
+      1
+    ]
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        81304
+      ],
+      [
+        0,
+        38552
+      ],
+      [
+        -32683,
+        19963
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "name": "q8_product4_prereg_pack_d200",
+    "dsp1": 200,
+    "tail": "packed",
+    "product_cut": 4,
+    "stress_overflow_counts": [
+      188,
+      9,
+      1
+    ],
+    "product_cut_stage": "register"
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        81080
+      ],
+      [
+        0,
+        38708
+      ],
+      [
+        -32683,
+        20148
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "name": "q8_product6_prereg_pack_d200",
+    "dsp1": 200,
+    "tail": "packed",
+    "product_cut": 6,
+    "stress_overflow_counts": [
+      188,
+      9,
+      1
+    ],
+    "product_cut_stage": "register"
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80805
+      ],
+      [
+        0,
+        37683
+      ],
+      [
+        -32166,
+        19709
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "name": "q8_lab6_rompack_d200",
+    "dsp1": 200,
+    "tail": "packed_rom",
+    "stress_overflow_counts": [
+      188,
+      9,
+      0
+    ]
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        81080
+      ],
+      [
+        0,
+        38708
+      ],
+      [
+        -32683,
+        20148
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "name": "q8_product6_prereg_rompack_d200",
+    "dsp1": 200,
+    "tail": "packed_rom",
+    "product_cut": 6,
+    "stress_overflow_counts": [
+      188,
+      9,
+      1
+    ],
+    "product_cut_stage": "register"
+  },
+  {
+    "widths": [
+      8,
+      8,
+      8
+    ],
+    "shifts": [
+      10,
+      9,
+      8
+    ],
+    "mode": "floor_wrap",
+    "correct": 37,
+    "accuracy": 0.8809523809523809,
+    "ties": 0,
+    "disagreements": 0,
+    "overflow_counts": [
+      0,
+      0,
+      0
+    ],
+    "raw_ranges": [
+      [
+        0,
+        80805
+      ],
+      [
+        0,
+        37683
+      ],
+      [
+        -32166,
+        19709
+      ]
+    ],
+    "wrong_samples": [
+      21,
+      23,
+      25,
+      40,
+      41
+    ],
+    "name": "q8_lab6_tree8_rompack_d200",
+    "dsp1": 200,
+    "tail": "packed_rom",
+    "stress_overflow_counts": [
+      188,
+      9,
+      0
+    ],
+    "tree_stages": 8
+  }
+]

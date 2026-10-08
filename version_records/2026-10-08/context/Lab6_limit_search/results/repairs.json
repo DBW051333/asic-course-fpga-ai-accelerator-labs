@@ -1,0 +1,7 @@
+[
+  {
+    "candidate": "free_biaspipe_narrow",
+    "reason": "Move loop variable declaration to module scope for Verilog synthesis compatibility",
+    "scope": "Declaration only; simulation arithmetic and pipeline unchanged"
+  }
+]

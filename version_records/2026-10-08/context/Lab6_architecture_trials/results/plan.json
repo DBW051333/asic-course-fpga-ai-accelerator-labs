@@ -1,0 +1,18 @@
+{
+  "baseline": "/home/ding/vivado_project/Lab6_limit_search/quick_fc2_rom_pipe",
+  "baseline_latency_ns": 735.3,
+  "candidates": [
+    "fc1_simd128_pe4",
+    "fc1_simd64_pe8",
+    "fc2_interleaved_split11"
+  ],
+  "budget": {
+    "dsp": 220,
+    "bram_expected": 68,
+    "rom_weight_bandwidth_bits_per_cycle": 6400,
+    "fc1_compute_issue_cycles": 128,
+    "fc1_queue_bits_max": 2944,
+    "fc2_extra_accumulator_bits": 672
+  },
+  "stop": "One routed implementation per numerical-valid and resource-feasible candidate; no iterative ps tuning."
+}

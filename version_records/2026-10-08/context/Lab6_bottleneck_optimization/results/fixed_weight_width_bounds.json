@@ -1,0 +1,24 @@
+[
+  {
+    "layer": 2,
+    "min": -874237,
+    "max": 875063,
+    "minimum_signed_width": 21,
+    "input_range": [
+      -128,
+      127
+    ],
+    "scope": "All independent signed INT8 inputs, all serial accumulation prefixes including bias"
+  },
+  {
+    "layer": 3,
+    "min": -251408,
+    "max": 252217,
+    "minimum_signed_width": 19,
+    "input_range": [
+      -128,
+      127
+    ],
+    "scope": "All independent signed INT8 inputs, all serial accumulation prefixes including bias"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "stream_pair171_staged_clk5p0",
+    "period": 5.0,
+    "exit": 0,
+    "wns": -0.439
+  },
+  {
+    "name": "stream_pair256_staged_clk6p0",
+    "period": 6.0,
+    "exit": 0,
+    "wns": -0.19
+  }
+]

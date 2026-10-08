@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": 16789504,
+  "vectors": 4099,
+  "pairs": 16,
+  "prefixes": 128,
+  "formula": "S0 = (q << 16) + unsigned_low16; S1 = signed_packed_sum >> 16 - q",
+  "scope": "Every prefix of seeded random and boundary vectors for fixed FC2 weights; algebraic derivation plus tests, not exhaustive input-vector enumeration"
+}

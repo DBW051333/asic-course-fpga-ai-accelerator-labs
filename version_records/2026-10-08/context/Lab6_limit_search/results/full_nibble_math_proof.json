@@ -1,0 +1,5 @@
+{
+  "checks": 65536,
+  "scope": "Every signed 8-bit input/weight pair; all four exact nibble tables and both intermediate additions",
+  "errors": 0
+}

@@ -1,0 +1,8 @@
+{
+  "baseline": "/home/ding/vivado_project/Lab5_truncation_optimization/q8_lab6_tree8_rompack_d200",
+  "candidates": [
+    "terminal_tree8",
+    "terminal_tree7",
+    "postroute_fanout"
+  ]
+}
