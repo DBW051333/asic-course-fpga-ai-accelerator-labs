@@ -1,0 +1,10 @@
+{
+  "pass": true,
+  "max_batch": 16383,
+  "max_tx_bytes": 8388104,
+  "dma_length_bits": 23,
+  "host_allocation_limit_checked": true,
+  "rtl_max_header_and_reset_checked": true,
+  "zero_and_overlimit": "covered by existing RTL regression and host tests",
+  "scope": "protocol/driver boundary only; no full 16383 sample run"
+}

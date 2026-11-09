@@ -1,0 +1,17 @@
+{
+  "baseline_id": "lab8_ax7020_shared192_v1",
+  "baseline_path": "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/baseline192",
+  "baseline_original_path": "/home/ding/vivado_project/Lab8_AX7020_trials/shared192_singlebank_v1/shared_pair",
+  "active_experiment": "lab8_ax7020_shared256_hybrid_v1",
+  "active_experiment_path": "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256",
+  "result_summary": "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/results/summary.json",
+  "status": "implemented_and_simulated_not_board_tested",
+  "default_current_project_unchanged": true,
+  "last_512_trial": {
+    "id": "lab8_ax7020_shared512_hybrid_v1",
+    "path": "/home/ding/vivado_project/Lab8_AX7020_trials/shared512_hybrid_v1",
+    "status": "512_trial_deferred_keep256",
+    "report": "/home/ding/vivado_project/Lab8_AX7020_trials/shared512_hybrid_v1/实验结果.md",
+    "selected_completed_version_unchanged": true
+  }
+}

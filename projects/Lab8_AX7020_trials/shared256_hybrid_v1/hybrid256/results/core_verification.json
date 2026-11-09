@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "samples": 48,
+  "feature_values": 7776,
+  "summary": [
+    "EVENT FC1_LAST 146",
+    "EVENT FC2_LAST 180",
+    "EVENT FC3_LAST 200",
+    "PASS CORE samples=48 values=7776 start_to_done_cycles=200..200"
+  ]
+}

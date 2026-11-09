@@ -1,0 +1,190 @@
+{
+  "id": "lab8_ax7020_shared256_hybrid_v1",
+  "direct_parent": "lab8_ax7020_shared192_v1",
+  "source_baseline": "lab8_128_resource_v1",
+  "part": "xc7z020clg400-2",
+  "nominal_clock_hz": 142857132,
+  "clock_ns": 7,
+  "selected_multiplier": "packed_sparse",
+  "architecture": {
+    "packed_lanes": 256,
+    "dsp_lanes": 220,
+    "lut_packed_units": 36,
+    "fc1_groups": 2,
+    "single_bank": true,
+    "layers_share_array": true,
+    "commands": [
+      1,
+      2
+    ]
+  },
+  "ooc_core": {
+    "lut": 14782.0,
+    "ff": 31155.0,
+    "bram36_equivalent": 96.0,
+    "dsp": 220.0,
+    "wns_ns": 0.345,
+    "whs_ns": 0.046,
+    "unrouted": 0,
+    "route_errors": 0,
+    "core_cycles": 200
+  },
+  "full_system": {
+    "lut": 18764.0,
+    "ff": 35919.0,
+    "bram36_equivalent": 100.0,
+    "dsp": 220.0,
+    "wns_ns": 0.255,
+    "whs_ns": 0.018
+  },
+  "same_checker_parent": {
+    "core_cycles": 264,
+    "lut": 9057,
+    "ff": 22203,
+    "bram36": 72,
+    "dsp": 192
+  },
+  "core_latency_reduction_percent": 24.242424242424242,
+  "core_time_us": 1.4,
+  "wrapper_compute_counter_cycles": 201,
+  "verification": {
+    "core_verification": {
+      "pass": true,
+      "samples": 48,
+      "feature_values": 7776,
+      "summary": [
+        "EVENT FC1_LAST 146",
+        "EVENT FC2_LAST 180",
+        "EVENT FC3_LAST 200",
+        "PASS CORE samples=48 values=7776 start_to_done_cycles=200..200"
+      ]
+    },
+    "stress_verification": {
+      "pass": true,
+      "samples": 96,
+      "values": 15552,
+      "fc1_full_precision_values": 12288,
+      "random_ce_stalls": true,
+      "between_sample_reset": true,
+      "aborted_job_reset_offsets_cycles": [
+        37,
+        155,
+        190
+      ],
+      "observed_max_absolute_accumulator": [
+        3190528,
+        140085,
+        31724
+      ],
+      "summary": [
+        "CE stalls=2757",
+        "PASS CORE samples=96 values=15552 start_to_done_cycles=212..258"
+      ]
+    },
+    "simulation_axis": {
+      "pass": true,
+      "scope": "RTL AXIS/AXI-Lite + real NPU; DMA/PS not simulated",
+      "summary": [
+        "SUMMARY CE=1 PREFETCH=1 jobs=48 correct=42/42 values=7776 feature_packets=50 output_words=1106 compute_cycles=201..201 feature_cycles_total=1756 stalls=1122 input_full=0 input_empty=1162 credit_full=67 errors=0"
+      ],
+      "log": "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/simulation/axis/xsim.console.log"
+    },
+    "simulation_dma": {
+      "pass": true,
+      "scope": "Actual configured AMD AXI DMA IP + Lab8 NPU; AXI DDR model and AXI-Lite PS transactions; no real PS or board",
+      "summary": [
+        "PASS LAB8 ACTUAL DMA samples=42 features=6804 errors=0"
+      ],
+      "log": "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/simulation/dma/xsim.console.log"
+    },
+    "python_tests": {
+      "pass": true,
+      "tests": 5,
+      "scope": "Host-side driver/program tests with fake transport; not board measurements"
+    },
+    "mapped_verification": {
+      "pass": true,
+      "samples": 8,
+      "feature_values": 1296,
+      "sample_indices": [
+        0,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        47
+      ],
+      "summary": [
+        "EVENT FC1_LAST 146",
+        "EVENT FC2_LAST 180",
+        "EVENT FC3_LAST 200",
+        "PASS CORE samples=8 values=1296 start_to_done_cycles=200..200"
+      ],
+      "scope": "post-route functional core netlist with AMD UNISIM primitives; no timing delays"
+    },
+    "dsp_audit": {
+      "pass": true,
+      "shared_dsp": 220,
+      "total": 220,
+      "all_use_mult_multiply": true,
+      "soft_packed_multipliers": 36
+    },
+    "final_checkpoint_audit": {
+      "pass": true,
+      "dsp": 220,
+      "soft_dsp": 0,
+      "wns_ns": 0.255,
+      "whs_ns": 0.018,
+      "period_ns": 7.0,
+      "route_errors": 0,
+      "drc_errors": 0,
+      "board_tested": false
+    },
+    "model_verification": {
+      "pass": true,
+      "packed_words_checked": 37120,
+      "packed_min": -7798781,
+      "packed_max": 7667785,
+      "signed24_legal": true,
+      "fixed_packed_structure_legal": true,
+      "all_three_layers_exactly_repacked_from_frozen_parent": true,
+      "biases_inputs_golden_outputs_unchanged": true,
+      "weight_bank_sha256": {
+        "fc1_bank0.mem": "f34d8b5757f55a3b2262462637883c7a968431d56c2e6035e9778a5ba1d6970c",
+        "fc1_bank1.mem": "906e2fac8384b663b9dc170094fa12dfa005707ca1d598471c39750694428477",
+        "fc1_bank2.mem": "d8039a8d8541c6e166d86d445793b12f102bcf50c5dff186182868b8404822a7",
+        "fc1_bank3.mem": "f2a224f442fdb6db9f8f5b3a518977a6816033c96014ab6bf81a866aae04157b",
+        "fc1_bank4.mem": "d8625586dde9cdaaded8b3a0267aea2d62ced09d08b2e36a6b1f1618abbf1123",
+        "fc1_bank5.mem": "19d4a914ab8319a761e0ddfd9a9f9b97ed218221d8bf4e2f9813037b6e4f8468",
+        "fc1_bank6.mem": "84236ccad97d3b1b3830ace49f752d857c7a6ad4fb8e07e5aced1295314aeb07",
+        "fc1_bank7.mem": "0d0bc85ec5fd150d868b716801aaaeb553fdb0124bf97319b03232a34e590ff0",
+        "fc1_bank8.mem": "11cac7c78b46e7bab7013fa785711d027c130b087f16175ea08610a2d231753c",
+        "fc1_bank9.mem": "1e2081d40666a9ae26105ecac058da7109a63be4cb678ef0f1b9b9b40c90d3d7",
+        "fc1_bank10.mem": "0910c5c6b74fbeee699494b66d58a68092930212024a1d54733aecb7c1d0a64b",
+        "fc1_bank11.mem": "f4543fe280aed283e635ab5070f9fc8ffde6b5bc77c670070550f31632bf68fd",
+        "fc1_bank12.mem": "7450d5ff9d185dee98f483446a08fd0e8d7fb7a97b6e75bf49d773f1302af964",
+        "fc1_bank13.mem": "9a67fc9b25651a6aa7e58dcfd76b6bc96fbc08e74cd6c87858d8cc4288d4e52e",
+        "fc1_bank14.mem": "66daa8508564b920e1bce5cd5489e4472f8f000893a7bbc93d836801021a27c7",
+        "fc1_bank15.mem": "7e2f409f88d5da8805b8362af5c381ebb34caf703f1ed347918e10eb91cce057"
+      }
+    }
+  },
+  "board_tested": false,
+  "board_latency_measured": false,
+  "power_measured": false,
+  "artifacts_sha256": {
+    "overlay/lab8.hwh": "98b7fba48ce37c32043916cd15181f305c58804ed7d99ee7d3f2b9ec0caf3ad7",
+    "overlay/lab8_ax7020_shared256.xsa": "361a8e72d69bf9289bdeafb3e68bc2de1406dcc948c11931715a52daf5baa730",
+    "overlay/lab8.bit": "f69a04ef15993f43921ef2dc64a5e77326d08977e817ded90775590b56a74d99"
+  },
+  "parent_source_unchanged": true,
+  "default_project_changed": false,
+  "scopes": {
+    "ooc": "internal register-to-register implementation; external core inputs/outputs lack system constraints",
+    "system": "full AX7020 PS7/DMA/interconnect/NPU timing implementation and bitstream; not a new board measurement",
+    "mapped": "post-route functional UNISIM, without SDF timing delays",
+    "dma": "actual AMD AXI DMA IP, RTL NPU, simulated DDR and AXI-Lite PS transactions"
+  }
+}

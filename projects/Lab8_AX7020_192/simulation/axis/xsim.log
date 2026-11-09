@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Oct 11 21:23:28 2026
+# Process ID         : 211240
+# Current directory  : /home/ding/vivado_project/Lab8_AX7020_192/simulation/axis
+# Command line       : xsim -mode tcl -source {xsim.dir/lab8_sim/xsim_script.tcl}
+# Log file           : /home/ding/vivado_project/Lab8_AX7020_192/simulation/axis/xsim.log
+# Journal file       : /home/ding/vivado_project/Lab8_AX7020_192/simulation/axis/xsim.jou
+# Running On         : Yilong
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 4179.738 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 24443 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 24443 MB
+# Available Virtual  : 11709 MB
+#-----------------------------------------------------------
+source xsim.dir/lab8_sim/xsim_script.tcl
+# xsim {lab8_sim} -wdb {lab8.wdb} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## run all
+BATCH count=42 gaps=0 cycles=7340
+BATCH count=1 gaps=0 cycles=288
+BATCH count=3 gaps=1 cycles=655
+BATCH count=48 gaps=1 cycles=9929
+PASS BATCH INTEGRATED samples=94 values=15228 min_ii=172 max_outstanding=8
+SUMMARY CE=1 PREFETCH=1 jobs=48 correct=42/42 values=7776 feature_packets=50 output_words=1313 compute_cycles=216..216 feature_cycles_total=1899 stalls=4379 input_full=9748 input_empty=1216 credit_full=634 errors=0
+PASS LAB8 AXIS AXILITE
+$finish called at time : 261842 ns : File "/home/ding/vivado_project/Lab8_AX7020_192/tb/tb_lab8.sv" Line 256
+run: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:12 . Memory (MB): peak = 1447.469 ; gain = 0.000 ; free physical = 1089 ; free virtual = 9817
+## quit
+INFO: xsimkernel Simulation Memory Usage: 289152 KB (Peak: 342324 KB), Simulation CPU Usage: 12760 ms
+INFO: [Common 17-206] Exiting xsim at Sun Oct 11 21:23:42 2026...

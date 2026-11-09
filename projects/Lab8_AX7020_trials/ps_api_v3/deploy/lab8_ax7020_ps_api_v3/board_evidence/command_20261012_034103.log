@@ -1,0 +1,308 @@
+RUN ['compare_api.py']
+PASS block 0 A
+PASS block 1 B
+PASS block 2 B
+PASS block 3 A
+PASS block 4 A
+PASS block 5 B
+PASS block 6 B
+PASS block 7 A
+PASS AX7020 COMPARISON
+RUN ['acceptance.py']
+PASS overlay_registers
+PASS first_sample
+PASS scalar42_all_layers
+PASS batch_1
+PASS batch_3
+PASS batch_8
+PASS batch_16
+PASS batch_42
+PASS batch_48
+PASS batch_128
+PASS malformed_packet_and_reset_recovery
+PASS overlay_reload_recovery
+PASS AX7020 LAB8 ACCEPTANCE
+RUN ['run_lab8.py', '--bit', 'lab8.bit', '--features', '--output', 'board_scalar']
+样本 01/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=931.439us
+样本 02/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=769.972us
+样本 03/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=734.626us
+样本 04/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=798.635us
+样本 05/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=731.386us
+样本 06/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=728.500us
+样本 07/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=724.960us
+样本 08/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=722.536us
+样本 09/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=731.212us
+样本 10/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=741.358us
+样本 11/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=735.802us
+样本 12/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=721.252us
+样本 13/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=740.110us
+样本 14/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=723.886us
+样本 15/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=721.816us
+样本 16/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=724.342us
+样本 17/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=798.856us
+样本 18/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=725.476us
+样本 19/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=722.248us
+样本 20/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=719.224us
+样本 21/42：分类=异常(0) 标签=0 核心=1.512us PL事务=1.995us 主机DMA窗口=727.624us
+样本 22/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=726.923us
+样本 23/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=728.375us
+样本 24/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=726.809us
+样本 25/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=724.402us
+样本 26/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=735.520us
+样本 27/42：分类=正常(1) 标签=1 核心=1.512us PL事务=2.016us 主机DMA窗口=723.070us
+样本 28/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=722.194us
+样本 29/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=727.408us
+样本 30/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=767.938us
+样本 31/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=731.026us
+样本 32/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=727.528us
+样本 33/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=727.426us
+样本 34/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=724.366us
+样本 35/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=729.011us
+样本 36/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=742.756us
+样本 37/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=727.288us
+样本 38/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=724.528us
+样本 39/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=740.735us
+样本 40/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=740.362us
+样本 41/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=730.828us
+样本 42/42：分类=正常(1) 标签=1 核心=1.512us PL事务=1.995us 主机DMA窗口=722.182us
+准确率：42/42 = 100.00%；特征检查：6804项
+结果保存到 /home/xilinx/jupyter_notebooks/Lab8_AX7020_ps_api_v3/board_scalar
+RUN ['run_batch.py', '--bitfile', 'lab8.bit', '--output', 'batch_board_results.json']
+{
+  "scope": "Board measurements produced only when this program runs on the board",
+  "samples": 42,
+  "scalar_dma_calls": 42,
+  "batch_dma_calls": 1,
+  "scalar_sum_ps_us": 29060.62000000001,
+  "batch_ps_us": 766.72,
+  "speedup": 37.90251982470786,
+  "batch_pl_transaction_cycles": 7337,
+  "core_cycles": 216,
+  "predictions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "scores": [
+    [
+      8,
+      -11
+    ],
+    [
+      9,
+      -11
+    ],
+    [
+      8,
+      -12
+    ],
+    [
+      8,
+      -10
+    ],
+    [
+      8,
+      -11
+    ],
+    [
+      9,
+      -11
+    ],
+    [
+      8,
+      -10
+    ],
+    [
+      8,
+      -10
+    ],
+    [
+      8,
+      -10
+    ],
+    [
+      8,
+      -10
+    ],
+    [
+      9,
+      -11
+    ],
+    [
+      8,
+      -11
+    ],
+    [
+      8,
+      -10
+    ],
+    [
+      10,
+      -12
+    ],
+    [
+      10,
+      -11
+    ],
+    [
+      9,
+      -11
+    ],
+    [
+      9,
+      -11
+    ],
+    [
+      9,
+      -11
+    ],
+    [
+      8,
+      -11
+    ],
+    [
+      9,
+      -11
+    ],
+    [
+      9,
+      -11
+    ],
+    [
+      -7,
+      0
+    ],
+    [
+      -54,
+      38
+    ],
+    [
+      -8,
+      1
+    ],
+    [
+      -76,
+      41
+    ],
+    [
+      -9,
+      2
+    ],
+    [
+      -66,
+      51
+    ],
+    [
+      -54,
+      27
+    ],
+    [
+      -41,
+      28
+    ],
+    [
+      -80,
+      46
+    ],
+    [
+      -48,
+      32
+    ],
+    [
+      -82,
+      46
+    ],
+    [
+      -44,
+      27
+    ],
+    [
+      -76,
+      43
+    ],
+    [
+      -18,
+      11
+    ],
+    [
+      -58,
+      32
+    ],
+    [
+      -58,
+      36
+    ],
+    [
+      -60,
+      47
+    ],
+    [
+      -84,
+      54
+    ],
+    [
+      -63,
+      42
+    ],
+    [
+      -8,
+      3
+    ],
+    [
+      -6,
+      0
+    ]
+  ],
+  "last_sample_features_checked": true,
+  "buffer_allocation_and_feature_readback_excluded": true
+}
+RUN ['stress_api.py']
+PASS dtypes_strides_mutable_input_result_lifetime
+PASS extra_integer_reference
+PASS invalid_input_rejection
+PASS continuous_120_seconds
+PASS post_stress_reset_recovery
+PASS AX7020 SOFTWARE STRESS
+RUN ['fault_dma.py']
+PASS REAL DMA TIMEOUT/ERROR AND RECOVERY
+
+EXIT 0

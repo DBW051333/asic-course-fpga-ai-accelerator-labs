@@ -1,0 +1,765 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Mon Oct 12 12:01:18 2026
+| Host         : Yilong running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_timing -delay_type max -max_paths 10 -file /home/ding/vivado_project/Lab8_AX7020_trials/platform_v1/results/first_route_critical_paths.rpt
+| Design       : lab8_system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.049ns  (required time - arrival time)
+  Source:                 lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_dup_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_fpga_0 rise@6.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.823ns  (logic 2.718ns (46.677%)  route 3.105ns (53.323%))
+  Logic Levels:           13  (CARRY4=8 LUT4=3 LUT6=2)
+  Clock Path Skew:        -0.061ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.283ns = ( 8.283 - 6.000 ) 
+    Source Clock Delay      (SCD):    2.537ns
+    Clock Pessimism Removal (CPR):    0.193ns
+  Clock Uncertainty:      0.097ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.180ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.458     2.537    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/m_axi_mm2s_aclk
+    SLICE_X64Y36         FDRE                                         r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_dup_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y36         FDRE (Prop_fdre_C_Q)         0.379     2.916 r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_dup_reg[3]/Q
+                         net (fo=4, routed)           0.691     3.607    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_dup[3]
+    SLICE_X60Y36         LUT4 (Prop_lut4_I0_O)        0.105     3.712 r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry_i_5/O
+                         net (fo=1, routed)           0.000     3.712    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry_i_5_n_0
+    SLICE_X60Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.457     4.169 r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry/CO[3]
+                         net (fo=1, routed)           0.000     4.169    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry_n_0
+    SLICE_X60Y37         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.267 r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     4.267    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry__0_n_0
+    SLICE_X60Y38         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.365 r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_lteq_max_first_incr0_carry__1/CO[3]
+                         net (fo=31, routed)          0.893     5.258    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/CO[0]
+    SLICE_X61Y36         LUT4 (Prop_lut4_I2_O)        0.105     5.363 r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry_i_3/O
+                         net (fo=1, routed)           0.000     5.363    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry_i_3_n_0
+    SLICE_X61Y36         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.457     5.820 r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry/CO[3]
+                         net (fo=1, routed)           0.000     5.820    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry_n_0
+    SLICE_X61Y37         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     5.918 r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     5.918    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__0_n_0
+    SLICE_X61Y38         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     6.016 r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     6.016    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__1_n_0
+    SLICE_X61Y39         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     6.114 r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     6.114    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__2_n_0
+    SLICE_X61Y40         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.265     6.379 f  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0_carry__3/O[1]
+                         net (fo=1, routed)           0.403     6.783    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr_prv0[17]
+    SLICE_X60Y40         LUT4 (Prop_lut4_I3_O)        0.250     7.033 f  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_cntr[17]_i_1/O
+                         net (fo=3, routed)           0.807     7.840    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sel0[17]
+    SLICE_X57Y38         LUT6 (Prop_lut6_I0_O)        0.105     7.945 f  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_i_2/O
+                         net (fo=1, routed)           0.310     8.255    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_btt_eq_0_reg_0
+    SLICE_X57Y37         LUT6 (Prop_lut6_I1_O)        0.105     8.360 r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_btt_eq_0_i_1/O
+                         net (fo=1, routed)           0.000     8.360    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF_n_26
+    SLICE_X57Y37         FDRE                                         r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      6.000     6.000 r  
+    PS7_X0Y0             PS7                          0.000     6.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     6.905    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     6.983 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.301     8.283    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/m_axi_mm2s_aclk
+    SLICE_X57Y37         FDRE                                         r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_reg/C
+                         clock pessimism              0.193     8.476    
+                         clock uncertainty           -0.097     8.379    
+    SLICE_X57Y37         FDRE (Setup_fdre_C_D)        0.030     8.409    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_btt_eq_0_reg
+  -------------------------------------------------------------------
+                         required time                          8.409    
+                         arrival time                          -8.360    
+  -------------------------------------------------------------------
+                         slack                                  0.049    
+
+Slack (MET) :             0.216ns  (required time - arrival time)
+  Source:                 lab8_system_i/npu_0/inst/npu/core/u_fc2/first_pipe_reg[4]_rep__1/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][20]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_fpga_0 rise@6.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.758ns  (logic 1.193ns (20.721%)  route 4.565ns (79.279%))
+  Logic Levels:           5  (CARRY4=4 LUT3=1)
+  Clock Path Skew:        0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.304ns = ( 8.304 - 6.000 ) 
+    Source Clock Delay      (SCD):    2.486ns
+    Clock Pessimism Removal (CPR):    0.193ns
+  Clock Uncertainty:      0.097ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.180ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.407     2.486    lab8_system_i/npu_0/inst/npu/core/u_fc2/aclk
+    SLICE_X40Y42         FDRE                                         r  lab8_system_i/npu_0/inst/npu/core/u_fc2/first_pipe_reg[4]_rep__1/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y42         FDRE (Prop_fdre_C_Q)         0.379     2.865 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/first_pipe_reg[4]_rep__1/Q
+                         net (fo=180, routed)         4.565     7.430    lab8_system_i/npu_0/inst/npu/core/u_fc2/first_pipe_reg[4]_rep__1_n_0
+    SLICE_X17Y12         LUT3 (Prop_lut3_I1_O)        0.105     7.535 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc[20][8]_i_2/O
+                         net (fo=1, routed)           0.000     7.535    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc[20][8]_i_2_n_0
+    SLICE_X17Y12         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.332     7.867 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.867    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][8]_i_1_n_0
+    SLICE_X17Y13         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     7.965 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.965    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][12]_i_1_n_0
+    SLICE_X17Y14         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     8.063 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.063    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][16]_i_1_n_0
+    SLICE_X17Y15         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.181     8.244 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][20]_i_1/O[0]
+                         net (fo=1, routed)           0.000     8.244    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][20]_i_1_n_7
+    SLICE_X17Y15         FDRE                                         r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][20]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      6.000     6.000 r  
+    PS7_X0Y0             PS7                          0.000     6.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     6.905    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     6.983 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.322     8.304    lab8_system_i/npu_0/inst/npu/core/u_fc2/aclk
+    SLICE_X17Y15         FDRE                                         r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][20]/C
+                         clock pessimism              0.193     8.497    
+                         clock uncertainty           -0.097     8.400    
+    SLICE_X17Y15         FDRE (Setup_fdre_C_D)        0.059     8.459    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][20]
+  -------------------------------------------------------------------
+                         required time                          8.459    
+                         arrival time                          -8.244    
+  -------------------------------------------------------------------
+                         slack                                  0.216    
+
+Slack (MET) :             0.231ns  (required time - arrival time)
+  Source:                 lab8_system_i/npu_0/inst/npu/core/u_fc2/first_pipe_reg[4]_rep__1/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][17]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_fpga_0 rise@6.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.744ns  (logic 1.179ns (20.528%)  route 4.565ns (79.472%))
+  Logic Levels:           4  (CARRY4=3 LUT3=1)
+  Clock Path Skew:        0.012ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.305ns = ( 8.305 - 6.000 ) 
+    Source Clock Delay      (SCD):    2.486ns
+    Clock Pessimism Removal (CPR):    0.193ns
+  Clock Uncertainty:      0.097ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.180ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.407     2.486    lab8_system_i/npu_0/inst/npu/core/u_fc2/aclk
+    SLICE_X40Y42         FDRE                                         r  lab8_system_i/npu_0/inst/npu/core/u_fc2/first_pipe_reg[4]_rep__1/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y42         FDRE (Prop_fdre_C_Q)         0.379     2.865 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/first_pipe_reg[4]_rep__1/Q
+                         net (fo=180, routed)         4.565     7.430    lab8_system_i/npu_0/inst/npu/core/u_fc2/first_pipe_reg[4]_rep__1_n_0
+    SLICE_X17Y12         LUT3 (Prop_lut3_I1_O)        0.105     7.535 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc[20][8]_i_2/O
+                         net (fo=1, routed)           0.000     7.535    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc[20][8]_i_2_n_0
+    SLICE_X17Y12         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.332     7.867 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.867    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][8]_i_1_n_0
+    SLICE_X17Y13         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     7.965 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.965    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][12]_i_1_n_0
+    SLICE_X17Y14         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.265     8.230 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][16]_i_1/O[1]
+                         net (fo=1, routed)           0.000     8.230    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][16]_i_1_n_6
+    SLICE_X17Y14         FDRE                                         r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      6.000     6.000 r  
+    PS7_X0Y0             PS7                          0.000     6.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     6.905    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     6.983 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.323     8.305    lab8_system_i/npu_0/inst/npu/core/u_fc2/aclk
+    SLICE_X17Y14         FDRE                                         r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][17]/C
+                         clock pessimism              0.193     8.498    
+                         clock uncertainty           -0.097     8.401    
+    SLICE_X17Y14         FDRE (Setup_fdre_C_D)        0.059     8.460    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][17]
+  -------------------------------------------------------------------
+                         required time                          8.460    
+                         arrival time                          -8.230    
+  -------------------------------------------------------------------
+                         slack                                  0.231    
+
+Slack (MET) :             0.236ns  (required time - arrival time)
+  Source:                 lab8_system_i/npu_0/inst/npu/core/u_fc2/first_pipe_reg[4]_rep__1/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][19]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_fpga_0 rise@6.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.739ns  (logic 1.174ns (20.458%)  route 4.565ns (79.542%))
+  Logic Levels:           4  (CARRY4=3 LUT3=1)
+  Clock Path Skew:        0.012ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.305ns = ( 8.305 - 6.000 ) 
+    Source Clock Delay      (SCD):    2.486ns
+    Clock Pessimism Removal (CPR):    0.193ns
+  Clock Uncertainty:      0.097ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.180ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.407     2.486    lab8_system_i/npu_0/inst/npu/core/u_fc2/aclk
+    SLICE_X40Y42         FDRE                                         r  lab8_system_i/npu_0/inst/npu/core/u_fc2/first_pipe_reg[4]_rep__1/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y42         FDRE (Prop_fdre_C_Q)         0.379     2.865 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/first_pipe_reg[4]_rep__1/Q
+                         net (fo=180, routed)         4.565     7.430    lab8_system_i/npu_0/inst/npu/core/u_fc2/first_pipe_reg[4]_rep__1_n_0
+    SLICE_X17Y12         LUT3 (Prop_lut3_I1_O)        0.105     7.535 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc[20][8]_i_2/O
+                         net (fo=1, routed)           0.000     7.535    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc[20][8]_i_2_n_0
+    SLICE_X17Y12         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.332     7.867 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.867    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][8]_i_1_n_0
+    SLICE_X17Y13         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     7.965 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.965    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][12]_i_1_n_0
+    SLICE_X17Y14         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.260     8.225 r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][16]_i_1/O[3]
+                         net (fo=1, routed)           0.000     8.225    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][16]_i_1_n_4
+    SLICE_X17Y14         FDRE                                         r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      6.000     6.000 r  
+    PS7_X0Y0             PS7                          0.000     6.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     6.905    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     6.983 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.323     8.305    lab8_system_i/npu_0/inst/npu/core/u_fc2/aclk
+    SLICE_X17Y14         FDRE                                         r  lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][19]/C
+                         clock pessimism              0.193     8.498    
+                         clock uncertainty           -0.097     8.401    
+    SLICE_X17Y14         FDRE (Setup_fdre_C_D)        0.059     8.460    lab8_system_i/npu_0/inst/npu/core/u_fc2/single_acc[20].acc_reg[20][19]
+  -------------------------------------------------------------------
+                         required time                          8.460    
+                         arrival time                          -8.225    
+  -------------------------------------------------------------------
+                         slack                                  0.236    
+
+Slack (MET) :             0.238ns  (required time - arrival time)
+  Source:                 lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            lab8_system_i/npu_0/inst/error_count_reg[25]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_fpga_0 rise@6.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.439ns  (logic 2.226ns (40.924%)  route 3.213ns (59.076%))
+  Logic Levels:           11  (CARRY4=6 LUT2=1 LUT3=1 LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.058ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.291ns = ( 8.291 - 6.000 ) 
+    Source Clock Delay      (SCD):    2.542ns
+    Clock Pessimism Removal (CPR):    0.193ns
+  Clock Uncertainty:      0.097ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.180ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.463     2.542    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X78Y38         FDRE                                         r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X78Y38         FDRE (Prop_fdre_C_Q)         0.379     2.921 f  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/Q
+                         net (fo=4, routed)           0.591     3.512    lab8_system_i/npu_0/inst/s_axis_tdata[3]
+    SLICE_X81Y38         LUT3 (Prop_lut3_I2_O)        0.105     3.617 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_55/O
+                         net (fo=1, routed)           0.000     3.617    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_55_n_0
+    SLICE_X81Y38         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.457     4.074 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_48/CO[3]
+                         net (fo=1, routed)           0.000     4.074    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_48_n_0
+    SLICE_X81Y39         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.172 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_43/CO[3]
+                         net (fo=1, routed)           0.000     4.172    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_43_n_0
+    SLICE_X81Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.270 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_38/CO[3]
+                         net (fo=1, routed)           0.000     4.270    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_38_n_0
+    SLICE_X81Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.368 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_33/CO[3]
+                         net (fo=1, routed)           0.000     4.368    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_33_n_0
+    SLICE_X81Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.466 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_16/CO[3]
+                         net (fo=1, routed)           0.000     4.466    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_16_n_0
+    SLICE_X81Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.132     4.598 f  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_7/CO[1]
+                         net (fo=2, routed)           0.602     5.200    lab8_system_i/npu_0/inst/expected_last2
+    SLICE_X78Y42         LUT4 (Prop_lut4_I3_O)        0.277     5.477 r  lab8_system_i/npu_0/inst/packet_state[2]_i_6/O
+                         net (fo=3, routed)           0.681     6.159    lab8_system_i/npu_0/inst/packet_state[2]_i_6_n_0
+    SLICE_X77Y41         LUT6 (Prop_lut6_I4_O)        0.274     6.433 r  lab8_system_i/npu_0/inst/packet_state[2]_i_5/O
+                         net (fo=4, routed)           0.598     7.031    lab8_system_i/npu_0/inst/npu/output_fifo/last_error_reg[7]
+    SLICE_X74Y42         LUT6 (Prop_lut6_I4_O)        0.105     7.136 r  lab8_system_i/npu_0/inst/npu/output_fifo/last_error[7]_i_1/O
+                         net (fo=34, routed)          0.299     7.435    lab8_system_i/npu_0/inst/npu/output_fifo/abort_reset_reg_0
+    SLICE_X74Y43         LUT2 (Prop_lut2_I1_O)        0.105     7.540 r  lab8_system_i/npu_0/inst/npu/output_fifo/error_count[31]_i_1/O
+                         net (fo=38, routed)          0.441     7.981    lab8_system_i/npu_0/inst/last_error[0]
+    SLICE_X74Y44         FDRE                                         r  lab8_system_i/npu_0/inst/error_count_reg[25]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      6.000     6.000 r  
+    PS7_X0Y0             PS7                          0.000     6.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     6.905    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     6.983 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.309     8.291    lab8_system_i/npu_0/inst/aclk
+    SLICE_X74Y44         FDRE                                         r  lab8_system_i/npu_0/inst/error_count_reg[25]/C
+                         clock pessimism              0.193     8.484    
+                         clock uncertainty           -0.097     8.387    
+    SLICE_X74Y44         FDRE (Setup_fdre_C_CE)      -0.168     8.219    lab8_system_i/npu_0/inst/error_count_reg[25]
+  -------------------------------------------------------------------
+                         required time                          8.219    
+                         arrival time                          -7.981    
+  -------------------------------------------------------------------
+                         slack                                  0.238    
+
+Slack (MET) :             0.238ns  (required time - arrival time)
+  Source:                 lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            lab8_system_i/npu_0/inst/error_count_reg[26]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_fpga_0 rise@6.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.439ns  (logic 2.226ns (40.924%)  route 3.213ns (59.076%))
+  Logic Levels:           11  (CARRY4=6 LUT2=1 LUT3=1 LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.058ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.291ns = ( 8.291 - 6.000 ) 
+    Source Clock Delay      (SCD):    2.542ns
+    Clock Pessimism Removal (CPR):    0.193ns
+  Clock Uncertainty:      0.097ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.180ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.463     2.542    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X78Y38         FDRE                                         r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X78Y38         FDRE (Prop_fdre_C_Q)         0.379     2.921 f  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/Q
+                         net (fo=4, routed)           0.591     3.512    lab8_system_i/npu_0/inst/s_axis_tdata[3]
+    SLICE_X81Y38         LUT3 (Prop_lut3_I2_O)        0.105     3.617 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_55/O
+                         net (fo=1, routed)           0.000     3.617    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_55_n_0
+    SLICE_X81Y38         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.457     4.074 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_48/CO[3]
+                         net (fo=1, routed)           0.000     4.074    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_48_n_0
+    SLICE_X81Y39         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.172 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_43/CO[3]
+                         net (fo=1, routed)           0.000     4.172    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_43_n_0
+    SLICE_X81Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.270 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_38/CO[3]
+                         net (fo=1, routed)           0.000     4.270    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_38_n_0
+    SLICE_X81Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.368 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_33/CO[3]
+                         net (fo=1, routed)           0.000     4.368    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_33_n_0
+    SLICE_X81Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.466 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_16/CO[3]
+                         net (fo=1, routed)           0.000     4.466    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_16_n_0
+    SLICE_X81Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.132     4.598 f  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_7/CO[1]
+                         net (fo=2, routed)           0.602     5.200    lab8_system_i/npu_0/inst/expected_last2
+    SLICE_X78Y42         LUT4 (Prop_lut4_I3_O)        0.277     5.477 r  lab8_system_i/npu_0/inst/packet_state[2]_i_6/O
+                         net (fo=3, routed)           0.681     6.159    lab8_system_i/npu_0/inst/packet_state[2]_i_6_n_0
+    SLICE_X77Y41         LUT6 (Prop_lut6_I4_O)        0.274     6.433 r  lab8_system_i/npu_0/inst/packet_state[2]_i_5/O
+                         net (fo=4, routed)           0.598     7.031    lab8_system_i/npu_0/inst/npu/output_fifo/last_error_reg[7]
+    SLICE_X74Y42         LUT6 (Prop_lut6_I4_O)        0.105     7.136 r  lab8_system_i/npu_0/inst/npu/output_fifo/last_error[7]_i_1/O
+                         net (fo=34, routed)          0.299     7.435    lab8_system_i/npu_0/inst/npu/output_fifo/abort_reset_reg_0
+    SLICE_X74Y43         LUT2 (Prop_lut2_I1_O)        0.105     7.540 r  lab8_system_i/npu_0/inst/npu/output_fifo/error_count[31]_i_1/O
+                         net (fo=38, routed)          0.441     7.981    lab8_system_i/npu_0/inst/last_error[0]
+    SLICE_X74Y44         FDRE                                         r  lab8_system_i/npu_0/inst/error_count_reg[26]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      6.000     6.000 r  
+    PS7_X0Y0             PS7                          0.000     6.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     6.905    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     6.983 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.309     8.291    lab8_system_i/npu_0/inst/aclk
+    SLICE_X74Y44         FDRE                                         r  lab8_system_i/npu_0/inst/error_count_reg[26]/C
+                         clock pessimism              0.193     8.484    
+                         clock uncertainty           -0.097     8.387    
+    SLICE_X74Y44         FDRE (Setup_fdre_C_CE)      -0.168     8.219    lab8_system_i/npu_0/inst/error_count_reg[26]
+  -------------------------------------------------------------------
+                         required time                          8.219    
+                         arrival time                          -7.981    
+  -------------------------------------------------------------------
+                         slack                                  0.238    
+
+Slack (MET) :             0.238ns  (required time - arrival time)
+  Source:                 lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            lab8_system_i/npu_0/inst/error_count_reg[27]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_fpga_0 rise@6.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.439ns  (logic 2.226ns (40.924%)  route 3.213ns (59.076%))
+  Logic Levels:           11  (CARRY4=6 LUT2=1 LUT3=1 LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.058ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.291ns = ( 8.291 - 6.000 ) 
+    Source Clock Delay      (SCD):    2.542ns
+    Clock Pessimism Removal (CPR):    0.193ns
+  Clock Uncertainty:      0.097ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.180ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.463     2.542    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X78Y38         FDRE                                         r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X78Y38         FDRE (Prop_fdre_C_Q)         0.379     2.921 f  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/Q
+                         net (fo=4, routed)           0.591     3.512    lab8_system_i/npu_0/inst/s_axis_tdata[3]
+    SLICE_X81Y38         LUT3 (Prop_lut3_I2_O)        0.105     3.617 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_55/O
+                         net (fo=1, routed)           0.000     3.617    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_55_n_0
+    SLICE_X81Y38         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.457     4.074 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_48/CO[3]
+                         net (fo=1, routed)           0.000     4.074    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_48_n_0
+    SLICE_X81Y39         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.172 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_43/CO[3]
+                         net (fo=1, routed)           0.000     4.172    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_43_n_0
+    SLICE_X81Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.270 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_38/CO[3]
+                         net (fo=1, routed)           0.000     4.270    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_38_n_0
+    SLICE_X81Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.368 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_33/CO[3]
+                         net (fo=1, routed)           0.000     4.368    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_33_n_0
+    SLICE_X81Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.466 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_16/CO[3]
+                         net (fo=1, routed)           0.000     4.466    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_16_n_0
+    SLICE_X81Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.132     4.598 f  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_7/CO[1]
+                         net (fo=2, routed)           0.602     5.200    lab8_system_i/npu_0/inst/expected_last2
+    SLICE_X78Y42         LUT4 (Prop_lut4_I3_O)        0.277     5.477 r  lab8_system_i/npu_0/inst/packet_state[2]_i_6/O
+                         net (fo=3, routed)           0.681     6.159    lab8_system_i/npu_0/inst/packet_state[2]_i_6_n_0
+    SLICE_X77Y41         LUT6 (Prop_lut6_I4_O)        0.274     6.433 r  lab8_system_i/npu_0/inst/packet_state[2]_i_5/O
+                         net (fo=4, routed)           0.598     7.031    lab8_system_i/npu_0/inst/npu/output_fifo/last_error_reg[7]
+    SLICE_X74Y42         LUT6 (Prop_lut6_I4_O)        0.105     7.136 r  lab8_system_i/npu_0/inst/npu/output_fifo/last_error[7]_i_1/O
+                         net (fo=34, routed)          0.299     7.435    lab8_system_i/npu_0/inst/npu/output_fifo/abort_reset_reg_0
+    SLICE_X74Y43         LUT2 (Prop_lut2_I1_O)        0.105     7.540 r  lab8_system_i/npu_0/inst/npu/output_fifo/error_count[31]_i_1/O
+                         net (fo=38, routed)          0.441     7.981    lab8_system_i/npu_0/inst/last_error[0]
+    SLICE_X74Y44         FDRE                                         r  lab8_system_i/npu_0/inst/error_count_reg[27]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      6.000     6.000 r  
+    PS7_X0Y0             PS7                          0.000     6.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     6.905    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     6.983 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.309     8.291    lab8_system_i/npu_0/inst/aclk
+    SLICE_X74Y44         FDRE                                         r  lab8_system_i/npu_0/inst/error_count_reg[27]/C
+                         clock pessimism              0.193     8.484    
+                         clock uncertainty           -0.097     8.387    
+    SLICE_X74Y44         FDRE (Setup_fdre_C_CE)      -0.168     8.219    lab8_system_i/npu_0/inst/error_count_reg[27]
+  -------------------------------------------------------------------
+                         required time                          8.219    
+                         arrival time                          -7.981    
+  -------------------------------------------------------------------
+                         slack                                  0.238    
+
+Slack (MET) :             0.238ns  (required time - arrival time)
+  Source:                 lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            lab8_system_i/npu_0/inst/error_count_reg[28]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_fpga_0 rise@6.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.439ns  (logic 2.226ns (40.924%)  route 3.213ns (59.076%))
+  Logic Levels:           11  (CARRY4=6 LUT2=1 LUT3=1 LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.058ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.291ns = ( 8.291 - 6.000 ) 
+    Source Clock Delay      (SCD):    2.542ns
+    Clock Pessimism Removal (CPR):    0.193ns
+  Clock Uncertainty:      0.097ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.180ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.463     2.542    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X78Y38         FDRE                                         r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X78Y38         FDRE (Prop_fdre_C_Q)         0.379     2.921 f  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/Q
+                         net (fo=4, routed)           0.591     3.512    lab8_system_i/npu_0/inst/s_axis_tdata[3]
+    SLICE_X81Y38         LUT3 (Prop_lut3_I2_O)        0.105     3.617 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_55/O
+                         net (fo=1, routed)           0.000     3.617    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_55_n_0
+    SLICE_X81Y38         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.457     4.074 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_48/CO[3]
+                         net (fo=1, routed)           0.000     4.074    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_48_n_0
+    SLICE_X81Y39         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.172 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_43/CO[3]
+                         net (fo=1, routed)           0.000     4.172    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_43_n_0
+    SLICE_X81Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.270 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_38/CO[3]
+                         net (fo=1, routed)           0.000     4.270    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_38_n_0
+    SLICE_X81Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.368 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_33/CO[3]
+                         net (fo=1, routed)           0.000     4.368    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_33_n_0
+    SLICE_X81Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.466 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_16/CO[3]
+                         net (fo=1, routed)           0.000     4.466    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_16_n_0
+    SLICE_X81Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.132     4.598 f  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_7/CO[1]
+                         net (fo=2, routed)           0.602     5.200    lab8_system_i/npu_0/inst/expected_last2
+    SLICE_X78Y42         LUT4 (Prop_lut4_I3_O)        0.277     5.477 r  lab8_system_i/npu_0/inst/packet_state[2]_i_6/O
+                         net (fo=3, routed)           0.681     6.159    lab8_system_i/npu_0/inst/packet_state[2]_i_6_n_0
+    SLICE_X77Y41         LUT6 (Prop_lut6_I4_O)        0.274     6.433 r  lab8_system_i/npu_0/inst/packet_state[2]_i_5/O
+                         net (fo=4, routed)           0.598     7.031    lab8_system_i/npu_0/inst/npu/output_fifo/last_error_reg[7]
+    SLICE_X74Y42         LUT6 (Prop_lut6_I4_O)        0.105     7.136 r  lab8_system_i/npu_0/inst/npu/output_fifo/last_error[7]_i_1/O
+                         net (fo=34, routed)          0.299     7.435    lab8_system_i/npu_0/inst/npu/output_fifo/abort_reset_reg_0
+    SLICE_X74Y43         LUT2 (Prop_lut2_I1_O)        0.105     7.540 r  lab8_system_i/npu_0/inst/npu/output_fifo/error_count[31]_i_1/O
+                         net (fo=38, routed)          0.441     7.981    lab8_system_i/npu_0/inst/last_error[0]
+    SLICE_X74Y44         FDRE                                         r  lab8_system_i/npu_0/inst/error_count_reg[28]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      6.000     6.000 r  
+    PS7_X0Y0             PS7                          0.000     6.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     6.905    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     6.983 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.309     8.291    lab8_system_i/npu_0/inst/aclk
+    SLICE_X74Y44         FDRE                                         r  lab8_system_i/npu_0/inst/error_count_reg[28]/C
+                         clock pessimism              0.193     8.484    
+                         clock uncertainty           -0.097     8.387    
+    SLICE_X74Y44         FDRE (Setup_fdre_C_CE)      -0.168     8.219    lab8_system_i/npu_0/inst/error_count_reg[28]
+  -------------------------------------------------------------------
+                         required time                          8.219    
+                         arrival time                          -7.981    
+  -------------------------------------------------------------------
+                         slack                                  0.238    
+
+Slack (MET) :             0.238ns  (required time - arrival time)
+  Source:                 lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            lab8_system_i/npu_0/inst/error_count_reg[29]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_fpga_0 rise@6.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.439ns  (logic 2.226ns (40.924%)  route 3.213ns (59.076%))
+  Logic Levels:           11  (CARRY4=6 LUT2=1 LUT3=1 LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.058ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.291ns = ( 8.291 - 6.000 ) 
+    Source Clock Delay      (SCD):    2.542ns
+    Clock Pessimism Removal (CPR):    0.193ns
+  Clock Uncertainty:      0.097ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.180ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.463     2.542    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X78Y38         FDRE                                         r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X78Y38         FDRE (Prop_fdre_C_Q)         0.379     2.921 f  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/Q
+                         net (fo=4, routed)           0.591     3.512    lab8_system_i/npu_0/inst/s_axis_tdata[3]
+    SLICE_X81Y38         LUT3 (Prop_lut3_I2_O)        0.105     3.617 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_55/O
+                         net (fo=1, routed)           0.000     3.617    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_55_n_0
+    SLICE_X81Y38         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.457     4.074 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_48/CO[3]
+                         net (fo=1, routed)           0.000     4.074    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_48_n_0
+    SLICE_X81Y39         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.172 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_43/CO[3]
+                         net (fo=1, routed)           0.000     4.172    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_43_n_0
+    SLICE_X81Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.270 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_38/CO[3]
+                         net (fo=1, routed)           0.000     4.270    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_38_n_0
+    SLICE_X81Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.368 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_33/CO[3]
+                         net (fo=1, routed)           0.000     4.368    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_33_n_0
+    SLICE_X81Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.466 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_16/CO[3]
+                         net (fo=1, routed)           0.000     4.466    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_16_n_0
+    SLICE_X81Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.132     4.598 f  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_7/CO[1]
+                         net (fo=2, routed)           0.602     5.200    lab8_system_i/npu_0/inst/expected_last2
+    SLICE_X78Y42         LUT4 (Prop_lut4_I3_O)        0.277     5.477 r  lab8_system_i/npu_0/inst/packet_state[2]_i_6/O
+                         net (fo=3, routed)           0.681     6.159    lab8_system_i/npu_0/inst/packet_state[2]_i_6_n_0
+    SLICE_X77Y41         LUT6 (Prop_lut6_I4_O)        0.274     6.433 r  lab8_system_i/npu_0/inst/packet_state[2]_i_5/O
+                         net (fo=4, routed)           0.598     7.031    lab8_system_i/npu_0/inst/npu/output_fifo/last_error_reg[7]
+    SLICE_X74Y42         LUT6 (Prop_lut6_I4_O)        0.105     7.136 r  lab8_system_i/npu_0/inst/npu/output_fifo/last_error[7]_i_1/O
+                         net (fo=34, routed)          0.299     7.435    lab8_system_i/npu_0/inst/npu/output_fifo/abort_reset_reg_0
+    SLICE_X74Y43         LUT2 (Prop_lut2_I1_O)        0.105     7.540 r  lab8_system_i/npu_0/inst/npu/output_fifo/error_count[31]_i_1/O
+                         net (fo=38, routed)          0.441     7.981    lab8_system_i/npu_0/inst/last_error[0]
+    SLICE_X74Y44         FDRE                                         r  lab8_system_i/npu_0/inst/error_count_reg[29]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      6.000     6.000 r  
+    PS7_X0Y0             PS7                          0.000     6.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     6.905    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     6.983 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.309     8.291    lab8_system_i/npu_0/inst/aclk
+    SLICE_X74Y44         FDRE                                         r  lab8_system_i/npu_0/inst/error_count_reg[29]/C
+                         clock pessimism              0.193     8.484    
+                         clock uncertainty           -0.097     8.387    
+    SLICE_X74Y44         FDRE (Setup_fdre_C_CE)      -0.168     8.219    lab8_system_i/npu_0/inst/error_count_reg[29]
+  -------------------------------------------------------------------
+                         required time                          8.219    
+                         arrival time                          -7.981    
+  -------------------------------------------------------------------
+                         slack                                  0.238    
+
+Slack (MET) :             0.238ns  (required time - arrival time)
+  Source:                 lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Destination:            lab8_system_i/npu_0/inst/error_count_reg[30]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@3.000ns period=6.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.000ns  (clk_fpga_0 rise@6.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.439ns  (logic 2.226ns (40.924%)  route 3.213ns (59.076%))
+  Logic Levels:           11  (CARRY4=6 LUT2=1 LUT3=1 LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.058ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.291ns = ( 8.291 - 6.000 ) 
+    Source Clock Delay      (SCD):    2.542ns
+    Clock Pessimism Removal (CPR):    0.193ns
+  Clock Uncertainty:      0.097ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.180ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.994     0.994    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     1.079 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.463     2.542    lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/m_axi_mm2s_aclk
+    SLICE_X78Y38         FDRE                                         r  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X78Y38         FDRE (Prop_fdre_C_Q)         0.379     2.921 f  lab8_system_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_data_reg_out_reg[3]/Q
+                         net (fo=4, routed)           0.591     3.512    lab8_system_i/npu_0/inst/s_axis_tdata[3]
+    SLICE_X81Y38         LUT3 (Prop_lut3_I2_O)        0.105     3.617 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_55/O
+                         net (fo=1, routed)           0.000     3.617    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_55_n_0
+    SLICE_X81Y38         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.457     4.074 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_48/CO[3]
+                         net (fo=1, routed)           0.000     4.074    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_48_n_0
+    SLICE_X81Y39         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.172 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_43/CO[3]
+                         net (fo=1, routed)           0.000     4.172    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_43_n_0
+    SLICE_X81Y40         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.270 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_38/CO[3]
+                         net (fo=1, routed)           0.000     4.270    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_38_n_0
+    SLICE_X81Y41         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.368 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_33/CO[3]
+                         net (fo=1, routed)           0.000     4.368    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_33_n_0
+    SLICE_X81Y42         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098     4.466 r  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_16/CO[3]
+                         net (fo=1, routed)           0.000     4.466    lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_16_n_0
+    SLICE_X81Y43         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.132     4.598 f  lab8_system_i/npu_0/inst/s_axis_tready_INST_0_i_7/CO[1]
+                         net (fo=2, routed)           0.602     5.200    lab8_system_i/npu_0/inst/expected_last2
+    SLICE_X78Y42         LUT4 (Prop_lut4_I3_O)        0.277     5.477 r  lab8_system_i/npu_0/inst/packet_state[2]_i_6/O
+                         net (fo=3, routed)           0.681     6.159    lab8_system_i/npu_0/inst/packet_state[2]_i_6_n_0
+    SLICE_X77Y41         LUT6 (Prop_lut6_I4_O)        0.274     6.433 r  lab8_system_i/npu_0/inst/packet_state[2]_i_5/O
+                         net (fo=4, routed)           0.598     7.031    lab8_system_i/npu_0/inst/npu/output_fifo/last_error_reg[7]
+    SLICE_X74Y42         LUT6 (Prop_lut6_I4_O)        0.105     7.136 r  lab8_system_i/npu_0/inst/npu/output_fifo/last_error[7]_i_1/O
+                         net (fo=34, routed)          0.299     7.435    lab8_system_i/npu_0/inst/npu/output_fifo/abort_reset_reg_0
+    SLICE_X74Y43         LUT2 (Prop_lut2_I1_O)        0.105     7.540 r  lab8_system_i/npu_0/inst/npu/output_fifo/error_count[31]_i_1/O
+                         net (fo=38, routed)          0.441     7.981    lab8_system_i/npu_0/inst/last_error[0]
+    SLICE_X74Y44         FDRE                                         r  lab8_system_i/npu_0/inst/error_count_reg[30]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      6.000     6.000 r  
+    PS7_X0Y0             PS7                          0.000     6.000 r  lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.905     6.905    lab8_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     6.983 r  lab8_system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=22127, routed)       1.309     8.291    lab8_system_i/npu_0/inst/aclk
+    SLICE_X74Y44         FDRE                                         r  lab8_system_i/npu_0/inst/error_count_reg[30]/C
+                         clock pessimism              0.193     8.484    
+                         clock uncertainty           -0.097     8.387    
+    SLICE_X74Y44         FDRE (Setup_fdre_C_CE)      -0.168     8.219    lab8_system_i/npu_0/inst/error_count_reg[30]
+  -------------------------------------------------------------------
+                         required time                          8.219    
+                         arrival time                          -7.981    
+  -------------------------------------------------------------------
+                         slack                                  0.238    
+
+
+
+

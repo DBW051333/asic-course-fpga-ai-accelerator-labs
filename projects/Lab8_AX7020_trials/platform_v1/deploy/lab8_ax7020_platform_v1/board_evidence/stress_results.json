@@ -1,0 +1,99 @@
+{
+  "client_date": "2026-10-12",
+  "scope": "Real AX7020 functional/reliability checks; not timed A/B benchmark",
+  "pass": true,
+  "phases": [
+    {
+      "name": "dtypes_strides_mutable_input_result_lifetime",
+      "pass": true
+    },
+    {
+      "name": "extra_integer_reference",
+      "pass": true,
+      "samples": 4,
+      "note": "additional boundary/random checks, not additional course accuracy samples"
+    },
+    {
+      "name": "invalid_input_rejection",
+      "pass": true,
+      "cases": 7,
+      "hardware_jobs_unchanged": true
+    },
+    {
+      "name": "continuous_120_seconds",
+      "pass": true,
+      "elapsed_seconds": 120.0041556080032,
+      "transactions": 33487,
+      "samples": 3401688,
+      "feature_values": 108378,
+      "errors": 0,
+      "batch_sizes": [
+        1,
+        2,
+        3,
+        8,
+        16,
+        42,
+        48,
+        128,
+        256,
+        512
+      ],
+      "buffers": {
+        "tx": {
+          "physical_address": "0x38045000",
+          "nbytes": 520,
+          "end_exclusive": "0x38045208"
+        },
+        "rx": {
+          "physical_address": "0x38046000",
+          "nbytes": 168,
+          "end_exclusive": "0x380460a8"
+        },
+        "batch_tx": {
+          "physical_address": "0x38080000",
+          "nbytes": 262152,
+          "end_exclusive": "0x380c0008"
+        },
+        "batch_rx": {
+          "physical_address": "0x38049000",
+          "nbytes": 4096,
+          "end_exclusive": "0x3804a000"
+        }
+      },
+      "note": "N>42 repeats course inputs; not new accuracy samples"
+    },
+    {
+      "name": "post_stress_reset_recovery",
+      "pass": true
+    }
+  ],
+  "driver_sha256": "a618d9b944790ef591439aa737c1bcb88fabb7240f9e3a3aa04c625c44feae65",
+  "clock": {
+    "raw_slcr": {
+      "0x100": "0x28000",
+      "0x104": "0x20000",
+      "0x108": "0x1e000",
+      "0x10c": "0x3f",
+      "0x170": "0x200300"
+    },
+    "ps_reference_hz": 33333333.0,
+    "pll_source_offset": "0x108",
+    "pll_feedback": 30,
+    "divisor0": 3,
+    "divisor1": 2,
+    "register_derived_hz": 166666665.0,
+    "pynq_reported_mhz_assuming_50mhz": 250.0,
+    "scope": "Register-derived clock with specified board crystal; tick estimates use host monotonic time; no instrument measurement",
+    "tick_estimates_hz": [
+      166583397.3740189,
+      166630142.52132896,
+      166649985.98996
+    ]
+  },
+  "progress": {
+    "iterations": 33000,
+    "samples": 3352800,
+    "elapsed_seconds": 118.2490594300034
+  }
+}

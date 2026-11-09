@@ -1,0 +1,4 @@
+Lab8 complete: Sun Oct 11 21:28:37 CST 2026
+Part xc7z020clg400-2
+Setup WNS 0.229
+Hold WHS 0.026

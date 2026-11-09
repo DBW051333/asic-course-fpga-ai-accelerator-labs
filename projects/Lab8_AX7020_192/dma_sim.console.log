@@ -1,0 +1,86 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ding/vivado_project/Lab8_AX7020_192/vivado/Lab8.gen/sources_1/bd/lab8_system/ip/lab8_system_axi_dma_0_0/sim/lab8_system_axi_dma_0_0.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'lab8_system_axi_dma_0_0'
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/adder_tree.v" into library work
+INFO: [VRFC 10-311] analyzing module adder_tree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/adder_tree64.v" into library work
+INFO: [VRFC 10-311] analyzing module adder_tree64
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/fc1_paired.v" into library work
+INFO: [VRFC 10-311] analyzing module fc1_paired
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/fc_stream_pair_output.v" into library work
+INFO: [VRFC 10-311] analyzing module fc_stream_pair_output
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/fc_stream_two_inputs.v" into library work
+INFO: [VRFC 10-311] analyzing module fc_stream_two_inputs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/lab7_core.v" into library work
+INFO: [VRFC 10-311] analyzing module lab7_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/quantize_signed.v" into library work
+INFO: [VRFC 10-311] analyzing module quantize_signed
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/lab7_feature_store.v" into library work
+INFO: [VRFC 10-311] analyzing module lab7_feature_store
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/lab7_fifo.v" into library work
+INFO: [VRFC 10-311] analyzing module lab7_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/lab7_top.v" into library work
+INFO: [VRFC 10-311] analyzing module lab7_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/lab8_npu.v" into library work
+INFO: [VRFC 10-311] analyzing module lab8_npu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/tb/tb_lab8_dma.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_lab8_dma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/vivado/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+
+piling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=30,c_depth=6)...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=30,...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=2,c_depth=6)\]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=2,c...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_wr_status_cntl [\axi_datamover_wr_status_cntl(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_addr_cntl [\axi_datamover_addr_cntl(c_addr_...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=36,c_depth=4)...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=36,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_wrdata_cntl [\axi_datamover_wrdata_cntl(c_rea...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_wr_demux [\axi_datamover_wr_demux(c_sel_ad...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_skid2mm_buf [\axi_datamover_skid2mm_buf(c_mda...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_s2mm_full_wrap [\axi_datamover_s2mm_full_wrap(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover [\axi_datamover(c_include_mm2s=1,...]
+Compiling architecture implementation of entity axi_dma_v7_1_37.axi_dma [\axi_dma(c_include_sg=0,c_sg_inc...]
+Compiling architecture lab8_system_axi_dma_0_0_arch of entity work.lab8_system_axi_dma_0_0 [lab8_system_axi_dma_0_0_default]
+Compiling module work.lab7_fifo_default
+Compiling module work.lab7_fifo(WIDTH=73,ADDR_BITS=3)
+Compiling module work.adder_tree64
+Compiling module work.fc1_paired(WEIGHTS="/home/ding/v...
+Compiling module work.quantize_signed(IW=32)
+Compiling module work.fc_stream_pair_output(IW=8,AW=21...
+Compiling module work.quantize_signed(SHIFT=9)
+Compiling module work.fc_stream_two_inputs(IW=8,NI=8,N...
+Compiling module work.quantize_signed(IW=21,SHIFT=8)
+Compiling module work.lab7_core
+Compiling module work.lab7_feature_store
+Compiling module work.lab7_top
+Compiling module work.lab8_npu
+Compiling module work.tb_lab8_dma
+Compiling module work.glbl
+Built simulation snapshot dma_sim
+
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Oct 11 21:24:46 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/dma_sim/xsim_script.tcl
+# xsim {dma_sim} -wdb {dma.wdb} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## log_wave /tb_lab8_dma/indata /tb_lab8_dma/inkeep /tb_lab8_dma/inlast /tb_lab8_dma/inv /tb_lab8_dma/inready /tb_lab8_dma/outdata /tb_lab8_dma/outkeep /tb_lab8_dma/outlast /tb_lab8_dma/outv /tb_lab8_dma/outready
+## run all
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. tb_lab8_dma.dma.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /tb_lab8_dma/dma/U0/I_PRMRY_DATAMOVER/gen_s2mm_full/I_S2MM_FULL_WRAPPER/gen_enable_indet_btt_sf/I_INDET_BTT/I_XD_FIFO/non_blk_mem/I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial310_87  Scope: tb_lab8_dma.dma.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc  File: /vivado/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 522
+PASS LAB8 ACTUAL DMA samples=42 features=6804 errors=0
+$finish called at time : 144634 ns : File "/home/ding/vivado_project/Lab8_AX7020_192/tb/tb_lab8_dma.sv" Line 118
+run: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:05 . Memory (MB): peak = 1447.469 ; gain = 0.000 ; free physical = 445 ; free virtual = 9292
+## quit
+INFO: xsimkernel Simulation Memory Usage: 298864 KB (Peak: 346404 KB), Simulation CPU Usage: 5970 ms
+INFO: [Common 17-206] Exiting xsim at Sun Oct 11 21:24:53 2026...
+

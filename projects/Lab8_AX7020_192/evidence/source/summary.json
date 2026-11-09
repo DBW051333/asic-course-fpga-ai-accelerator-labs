@@ -1,0 +1,79 @@
+{
+  "pass": true,
+  "project_id": "lab8_integrated_192",
+  "source_baseline": "lab8_128_resource_v1",
+  "direct_source_project": "/home/ding/vivado_project/Lab8_optimization_trials/fc2_192_single_acc",
+  "resources": {
+    "lut": 14328.0,
+    "ff": 18905.0,
+    "bram36_equivalent": 56.0,
+    "dsp": 212.0,
+    "slice": 5993.0
+  },
+  "reduction_percent_vs_batch_integrated": {
+    "lut": 28.24878561770745,
+    "ff": 42.02342983316978,
+    "slice": 39.311392405063295,
+    "dsp": 0.0,
+    "bram36_equivalent": 0.0
+  },
+  "timing": {
+    "pass": true,
+    "wns_ns": 0.015,
+    "whs_ns": 0.052,
+    "period_ns": 7.0,
+    "error_or_critical_drc": 0,
+    "control_buffer_warnings": 0
+  },
+  "core_cycles": 216,
+  "batch_start_interval_cycles": 172,
+  "dma_42_cycles": 7423,
+  "clock_hz": 142857132,
+  "fresh_verification": [
+    "integrated AXIS/AXI-Lite RTL and batch",
+    "scalar model48 samples7776 values",
+    "host7 tests",
+    "protocol boundaries",
+    "actual DMA malformed packet/recovery",
+    "paired actual DMA42 samples6804 values each",
+    "full synthesis/place/route/bitstream",
+    "reopened saved DCP, route/clock/DSP/FC2 audit"
+  ],
+  "reused_verification": "FC1 CE/bank stress and FC2 old/new equivalence from unchanged source candidate; see evidence/source_summary.json",
+  "functional_rtl_identical": true,
+  "model_and_ps_identical": true,
+  "protected_files_verified": 137,
+  "designated_baselines_verified": true,
+  "default_changed": false,
+  "board_tested": false,
+  "power_measured": false,
+  "ax7020_migrated": false,
+  "designated_baseline_comparisons": [
+    {
+      "baseline_id": "lab8_128_resource_v1",
+      "core_cycles": 303,
+      "core_time_reduction_percent": 28.712871287128717,
+      "resource_change": {
+        "lut": 2608.0,
+        "ff": -9204.0,
+        "bram36_equivalent": 16.0,
+        "dsp": 64.0,
+        "slice": -451.0
+      },
+      "same_window_batch_comparison": false
+    },
+    {
+      "baseline_id": "lab8_256_performance_v1",
+      "core_cycles": 175,
+      "core_time_reduction_percent": -23.42857142857142,
+      "resource_change": {
+        "lut": -12974.0,
+        "ff": -31671.0,
+        "bram36_equivalent": -16.0,
+        "dsp": -8.0,
+        "slice": -6026.0
+      },
+      "same_window_batch_comparison": false
+    }
+  ]
+}

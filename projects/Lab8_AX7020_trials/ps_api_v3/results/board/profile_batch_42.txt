@@ -1,0 +1,41 @@
+         7501 function calls in 0.215 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      100    0.001    0.000    0.215    0.002 profile_api.py:12(<lambda>)
+      100    0.051    0.001    0.214    0.002 parent_driver.py:163(infer_batch)
+      100    0.008    0.000    0.112    0.001 parent_driver.py:71(_exchange)
+      200    0.015    0.000    0.067    0.000 dma.py:106(transfer)
+      100    0.006    0.000    0.034    0.000 parent_driver.py:46(_wait_dma)
+     1200    0.028    0.000    0.028    0.000 mmio.py:82(read)
+      300    0.003    0.000    0.019    0.000 {method 'any' of 'numpy.ndarray' objects}
+      100    0.002    0.000    0.018    0.000 buffer.py:104(flush)
+      200    0.018    0.000    0.018    0.000 xrt.py:517(xclSyncBO)
+      100    0.002    0.000    0.017    0.000 buffer.py:109(invalidate)
+      600    0.017    0.000    0.017    0.000 mmio.py:130(write_mm)
+      300    0.003    0.000    0.016    0.000 _methods.py:54(_any)
+      300    0.013    0.000    0.013    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+      100    0.002    0.000    0.011    0.000 xrt_device.py:383(flush)
+      100    0.002    0.000    0.010    0.000 xrt_device.py:394(invalidate)
+      200    0.009    0.000    0.009    0.000 buffer.py:93(virtual_address)
+      200    0.003    0.000    0.008    0.000 dma.py:68(running)
+      200    0.002    0.000    0.007    0.000 dma.py:73(idle)
+      300    0.005    0.000    0.005    0.000 {method 'copy' of 'numpy.ndarray' objects}
+      100    0.003    0.000    0.005    0.000 parent_driver.py:197(_timing_result)
+      900    0.004    0.000    0.004    0.000 {built-in method time.perf_counter_ns}
+      200    0.003    0.000    0.003    0.000 {method 'reshape' of 'numpy.ndarray' objects}
+      200    0.003    0.000    0.003    0.000 {method 'view' of 'numpy.ndarray' objects}
+      100    0.002    0.000    0.002    0.000 {built-in method numpy.frombuffer}
+      100    0.002    0.000    0.002    0.000 parent_driver.py:139(prepare_batch)
+      100    0.002    0.000    0.002    0.000 {method 'fill' of 'numpy.ndarray' objects}
+      400    0.002    0.000    0.002    0.000 buffer.py:89(physical_address)
+      100    0.001    0.000    0.001    0.000 {method 'update' of 'dict' objects}
+      100    0.001    0.000    0.001    0.000 {method 'astype' of 'numpy.ndarray' objects}
+      100    0.001    0.000    0.001    0.000 {built-in method time.perf_counter}
+      100    0.001    0.000    0.001    0.000 {method 'to_bytes' of 'int' objects}
+      100    0.000    0.000    0.000    0.000 {built-in method numpy.asarray}
+      100    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

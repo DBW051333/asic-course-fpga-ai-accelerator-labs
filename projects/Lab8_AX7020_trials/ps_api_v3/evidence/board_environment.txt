@@ -1,0 +1,28 @@
+a7e92fd180d9fa3322e81b49bb4141e08c8f5c8cb685fe608793b46acfe11d49  /home/xilinx/pynq/lib/dma.py
+f7eaac4c84d7a8cb4eb6a26bc18a0a78d24961547c0b56d5df9931c8812ae099  /home/xilinx/pynq/mmio.py
+Linux pynq 5.15.19-xilinx-v2022.1 #1 SMP PREEMPT Mon Apr 11 17:52:14 UTC 2022 armv7l armv7l armv7l GNU/Linux
+ 19:39:29 up  1:03,  1 user,  load average: 1.16, 0.67, 0.36
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 333.33
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpd32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 333.33
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpd32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: Xilinx Zynq Platform
+Revision	: 0003
+Serial		: 0000000000000000
+ls: cannot access '/sys/devices/system/cpu/cpu0/cpufreq': No such file or directory

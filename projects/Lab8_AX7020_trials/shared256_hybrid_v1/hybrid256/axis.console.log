@@ -1,0 +1,73 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/sim_primitives.v" into library work
+INFO: [VRFC 10-311] analyzing module LUT6_2
+INFO: [VRFC 10-311] analyzing module CARRY4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/rtl/core/adder_tree.v" into library work
+INFO: [VRFC 10-311] analyzing module adder_tree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/rtl/core/fc1_paired.v" into library work
+INFO: [VRFC 10-311] analyzing module fc1_paired
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/rtl/core/lab7_core.v" into library work
+INFO: [VRFC 10-311] analyzing module lab7_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/rtl/core/packed_mul.v" into library work
+INFO: [VRFC 10-311] analyzing module packed_ga
+INFO: [VRFC 10-311] analyzing module packed_mul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/rtl/lab7_feature_store.v" into library work
+INFO: [VRFC 10-311] analyzing module lab7_feature_store
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/rtl/lab7_fifo.v" into library work
+INFO: [VRFC 10-311] analyzing module lab7_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/rtl/lab7_top.v" into library work
+INFO: [VRFC 10-311] analyzing module lab7_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/rtl/lab8_npu.v" into library work
+INFO: [VRFC 10-311] analyzing module lab8_npu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/tb/tb_lab8.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_lab8
+
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /vivado/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab tb_lab8 -s lab8_sim -debug typical -mt 2 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.lab7_fifo_default
+Compiling module work.lab7_fifo(WIDTH=73,ADDR_BITS=3)
+Compiling module work.LUT6_2(INIT=64'b0101010101100001...
+Compiling module work.CARRY4
+Compiling module work.packed_ga(M=8)
+Compiling module work.packed_mul(METHOD=2)
+Compiling module work.adder_tree
+Compiling module work.fc1_paired(LANES=256,GROUPS=2,AD...
+Compiling module work.lab7_core
+Compiling module work.lab7_feature_store
+Compiling module work.lab7_top
+Compiling module work.lab8_npu
+Compiling module work.tb_lab8
+Built simulation snapshot lab8_sim
+
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Oct 20 19:56:34 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/lab8_sim/xsim_script.tcl
+# xsim {lab8_sim} -wdb {lab8.wdb} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## run all
+SUMMARY CE=1 PREFETCH=1 jobs=48 correct=42/42 values=7776 feature_packets=50 output_words=1106 compute_cycles=201..201 feature_cycles_total=1756 stalls=1122 input_full=0 input_empty=1162 credit_full=67 errors=0
+PASS LAB8 AXIS AXILITE
+$finish called at time : 119175 ns : File "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/tb/tb_lab8.sv" Line 176
+run: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:21 . Memory (MB): peak = 1455.473 ; gain = 8.004 ; free physical = 9171 ; free virtual = 15006
+## quit
+INFO: xsimkernel Simulation Memory Usage: 299156 KB (Peak: 353108 KB), Simulation CPU Usage: 21260 ms
+INFO: [Common 17-206] Exiting xsim at Tue Oct 20 19:56:56 2026...
+

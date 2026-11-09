@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/adder_tree.v" into library work
+INFO: [VRFC 10-311] analyzing module adder_tree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/adder_tree64.v" into library work
+INFO: [VRFC 10-311] analyzing module adder_tree64
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/fc1_paired.v" into library work
+INFO: [VRFC 10-311] analyzing module fc1_paired
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/fc_stream_pair_output.v" into library work
+INFO: [VRFC 10-311] analyzing module fc_stream_pair_output
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/fc_stream_two_inputs.v" into library work
+INFO: [VRFC 10-311] analyzing module fc_stream_two_inputs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/lab7_core.v" into library work
+INFO: [VRFC 10-311] analyzing module lab7_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/core/quantize_signed.v" into library work
+INFO: [VRFC 10-311] analyzing module quantize_signed
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/lab7_feature_store.v" into library work
+INFO: [VRFC 10-311] analyzing module lab7_feature_store
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/lab7_fifo.v" into library work
+INFO: [VRFC 10-311] analyzing module lab7_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/lab7_top.v" into library work
+INFO: [VRFC 10-311] analyzing module lab7_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/rtl/lab8_npu.v" into library work
+INFO: [VRFC 10-311] analyzing module lab8_npu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_192/tb/tb_dma_schedule.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_dma_schedule
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/vivado/2025.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl

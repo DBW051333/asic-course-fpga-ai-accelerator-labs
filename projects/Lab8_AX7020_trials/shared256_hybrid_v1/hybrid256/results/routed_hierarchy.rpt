@@ -1,0 +1,106 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Tue Oct 20 19:59:22 2026
+| Host         : Yilong running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_utilization -hierarchical -file /home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/results/routed_hierarchy.rpt
+| Design       : lab7_core
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Routed
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------------+---------------+------------+------------+---------+------+-------+--------+--------+------------+
+|             Instance             |     Module    | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++----------------------------------+---------------+------------+------------+---------+------+-------+--------+--------+------------+
+| lab7_core                        |         (top) |      14782 |      13902 |       0 |  880 | 31155 |     96 |      0 |        220 |
+|   (lab7_core)                    |         (top) |          0 |          0 |       0 |    0 |    16 |      0 |      0 |          0 |
+|   u_fc1                          |    fc1_paired |      14782 |      13902 |       0 |  880 | 31139 |     96 |      0 |        220 |
+|     (u_fc1)                      |    fc1_paired |       3376 |       2496 |       0 |  880 | 19601 |     96 |      0 |        220 |
+|     mult[220].lut_multiplier     |    packed_mul |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[220].lut_multiplier) |    packed_mul |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[221].lut_multiplier     |  packed_mul_0 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[221].lut_multiplier) |  packed_mul_0 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[222].lut_multiplier     |  packed_mul_1 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[222].lut_multiplier) |  packed_mul_1 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[223].lut_multiplier     |  packed_mul_2 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[223].lut_multiplier) |  packed_mul_2 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[224].lut_multiplier     |  packed_mul_3 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[224].lut_multiplier) |  packed_mul_3 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[225].lut_multiplier     |  packed_mul_4 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[225].lut_multiplier) |  packed_mul_4 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[226].lut_multiplier     |  packed_mul_5 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[226].lut_multiplier) |  packed_mul_5 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[227].lut_multiplier     |  packed_mul_6 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[227].lut_multiplier) |  packed_mul_6 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[228].lut_multiplier     |  packed_mul_7 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[228].lut_multiplier) |  packed_mul_7 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[229].lut_multiplier     |  packed_mul_8 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[229].lut_multiplier) |  packed_mul_8 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[230].lut_multiplier     |  packed_mul_9 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[230].lut_multiplier) |  packed_mul_9 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[231].lut_multiplier     | packed_mul_10 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[231].lut_multiplier) | packed_mul_10 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[232].lut_multiplier     | packed_mul_11 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[232].lut_multiplier) | packed_mul_11 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[233].lut_multiplier     | packed_mul_12 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[233].lut_multiplier) | packed_mul_12 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[234].lut_multiplier     | packed_mul_13 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[234].lut_multiplier) | packed_mul_13 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[235].lut_multiplier     | packed_mul_14 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[235].lut_multiplier) | packed_mul_14 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[236].lut_multiplier     | packed_mul_15 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[236].lut_multiplier) | packed_mul_15 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[237].lut_multiplier     | packed_mul_16 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[237].lut_multiplier) | packed_mul_16 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[238].lut_multiplier     | packed_mul_17 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[238].lut_multiplier) | packed_mul_17 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[239].lut_multiplier     | packed_mul_18 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[239].lut_multiplier) | packed_mul_18 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[240].lut_multiplier     | packed_mul_19 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[240].lut_multiplier) | packed_mul_19 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[241].lut_multiplier     | packed_mul_20 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[241].lut_multiplier) | packed_mul_20 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[242].lut_multiplier     | packed_mul_21 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[242].lut_multiplier) | packed_mul_21 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[243].lut_multiplier     | packed_mul_22 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[243].lut_multiplier) | packed_mul_22 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[244].lut_multiplier     | packed_mul_23 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[244].lut_multiplier) | packed_mul_23 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[245].lut_multiplier     | packed_mul_24 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[245].lut_multiplier) | packed_mul_24 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[246].lut_multiplier     | packed_mul_25 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[246].lut_multiplier) | packed_mul_25 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[247].lut_multiplier     | packed_mul_26 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[247].lut_multiplier) | packed_mul_26 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[248].lut_multiplier     | packed_mul_27 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[248].lut_multiplier) | packed_mul_27 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[249].lut_multiplier     | packed_mul_28 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[249].lut_multiplier) | packed_mul_28 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[250].lut_multiplier     | packed_mul_29 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[250].lut_multiplier) | packed_mul_29 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[251].lut_multiplier     | packed_mul_30 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[251].lut_multiplier) | packed_mul_30 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[252].lut_multiplier     | packed_mul_31 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[252].lut_multiplier) | packed_mul_31 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[253].lut_multiplier     | packed_mul_32 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[253].lut_multiplier) | packed_mul_32 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[254].lut_multiplier     | packed_mul_33 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[254].lut_multiplier) | packed_mul_33 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     mult[255].lut_multiplier     | packed_mul_34 |         72 |         72 |       0 |    0 |    66 |      0 |      0 |          0 |
+|       (mult[255].lut_multiplier) | packed_mul_34 |          0 |          0 |       0 |    0 |    66 |      0 |      0 |          0 |
+|     tree0                        |    adder_tree |       4407 |       4407 |       0 |    0 |  4581 |      0 |      0 |          0 |
+|     tree1                        | adder_tree_35 |       4407 |       4407 |       0 |    0 |  4581 |      0 |      0 |          0 |
++----------------------------------+---------------+------------+------------+---------+------+-------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

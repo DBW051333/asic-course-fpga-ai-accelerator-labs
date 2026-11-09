@@ -1,0 +1,47 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Tue Oct 20 20:04:02 2026
+| Host         : Yilong running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_clocks -file /home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/results/clocks.rpt
+| Design       : lab8_system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Report
+
+
+Attributes
+  P: Propagated
+  G: Generated
+  A: Auto-derived
+  R: Renamed
+  V: Virtual
+  I: Inverted
+  S: Pin phase-shifted with Latency mode
+
+Clock       Period(ns)  Waveform(ns)   Attributes  Sources
+clk_fpga_0  7.000       {0.000 3.500}  P           {lab8_system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]}
+
+
+====================================================
+Generated Clocks
+====================================================
+
+
+
+====================================================
+User Uncertainty
+====================================================
+
+
+
+====================================================
+User Jitter
+====================================================
+
+Clock       Jitter(ns)
+clk_fpga_0  0.210
+

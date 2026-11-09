@@ -1,0 +1,120 @@
+{
+  "pass": true,
+  "project_id": "lab8_ax7020_192",
+  "source_baseline": "lab8_128_resource_v1",
+  "direct_source_project": "/home/ding/vivado_project/Lab8_integrated_192",
+  "target_board": "AX7020",
+  "part": "xc7z020clg400-2",
+  "resources": {
+    "lut": 14299.0,
+    "ff": 18905.0,
+    "bram36_equivalent": 56.0,
+    "dsp": 212.0,
+    "slice": 5791.0
+  },
+  "resource_change_vs_direct_parent": {
+    "lut": -29.0,
+    "ff": 0.0,
+    "bram36_equivalent": 0.0,
+    "dsp": 0.0,
+    "slice": -202.0
+  },
+  "timing": {
+    "pass": true,
+    "wns_ns": 0.229,
+    "whs_ns": 0.026,
+    "period_ns": 7.0,
+    "error_or_critical_drc": 0,
+    "control_buffer_warnings": 0
+  },
+  "core_cycles": 216,
+  "batch_start_interval_cycles": 172,
+  "dma_42_simulation_cycles": 7423,
+  "target_clock_hz": 142857132,
+  "dma_hwh_address_ranges": [
+    {
+      "ADDRESSBLOCK": "HP0_DDR_LOWOCM",
+      "BASENAME": "C_BASEADDR",
+      "BASEVALUE": "0x00000000",
+      "HIGHNAME": "C_HIGHADDR",
+      "HIGHVALUE": "0x3FFFFFFF",
+      "INSTANCE": "processing_system7_0",
+      "IS_DATA": "TRUE",
+      "IS_INSTRUCTION": "TRUE",
+      "MASTERBUSINTERFACE": "M_AXI_MM2S",
+      "MEMTYPE": "MEMORY",
+      "SLAVEBUSINTERFACE": "S_AXI_HP0"
+    },
+    {
+      "ADDRESSBLOCK": "HP0_DDR_LOWOCM",
+      "BASENAME": "C_BASEADDR",
+      "BASEVALUE": "0x00000000",
+      "HIGHNAME": "C_HIGHADDR",
+      "HIGHVALUE": "0x3FFFFFFF",
+      "INSTANCE": "processing_system7_0",
+      "IS_DATA": "TRUE",
+      "IS_INSTRUCTION": "TRUE",
+      "MASTERBUSINTERFACE": "M_AXI_S2MM",
+      "MEMTYPE": "MEMORY",
+      "SLAVEBUSINTERFACE": "S_AXI_HP0"
+    }
+  ],
+  "model_identical": true,
+  "functional_rtl_identical": true,
+  "parent_and_designated_baselines_verified": true,
+  "default_changed": false,
+  "known_warnings": [
+    "Community PS preset negative DDR DQS skew warnings also present in smoke; current board startup files retained; XSA PS initialization not deployed"
+  ],
+  "board_tested": true,
+  "power_measured": false,
+  "scope": "Fresh target RTL, AMD DMA IP simulation, full implementation and reopened final DCP. Board results recorded separately.",
+  "board_acceptance_pass": true,
+  "clock_board": {
+    "raw_slcr": {
+      "0x100": "0x28000",
+      "0x104": "0x20000",
+      "0x108": "0x1e000",
+      "0x10c": "0x3f",
+      "0x170": "0x100700"
+    },
+    "ps_reference_hz": 33333333.0,
+    "pll_source_offset": "0x108",
+    "pll_feedback": 30,
+    "divisor0": 7,
+    "divisor1": 1,
+    "register_derived_hz": 142857141.42857143,
+    "pynq_reported_mhz_assuming_50mhz": 214.285714,
+    "scope": "Register-derived clock with specified board crystal; tick estimates use host monotonic time; no instrument measurement",
+    "tick_estimates_hz": [
+      142783978.5602296,
+      142829426.84586537,
+      142841917.587237
+    ]
+  },
+  "api_benchmark_completed": true,
+  "designated_baseline_comparisons": [
+    {
+      "baseline_id": "lab8_128_resource_v1",
+      "core_cycles": 303,
+      "resource_change": {
+        "lut": 2579.0,
+        "ff": -9204.0,
+        "bram36_equivalent": 16.0,
+        "dsp": 64.0,
+        "slice": -653.0
+      }
+    },
+    {
+      "baseline_id": "lab8_256_performance_v1",
+      "core_cycles": 175,
+      "resource_change": {
+        "lut": -13003.0,
+        "ff": -31671.0,
+        "bram36_equivalent": -16.0,
+        "dsp": -8.0,
+        "slice": -6228.0
+      }
+    }
+  ]
+}

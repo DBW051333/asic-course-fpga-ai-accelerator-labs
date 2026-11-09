@@ -1,0 +1,25 @@
+{
+  "id": "lab8_ax7020_shared512_hybrid_v1",
+  "direct_parent": "lab8_ax7020_shared256_hybrid_v1",
+  "source_baseline": "lab8_128_resource_v1",
+  "authorization": "2026-10-20 user explicitly requests512 lanes and BRAM/LUTRAM comparison; supersedes previous512defer for this experiment",
+  "architecture": {
+    "packed_lanes": 512,
+    "dsp_lanes": 220,
+    "soft_lanes": 292,
+    "fc1_groups": 1,
+    "single_bank": true,
+    "fc1_outputs_per_clock": 2,
+    "clock_ns": 7
+  },
+  "metric": "whole-core single-sample latency, resource feasibility and routed7ns timing; compare same512 BRAM/LUTRAM onlyinputstyle; preserve256parent",
+  "budget": "two storage variants, necessary correctness/timing/packing integration; selected fit candidate fullAX7020PS/DMA implementation if feasible",
+  "board_tested": false,
+  "storage_variants": {
+    "bram_input": "64x64-bit BRAM words, explicit primitives to measure physical BRAM cost",
+    "lutram_input": "64x64-bit LUTRAM words, explicit RAM32X1S primitives, same synchronous output",
+    "register_input": "single-group natural4096-bit register cache, same synchronous output"
+  },
+  "integration_notes": "FC1 emits two values/cycle; paired feature-store writes avoid serialization bottleneck. Nine-level tree/17-cycle valid alignment. Initial generic constant-address array inference unsupported by Vivado; archived and replaced with explicit storage implementations.",
+  "required_integration_repair": "Initial LUTRAM storage fitsBRAM128 but LUT54702 and carry13104 cause placement failure. Remove two redundant pipeline delay registers (matched DSP/LUT), adjust valid/bias latency17->15, prevent LUT-SRL substitution of final arithmetic outputs. Compare both remaining storage implementations with identical arithmetic/pipeline."
+}

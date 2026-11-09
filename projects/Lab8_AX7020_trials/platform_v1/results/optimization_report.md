@@ -1,0 +1,48 @@
+# AX7020 platform_v1 优化与实板报告
+
+2026-10-12；工程 ID `lab8_ax7020_platform_v1`。直接软件父版 `lab8_ax7020_ps_api_v3`，硬件父工程 `Lab8_AX7020_192`，源基线 `lab8_128_resource_v1`。独立工程 `/home/ding/vivado_project/Lab8_AX7020_trials/platform_v1`。
+
+## 已实现的收益
+
+NPU、DMA、PL AXI 互连使用同一 FCLK0，从实际 142.857141 MHz 提升到 166.666665 MHz。FC1 保持192路、模型和量化不变、DMA参数不变、v3解析/等待路径不变。核心216周期、批量II172周期不变；计算时间从1.512 µs降到1.296 µs，PL时间减少14.29%，理想计算吞吐提高16.67%。这些时间根据实板周期计数和寄存器推导时钟计算；没有示波器频率或功耗测量。
+
+完整调用由调用者 perf_counter_ns 测量，含输入检查、打包、缓存维护、DMA、解析及统计。每个点每版400次，10次预热/块，顺序 A/B/B/A/A/B/B/A。每块加载对应 bit/hwh、同一模型/输入/PS与DDR时钟，结果校验在计时区间外；批量先分配缓存，未包含冷启动。
+
+|调用|v3中位数 µs|本版中位数 µs|中位数减少|P95减少|
+|---|---:|---:|---:|---:|
+|scalar N=1|950.885|963.455|-1.32%|-0.34%|
+|batch N=42|1382.970|1396.588|-0.98%|0.07%|
+|batch N=128|1708.374|1710.075|-0.10%|0.57%|
+|batch N=512|2731.153|2647.954|3.05%|3.15%|
+|batch N=1024|4047.370|3899.789|3.65%|2.12%|
+|batch N=2048|6615.159|6266.815|5.27%|8.49%|
+|batch N=4096|11601.918|10943.621|5.67%|11.52%|
+
+主指标 N=4096 完整API达到预先设定的至少5%目标，N=2048也达到；N=42没有测得收益，单样本及N128也无明确提升。负数表示候选变慢，不把小幅差异解释为稳定改善。P95是同轮样本分位数，未提供跨运行置信区间。N>42重复课程样本，并非新增准确率样本。
+
+## 实现与验证
+
+Vivado 2025.2、xc7z020clg400-2、6.000 ns唯一PL时钟。重新综合、布局布线、生成bit/hwh/XSA，再打开最终DCP审计。WNS +0.049 ns、WHS +0.050 ns；布线完整、错误/严重DRC为0；首次布局布线已通过，无额外物理修复。余量较小，所以本轮没有尝试200MHz，不能宣称166.667是极限频率，也不能据此证明PYNQ-Z2无法运行此频率。
+
+资源：14,312 LUT，18,905 FF，56 BRAM36等效，212 DSP。DSP分布FC1/FC2/FC3=192/16/4，全部USE_MULT=MULTIPLY；未加入LUT乘法器。
+
+验证：独立参考48输入/7776特征；RTL回归和真实AMD DMA-IP仿真通过；15项主机驱动测试通过。实板42/42分类正确、6804逐层特征一致；不同批量、非法帧、DMA复位、Overlay重载、数据类型/步幅/结果生命周期检查通过。实际DMA接收挂起超时和S2MM长度内部错误均被检测并恢复。
+持续板测 120.004 秒，33487 个批量事务、3401688 个重复课程样本、108378 个附加逐层特征检查，硬件错误0。
+
+## AX7020 另外两个方向的结论
+
+实板ARM寄存器推导666.666660 MHz，DDR3x 533.333328 MHz，DDR2x/HP 355.555552 MHz；各A/B块这些PS寄存器完全相同。板上Linux识别约1GiB内存。PYNQ Clocks按50MHz晶振报告250MHz，但本板晶振33.333333MHz，实际FCLK是166.666665MHz；驱动保留SLCR与NPU tick交叉校验，不能按PYNQ显示频率计时。
+
+DDR/HP：N42到4096的正式批量事务中位数均为 `(N−1)*172+285` 周期，与计算流水供数公式一致；少数事务有额外周期，最大54周期，未归因于特定DDR或调度事件。即使消除全部可见额外周期，最大N42约0.74%的PL事务时间，完整API占比更小；N4096则不到0.01%。单改burst未建立至少5%应用收益依据，因此没有追加DDR/burst实现。CPU缓存NumPy拷贝约350MB/s只衡量该拷贝路径，不代表DDR峰值或DMA带宽；没有做纯DDR峰值benchmark。
+
+ARM：`cpu_767_proposal/cpu_767.xsa` 已生成并通过PS配置验证，ARM PLL反馈系数46、目标766.666667MHz，Vivado实际配置766.666687MHz。该文件是独立PS配置提案，不含完整NPU/部署系统，不能直接作为Lab8启动包。当前Linux没有可用cpufreq入口、未编译CPUFREQ_DT，时间源为arm_global_timer；正确提速需配套FSBL、设备树/内核时钟配置和冷启动计时校验。本轮未改ARM PLL、未替换BOOT.BIN/image.ub、未重启测试767MHz，不计任何CPU提速收益。保留原启动文件哈希及BOOT.BIN/boot.scr副本。
+
+AMD UG585说明DDR3x服务DDR控制器/PHY，DDR2x服务HP互连，改变DDR时钟需同步时序参数且控制器空闲：[DDR Clocks](https://docs.amd.com/r/en-US/ug585-zynq-7000-SoC-TRM/DDR-Clocks)。因此未仅修改DDR分频器并宣称优化。
+
+## 复现、部署与保护
+
+部署包 `deploy/lab8_ax7020_platform_v1.tar.gz`；解压后以板端PYNQ虚拟环境执行 `acceptance.py`、`compare_api.py`、`stress_api.py`、`fault_dma.py`，比较脚本会切换父版与候选bit。`Lab8_AX7020_platform_v1.ipynb`为推理入口。远端目录 `/home/xilinx/jupyter_notebooks/Lab8_AX7020_platform_v1`。
+
+当前默认 `current_project.json` 未切换；两份指定基线、v3软件父版及AX7020硬件父版清单均重新校验通过。板端最后装载候选166.667MHz，启动文件未修改。原始数据见 `results/board/comparison.json`、`board_acceptance/acceptance.json`、`stress_results.json`、`dma_fault_results.json`；布局布线证据见 `checkpoint_verified.json`、`dsp_audit.json`、`final_routed.dcp`。
+
+本轮仅在AX7020测试，未部署PYNQ-Z2。未验证最大N16383、长于120秒连续运行、温度/功耗及环境变化稳定性。

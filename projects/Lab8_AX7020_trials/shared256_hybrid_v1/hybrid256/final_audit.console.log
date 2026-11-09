@@ -1,0 +1,82 @@
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Oct 20 20:04:34 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/tools/verify_final.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# set_param general.maxThreads 2
+# open_checkpoint $root/results/final_routed.dcp
+Command: open_checkpoint /home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/results/final_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1551.871 ; gain = 0.000 ; free physical = 11909 ; free virtual = 18187
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+Netlist sorting complete. Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1813.270 ; gain = 0.000 ; free physical = 11690 ; free virtual = 17968
+INFO: [Netlist 29-17] Analyzing 7564 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1935.410 ; gain = 12.578 ; free physical = 11555 ; free virtual = 17834
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2596.480 ; gain = 0.000 ; free physical = 10964 ; free virtual = 17242
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2600.480 ; gain = 4.000 ; free physical = 10956 ; free virtual = 17234
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2600.480 ; gain = 0.000 ; free physical = 10956 ; free virtual = 17234
+Read placeStorage: Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.65 . Memory (MB): peak = 2629.480 ; gain = 29.000 ; free physical = 10930 ; free virtual = 17209
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2629.480 ; gain = 0.000 ; free physical = 10930 ; free virtual = 17209
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.34 . Memory (MB): peak = 2660.332 ; gain = 30.852 ; free physical = 10899 ; free virtual = 17177
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2660.332 ; gain = 63.852 ; free physical = 10899 ; free virtual = 17177
+Restored from archive | CPU: 1.260000 secs | Memory: 48.730408 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2660.332 ; gain = 63.852 ; free physical = 10899 ; free virtual = 17177
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2685.473 ; gain = 0.000 ; free physical = 10875 ; free virtual = 17154
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2632 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 2592 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 39 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+open_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 2693.508 ; gain = 1141.637 ; free physical = 10873 ; free virtual = 17152
+# set dsps [get_cells -hier -filter {REF_NAME == DSP48E1}]
+# if {[llength $dsps]!=220} {error "DSP count is not 220"}
+# foreach cell $dsps {if {[get_property USE_MULT $cell] ne "MULTIPLY"} {error "DSP without multiply: $cell"}}
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == DSP48E1 && NAME =~ *lut_multiplier*}'.
+# set softdsps [get_cells -hier -filter {REF_NAME == DSP48E1 && NAME =~ *lut_multiplier*}]
+# if {[llength $softdsps]!=0} {error "Soft multiplier consumed DSP"}
+get_timing_paths: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2778.590 ; gain = 85.082 ; free physical = 10781 ; free virtual = 17061
+# set wns [get_property SLACK [get_timing_paths -delay_type max -max_paths 1]]
+# set whs [get_property SLACK [get_timing_paths -delay_type min -max_paths 1]]
+# if {$wns<0 || $whs<0} {error "Timing not closed"}
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -hier -filter {ROUTE_STATUS == UNROUTED || ROUTE_STATUS == PARTIAL || ROUTE_STATUS == CONFLICTS}'.
+# set bad [get_nets -hier -filter {ROUTE_STATUS == UNROUTED || ROUTE_STATUS == PARTIAL || ROUTE_STATUS == CONFLICTS}]
+# if {[llength $bad]} {error "Unfinished routing"}
+# report_drc -file $root/results/reopened_drc.rpt
+Command: report_drc -file /home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/results/reopened_drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/vivado/2025.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/results/reopened_drc.rpt.
+report_drc completed successfully
+WARNING: [Vivado_Tcl 4-49] No violations matched 'SEVERITY == Error'.
+# set errors [get_drc_violations -filter {SEVERITY == Error}]
+# if {[llength $errors]} {error "DRC errors remain"}
+# set periods [get_property PERIOD [get_clocks]]
+# if {[llength $periods]!=1 || abs([lindex $periods 0]-7.0)>0.001} {error "Unexpected clocks: $periods"}
+# set fp [open $root/results/final_checkpoint_audit.json w]
+# puts $fp "{\"pass\":true,\"dsp\":220,\"soft_dsp\":0,\"wns_ns\":$wns,\"whs_ns\":$whs,\"period_ns\":[lindex $periods 0],\"route_errors\":0,\"drc_errors\":0,\"board_tested\":false}"
+# close $fp
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 20 20:04:57 2026...

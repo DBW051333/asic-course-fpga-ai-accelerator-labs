@@ -1,0 +1,23 @@
+{
+  "project_id": "lab8_ax7020_platform_v1",
+  "direct_parent_id": "lab8_ax7020_ps_api_v3",
+  "direct_parent_root": "/home/ding/vivado_project/Lab8_AX7020_trials/ps_api_v3",
+  "hardware_parent": "/home/ding/vivado_project/Lab8_AX7020_192",
+  "source_baseline": "lab8_128_resource_v1",
+  "target_board": "AX7020",
+  "clock_policy": "single shared PL clock",
+  "target_pl_hz": 166666665,
+  "fc1_lanes": 192,
+  "minimum_expected_reduction_percent": 5,
+  "primary_metrics": [
+    "PL compute and batch transaction time >=5% reduction",
+    "full API N512/2048/4096 measured separately"
+  ],
+  "budget": "one 166.667MHz complete implementation plus one timing repair; 200MHz only if margin permits; DDR prototypes only after measured >=5% hypothesis; read-only PS audit first",
+  "status": "verified",
+  "default_changed": false,
+  "primary_metric": "Full external infer_batch API median N=4096; target >=5% reduction vs ps_api_v3 at fixed PS/DDR clocks",
+  "prior_measurement_rationale": "Before formal comparison, measured baseline N4096 PL boundary is 42.85% of full API; 166.667 MHz gives predicted 6.12% full API reduction if other overhead stays fixed.",
+  "primary_metric_target_met": true,
+  "summary": "/home/ding/vivado_project/Lab8_AX7020_trials/platform_v1/results/optimization_summary.json"
+}

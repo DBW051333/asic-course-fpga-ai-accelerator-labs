@@ -25,5 +25,6 @@
     "Lab5_optimization/stream_pair256_burst_exact23_tree7_clk4p8/results/explore_routed.dcp",
     "Lab6_architecture_trials/fc2_interleaved_split11/results/final_routed.dcp",
     "Lab6_growth_trials/fc1_128x6_dual/results/final_routed.dcp"
-  ]
+  ],
+  "final_milestones": "manifests/final_2026-11-09.json"
 }

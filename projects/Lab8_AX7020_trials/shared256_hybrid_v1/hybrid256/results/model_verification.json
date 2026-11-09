@@ -1,0 +1,28 @@
+{
+  "pass": true,
+  "packed_words_checked": 37120,
+  "packed_min": -7798781,
+  "packed_max": 7667785,
+  "signed24_legal": true,
+  "fixed_packed_structure_legal": true,
+  "all_three_layers_exactly_repacked_from_frozen_parent": true,
+  "biases_inputs_golden_outputs_unchanged": true,
+  "weight_bank_sha256": {
+    "fc1_bank0.mem": "f34d8b5757f55a3b2262462637883c7a968431d56c2e6035e9778a5ba1d6970c",
+    "fc1_bank1.mem": "906e2fac8384b663b9dc170094fa12dfa005707ca1d598471c39750694428477",
+    "fc1_bank2.mem": "d8039a8d8541c6e166d86d445793b12f102bcf50c5dff186182868b8404822a7",
+    "fc1_bank3.mem": "f2a224f442fdb6db9f8f5b3a518977a6816033c96014ab6bf81a866aae04157b",
+    "fc1_bank4.mem": "d8625586dde9cdaaded8b3a0267aea2d62ced09d08b2e36a6b1f1618abbf1123",
+    "fc1_bank5.mem": "19d4a914ab8319a761e0ddfd9a9f9b97ed218221d8bf4e2f9813037b6e4f8468",
+    "fc1_bank6.mem": "84236ccad97d3b1b3830ace49f752d857c7a6ad4fb8e07e5aced1295314aeb07",
+    "fc1_bank7.mem": "0d0bc85ec5fd150d868b716801aaaeb553fdb0124bf97319b03232a34e590ff0",
+    "fc1_bank8.mem": "11cac7c78b46e7bab7013fa785711d027c130b087f16175ea08610a2d231753c",
+    "fc1_bank9.mem": "1e2081d40666a9ae26105ecac058da7109a63be4cb678ef0f1b9b9b40c90d3d7",
+    "fc1_bank10.mem": "0910c5c6b74fbeee699494b66d58a68092930212024a1d54733aecb7c1d0a64b",
+    "fc1_bank11.mem": "f4543fe280aed283e635ab5070f9fc8ffde6b5bc77c670070550f31632bf68fd",
+    "fc1_bank12.mem": "7450d5ff9d185dee98f483446a08fd0e8d7fb7a97b6e75bf49d773f1302af964",
+    "fc1_bank13.mem": "9a67fc9b25651a6aa7e58dcfd76b6bc96fbc08e74cd6c87858d8cc4288d4e52e",
+    "fc1_bank14.mem": "66daa8508564b920e1bce5cd5489e4472f8f000893a7bbc93d836801021a27c7",
+    "fc1_bank15.mem": "7e2f409f88d5da8805b8362af5c381ebb34caf703f1ed347918e10eb91cce057"
+  }
+}

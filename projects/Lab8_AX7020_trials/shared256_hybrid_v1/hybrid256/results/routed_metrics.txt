@@ -1,0 +1,4 @@
+max 0.345
+min 0.046
+UNROUTED 0
+ROUTE_ERRORS 0

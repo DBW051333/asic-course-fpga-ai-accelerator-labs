@@ -1,0 +1,21 @@
+PASS overlay_registers
+PASS first_sample
+PASS scalar42_all_layers
+PASS batch_1
+PASS batch_3
+PASS batch_8
+PASS batch_16
+PASS batch_42
+PASS batch_48
+PASS batch_128
+PASS malformed_packet_and_reset_recovery
+Traceback (most recent call last):
+  File "/home/xilinx/jupyter_notebooks/Lab8_AX7020_192/acceptance.py", line 55, in <module>
+    v=n.infer_batch(xs);np.testing.assert_array_equal(v['predictions'],pred);np.testing.assert_array_equal(v['scores'],gold[:,160:162])
+  File "/home/xilinx/jupyter_notebooks/Lab8_AX7020_192/lab8_driver.py", line 146, in infer_batch
+    self.prepare_batch(count)
+  File "/home/xilinx/jupyter_notebooks/Lab8_AX7020_192/lab8_driver.py", line 122, in prepare_batch
+    raise RuntimeError('Cannot resize buffers while DMA is running')
+RuntimeError: Cannot resize buffers while DMA is running
+
+EXIT 1

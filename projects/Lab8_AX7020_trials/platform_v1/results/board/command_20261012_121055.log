@@ -1,0 +1,31 @@
+PASS block 0 A
+PASS block 1 B
+PASS block 2 B
+PASS block 3 A
+PASS block 4 A
+PASS block 5 B
+PASS block 6 B
+PASS block 7 A
+PASS AX7020 COMPARISON
+PASS overlay_registers
+PASS first_sample
+PASS scalar42_all_layers
+PASS batch_1
+PASS batch_3
+PASS batch_8
+PASS batch_16
+PASS batch_42
+PASS batch_48
+PASS batch_128
+PASS malformed_packet_and_reset_recovery
+PASS overlay_reload_recovery
+PASS AX7020 LAB8 ACCEPTANCE
+PASS dtypes_strides_mutable_input_result_lifetime
+PASS extra_integer_reference
+PASS invalid_input_rejection
+PASS continuous_120_seconds
+PASS post_stress_reset_recovery
+PASS AX7020 SOFTWARE STRESS
+PASS REAL DMA TIMEOUT/ERROR AND RECOVERY
+
+EXIT 0

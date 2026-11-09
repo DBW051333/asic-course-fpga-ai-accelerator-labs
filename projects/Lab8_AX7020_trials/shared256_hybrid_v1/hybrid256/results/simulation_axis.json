@@ -1,0 +1,8 @@
+{
+  "pass": true,
+  "scope": "RTL AXIS/AXI-Lite + real NPU; DMA/PS not simulated",
+  "summary": [
+    "SUMMARY CE=1 PREFETCH=1 jobs=48 correct=42/42 values=7776 feature_packets=50 output_words=1106 compute_cycles=201..201 feature_cycles_total=1756 stalls=1122 input_full=0 input_empty=1162 credit_full=67 errors=0"
+  ],
+  "log": "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/simulation/axis/xsim.console.log"
+}

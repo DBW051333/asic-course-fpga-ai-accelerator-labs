@@ -1,0 +1,13 @@
+{
+  "id": "lab8_ax7020_shared256_hybrid_v1",
+  "direct_parent": "lab8_ax7020_shared192_v1",
+  "parent_path": "/home/ding/vivado_project/Lab8_AX7020_trials/shared192_singlebank_v1/shared_pair",
+  "source_baseline": "lab8_128_resource_v1",
+  "target": "AX7020 xc7z020clg400-2",
+  "clock_ns": 7,
+  "user_authorization": "2026-10-20 user explicitly requested 256 packed lanes:220 DSP plus36 specialized LUT units; this supersedes earlier no-LUT/keep192 rules for this independent trial only. 512 deferred.",
+  "primary_metric": "same-clock single-sample whole-core latency, expected264->200 cycles (24.24% less), actual implementation required",
+  "selection": "compare36-lane packed25/24 LUT kernels, require0DSP and exact output, II1, same3 multiplier pipeline cycles pluscommonIO registers; select low-LUT candidate meeting7ns",
+  "budget": "three existing-literature-informed soft-multiplier structures, one selected complete256 three-layer design with required integration/timing repairs; no model changes or512 implementation",
+  "scope_target": "complete three-layer core, single-bank CMD1/CMD2 NPU wrapper, PS/DMA Vivado full system and reproducible deployment artifacts if implementation passes; board test reported separately"
+}

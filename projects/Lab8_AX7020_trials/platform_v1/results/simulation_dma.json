@@ -1,0 +1,8 @@
+{
+  "pass": true,
+  "scope": "Actual configured AMD AXI DMA IP + Lab8 NPU; AXI DDR model and AXI-Lite PS transactions; no real PS or board",
+  "summary": [
+    "PASS LAB8 ACTUAL DMA samples=42 features=6804 errors=0"
+  ],
+  "log": "/home/ding/vivado_project/Lab8_AX7020_trials/platform_v1/simulation/dma/xsim.console.log"
+}

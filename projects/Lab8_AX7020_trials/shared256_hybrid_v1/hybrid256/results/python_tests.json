@@ -1,0 +1,5 @@
+{
+  "pass": true,
+  "tests": 5,
+  "scope": "Host-side driver/program tests with fake transport; not board measurements"
+}

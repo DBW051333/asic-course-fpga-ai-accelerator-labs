@@ -1,0 +1,15 @@
+{
+  "scope": "Actual configured AMD AXI DMA IP and stalled AXI memory model. Host register transactions are idealized, not ARM/Python measurements. Board/PS measurements unavailable.",
+  "results": {
+    "dma_parent": {
+      "feature_values_checked": 6804,
+      "total_cycles": 7423,
+      "log": "/home/ding/vivado_project/Lab8_AX7020_192/simulation/dma_parent/xsim.log"
+    },
+    "dma_candidate": {
+      "feature_values_checked": 6804,
+      "total_cycles": 7423,
+      "log": "/home/ding/vivado_project/Lab8_AX7020_192/simulation/dma_candidate/xsim.log"
+    }
+  }
+}

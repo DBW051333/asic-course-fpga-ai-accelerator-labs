@@ -1,0 +1,21 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Oct 11 21:25:24 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/dma_schedule/xsim_script.tcl
+# xsim {dma_schedule} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## run all
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. tb_dma_schedule.dma.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /tb_dma_schedule/dma/U0/I_PRMRY_DATAMOVER/gen_s2mm_full/I_S2MM_FULL_WRAPPER/gen_enable_indet_btt_sf/I_INDET_BTT/I_XD_FIFO/non_blk_mem/I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial310_87  Scope: tb_dma_schedule.dma.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc  File: /vivado/2025.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 522
+PASS DMA SCHEDULE samples=42 values=6804 total_cycles=7423 errors=0
+$finish called at time : 53410 ns : File "/home/ding/vivado_project/Lab8_AX7020_192/tb/tb_dma_schedule.sv" Line 155
+## quit
+INFO: xsimkernel Simulation Memory Usage: 297344 KB (Peak: 346416 KB), Simulation CPU Usage: 4050 ms
+INFO: [Common 17-206] Exiting xsim at Sun Oct 11 21:25:29 2026...

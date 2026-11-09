@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/sim_primitives.v" into library work
+INFO: [VRFC 10-311] analyzing module LUT6_2
+INFO: [VRFC 10-311] analyzing module CARRY4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/rtl/core/adder_tree.v" into library work
+INFO: [VRFC 10-311] analyzing module adder_tree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/rtl/core/fc1_paired.v" into library work
+INFO: [VRFC 10-311] analyzing module fc1_paired
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/rtl/core/lab7_core.v" into library work
+INFO: [VRFC 10-311] analyzing module lab7_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/rtl/core/packed_mul.v" into library work
+INFO: [VRFC 10-311] analyzing module packed_ga
+INFO: [VRFC 10-311] analyzing module packed_mul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/simulation/core/tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_core

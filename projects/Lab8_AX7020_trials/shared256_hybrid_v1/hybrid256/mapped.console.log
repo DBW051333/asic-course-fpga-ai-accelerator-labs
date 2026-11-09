@@ -1,0 +1,1 @@
+hybrid256 True ['EVENT FC1_LAST 146', 'EVENT FC2_LAST 180', 'EVENT FC3_LAST 200', 'PASS CORE samples=8 values=1296 start_to_done_cycles=200..200']

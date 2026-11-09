@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Oct 20 19:59:41 2026
+# Process ID         : 30121
+# Current directory  : /home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1
+# Command line       : vivado -mode batch -source /home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/export_netlists.tcl -tclargs /home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1 hybrid256
+# Log file           : /home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/vivado.log
+# Journal file       : /home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/vivado.jou
+# Running On         : Yilong
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 2276.284 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 24443 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 24443 MB
+# Available Virtual  : 16692 MB
+#-----------------------------------------------------------
+source /home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/export_netlists.tcl
+# set root [file normalize [lindex $argv 0]]
+# set_param general.maxThreads 1
+# foreach name [lrange $argv 1 end] {
+#  open_checkpoint "$root/$name/results/routed.dcp"
+#  write_verilog -force -mode funcsim "$root/$name/results/core_funcsim.v"
+#  set fp [open "$root/$name/results/final_dsp_audit.txt" w]
+#  foreach c [get_cells -hier -filter {REF_NAME == DSP48E1}] {puts $fp "[get_property NAME $c] [get_property USE_MULT $c]"}
+#  close $fp
+#  close_design
+# }
+Command: open_checkpoint /home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/results/routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1551.871 ; gain = 0.000 ; free physical = 9574 ; free virtual = 15550
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1774.461 ; gain = 0.000 ; free physical = 9248 ; free virtual = 15237
+INFO: [Netlist 29-17] Analyzing 7303 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1905.242 ; gain = 12.312 ; free physical = 9107 ; free virtual = 15090
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2505.289 ; gain = 0.000 ; free physical = 8525 ; free virtual = 14509
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2505.289 ; gain = 0.000 ; free physical = 8525 ; free virtual = 14509
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2505.289 ; gain = 0.000 ; free physical = 8525 ; free virtual = 14509
+Read placeStorage: Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.56 . Memory (MB): peak = 2531.289 ; gain = 26.000 ; free physical = 8503 ; free virtual = 14486
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2531.289 ; gain = 0.000 ; free physical = 8503 ; free virtual = 14486
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.48 . Memory (MB): peak = 2554.523 ; gain = 23.234 ; free physical = 8483 ; free virtual = 14467
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2554.523 ; gain = 49.234 ; free physical = 8483 ; free virtual = 14467
+Restored from archive | CPU: 1.110000 secs | Memory: 42.593140 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2554.523 ; gain = 52.203 ; free physical = 8483 ; free virtual = 14467
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2573.961 ; gain = 0.000 ; free physical = 8467 ; free virtual = 14451
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2592 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 2592 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+open_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2581.996 ; gain = 1030.125 ; free physical = 8467 ; free virtual = 14451
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 20 19:59:57 2026...

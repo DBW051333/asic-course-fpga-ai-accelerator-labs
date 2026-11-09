@@ -1,0 +1,35 @@
+`timescale 1ns/1ps
+module tb_stress;
+reg clk=0;always #3.5 clk=~clk;
+reg rst=0,start=0,ce=1,we=0;reg[5:0] addr=0;reg[63:0] data=0;
+wire done,ready,v1,v2,v3;wire[7:0]o1,o2,o2b,o2c,o2d,o3;wire[6:0]a1;wire[4:0]a2;wire a3;
+lab7_core dut(.clk_i(clk),.rst_n_i(rst),.start_i(start),.ce_i(ce),.load_we_i(we),.load_addr_i(addr),.load_data_i(data),.done_o(done),.ready_o(ready),.fc1_wren_o(v1),.fc1_data_o(o1),.fc1_addr_o(a1),.fc2_wren_o(v2),.fc2_data_o(o2),.fc2_data_b_o(o2b),.fc2_data_c_o(o2c),.fc2_data_d_o(o2d),.fc2_addr_o(a2),.fc3_wren_o(v3),.fc3_data_o(o3),.fc3_addr_o(a3));
+reg[31:0] fullgold[0:12287];reg[7:0] xs[0:49151],gold[0:15551];reg [31:0] rng=32'h10202026;integer stalls=0;integer s,j,k,n1,n2,n3,cycles,checked=0,minimum=99999,maximum=0;
+initial begin
+$readmemh("/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/stress_fc1_full_gold.mem",fullgold);
+$readmemh("/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/stress_inputs.mem",xs);$readmemh("/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/stress_gold.mem",gold);
+repeat(4)@(negedge clk);rst=1;
+for(s=0;s<96;s=s+1)begin
+if(s==17 || s==49 || s==81)begin
+ @(negedge clk);start=1;@(negedge clk);start=0;
+ if(s==17)repeat(37)@(negedge clk);else if(s==49)repeat(155)@(negedge clk);else repeat(190)@(negedge clk);
+ rst=0;ce=0;repeat(3)@(negedge clk);rst=1;ce=1;
+end
+if(s%13==0)begin @(negedge clk);rst=0;ce=0;repeat(3)@(negedge clk);rst=1;ce=1;end
+for(j=0;j<64;j=j+1)begin @(negedge clk);we=1;addr=j;for(k=0;k<8;k=k+1)data[k*8+:8]=xs[s*512+j*8+k];end
+@(negedge clk);we=0;start=1;@(negedge clk);start=0;n1=0;n2=0;n3=0;cycles=0;
+while(!(done && ce))begin
+@(posedge clk);#1;cycles=cycles+1;
+if(ce && v1)begin if(dut.u_fc1.fc_output_data_o!==fullgold[s*128+n1])$fatal(1,"FC1 FULL s=%0d n=%0d",s,n1); if(s==0 && a1==127)$display("EVENT FC1_LAST %0d",cycles);if(a1!==n1 || o1!==gold[s*162+n1])$fatal(1,"FC1 s=%0d n=%0d",s,n1);n1=n1+1;checked=checked+1;end
+if(ce && v2)begin if(s==0 && a2==28)$display("EVENT FC2_LAST %0d",cycles);if(a2!==n2 || {o2d,o2c,o2b,o2}!=={gold[s*162+128+n2+3],gold[s*162+128+n2+2],gold[s*162+128+n2+1],gold[s*162+128+n2]})$fatal(1,"FC2 s=%0d n=%0d",s,n2);n2=n2+4;checked=checked+4;end
+if(ce && v3)begin if(s==0 && a3==1)$display("EVENT FC3_LAST %0d",cycles);if(a3!==n3%2 || o3!==gold[s*162+160+n3])$fatal(1,"FC3 s=%0d n=%0d",s,n3);n3=n3+1;checked=checked+1;end
+if(cycles>1000)$fatal(1,"timeout");@(negedge clk);rng={rng[30:0],rng[31]^rng[21]^rng[1]^rng[0]};ce=(rng[3:0]!=0 && rng[3:0]!=1);if(!ce)stalls=stalls+1;
+end
+ce=1;
+if(n1!=128 || n2!=32 || n3!=2)$fatal(1,"counts");
+if(cycles<minimum)minimum=cycles;if(cycles>maximum)maximum=cycles;repeat(8)@(negedge clk);
+end
+$display("CE stalls=%0d",stalls);$display("PASS CORE samples=96 values=%0d start_to_done_cycles=%0d..%0d",checked,minimum,maximum);$finish;
+end
+initial begin #3000000;$fatal(1,"watchdog");end
+endmodule

@@ -1,0 +1,934 @@
+{
+  "pass": true,
+  "project_id": "lab8_ax7020_ps_api_v2",
+  "source_baseline": "lab8_128_resource_v1",
+  "direct_parent_id": "lab8_ax7020_ps_api_v1",
+  "primary_metric": "batch N=42 full external API median, same board alternating parent/candidate",
+  "primary_api_median_reduction_percent": 9.285172544019415,
+  "primary_p95_reduction_percent": 8.653276510279351,
+  "api_results": [
+    {
+      "mode": "scalar",
+      "N": 1,
+      "variants": {
+        "A": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1179.461,
+              "p95": 1269.32715
+            },
+            "samples_per_second": {
+              "median": 847.8449117680209,
+              "p95": 899.8295775457275
+            },
+            "validation_allocation_pack_us": {
+              "median": 99.652,
+              "p95": 105.0334
+            },
+            "receive_clear_us": {
+              "median": 16.734,
+              "p95": 17.708999999999996
+            },
+            "host_dma_window_us": {
+              "median": 886.528,
+              "p95": 955.2130999999998
+            },
+            "parse_statistics_us": {
+              "median": 101.614,
+              "p95": 104.72944999999999
+            },
+            "api_inside_us": {
+              "median": 1148.458,
+              "p95": 1238.0171
+            },
+            "pl_transaction_cycles": {
+              "median": 285.0,
+              "p95": 285.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        },
+        "B": {
+          "stats": {
+            "api_wall_us": {
+              "median": 969.332,
+              "p95": 1036.0782
+            },
+            "samples_per_second": {
+              "median": 1031.6382847954937,
+              "p95": 1096.2230621198855
+            },
+            "validation_allocation_pack_us": {
+              "median": 98.173,
+              "p95": 102.26919999999998
+            },
+            "receive_clear_us": {
+              "median": 16.557499999999997,
+              "p95": 17.727899999999998
+            },
+            "host_dma_window_us": {
+              "median": 682.308,
+              "p95": 738.7178999999999
+            },
+            "parse_statistics_us": {
+              "median": 99.079,
+              "p95": 102.0361
+            },
+            "api_inside_us": {
+              "median": 938.9390000000001,
+              "p95": 1006.3278
+            },
+            "pl_transaction_cycles": {
+              "median": 285.0,
+              "p95": 285.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        }
+      },
+      "api_median_reduction_percent": 17.81568021324995,
+      "api_p95_reduction_percent": 18.37579460897848
+    },
+    {
+      "mode": "batch",
+      "N": 1,
+      "variants": {
+        "A": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1682.606,
+              "p95": 1756.5546
+            },
+            "samples_per_second": {
+              "median": 594.3161978014405,
+              "p95": 629.2597543235117
+            },
+            "validation_allocation_pack_us": {
+              "median": 153.34949999999998,
+              "p95": 158.55974999999998
+            },
+            "receive_clear_us": {
+              "median": 17.568,
+              "p95": 18.5883
+            },
+            "host_dma_window_us": {
+              "median": 946.5954999999999,
+              "p95": 1006.6251
+            },
+            "parse_statistics_us": {
+              "median": 484.0185,
+              "p95": 504.0958999999999
+            },
+            "api_inside_us": {
+              "median": 1652.7890000000002,
+              "p95": 1726.5528
+            },
+            "pl_transaction_cycles": {
+              "median": 285.0,
+              "p95": 285.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        },
+        "B": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1469.679,
+              "p95": 1539.7567
+            },
+            "samples_per_second": {
+              "median": 680.4206905073603,
+              "p95": 724.0277664810699
+            },
+            "validation_allocation_pack_us": {
+              "median": 152.791,
+              "p95": 159.0037
+            },
+            "receive_clear_us": {
+              "median": 17.625,
+              "p95": 18.592499999999998
+            },
+            "host_dma_window_us": {
+              "median": 734.352,
+              "p95": 778.9128999999999
+            },
+            "parse_statistics_us": {
+              "median": 482.74,
+              "p95": 499.1288
+            },
+            "api_inside_us": {
+              "median": 1440.2530000000002,
+              "p95": 1510.0230999999999
+            },
+            "pl_transaction_cycles": {
+              "median": 285.0,
+              "p95": 285.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        }
+      },
+      "api_median_reduction_percent": 12.654596500903947,
+      "api_p95_reduction_percent": 12.342223805624942
+    },
+    {
+      "mode": "batch",
+      "N": 2,
+      "variants": {
+        "A": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1703.6005,
+              "p95": 1768.0227
+            },
+            "samples_per_second": {
+              "median": 1173.9841617330383,
+              "p95": 1240.283658813156
+            },
+            "validation_allocation_pack_us": {
+              "median": 153.584,
+              "p95": 159.2116
+            },
+            "receive_clear_us": {
+              "median": 17.7395,
+              "p95": 18.625549999999997
+            },
+            "host_dma_window_us": {
+              "median": 945.524,
+              "p95": 997.7800999999998
+            },
+            "parse_statistics_us": {
+              "median": 505.0965,
+              "p95": 518.6089499999998
+            },
+            "api_inside_us": {
+              "median": 1673.3429999999998,
+              "p95": 1736.8575
+            },
+            "pl_transaction_cycles": {
+              "median": 457.0,
+              "p95": 457.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        },
+        "B": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1490.368,
+              "p95": 1554.8049999999998
+            },
+            "samples_per_second": {
+              "median": 1341.9504447204204,
+              "p95": 1428.3179029224307
+            },
+            "validation_allocation_pack_us": {
+              "median": 152.504,
+              "p95": 156.8213
+            },
+            "receive_clear_us": {
+              "median": 17.712,
+              "p95": 18.618899999999996
+            },
+            "host_dma_window_us": {
+              "median": 734.8715,
+              "p95": 788.2453
+            },
+            "parse_statistics_us": {
+              "median": 503.51800000000003,
+              "p95": 528.0298499999999
+            },
+            "api_inside_us": {
+              "median": 1460.692,
+              "p95": 1525.0012000000002
+            },
+            "pl_transaction_cycles": {
+              "median": 457.0,
+              "p95": 457.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        }
+      },
+      "api_median_reduction_percent": 12.516578857543193,
+      "api_p95_reduction_percent": 12.059669822112584
+    },
+    {
+      "mode": "batch",
+      "N": 3,
+      "variants": {
+        "A": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1708.731,
+              "p95": 1773.6232
+            },
+            "samples_per_second": {
+              "median": 1755.6888709504055,
+              "p95": 1856.231987450805
+            },
+            "validation_allocation_pack_us": {
+              "median": 154.4925,
+              "p95": 159.48399999999998
+            },
+            "receive_clear_us": {
+              "median": 17.871,
+              "p95": 18.804599999999997
+            },
+            "host_dma_window_us": {
+              "median": 949.172,
+              "p95": 1005.5109
+            },
+            "parse_statistics_us": {
+              "median": 505.408,
+              "p95": 531.3553499999998
+            },
+            "api_inside_us": {
+              "median": 1679.094,
+              "p95": 1743.4623
+            },
+            "pl_transaction_cycles": {
+              "median": 629.0,
+              "p95": 629.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        },
+        "B": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1493.8114999999998,
+              "p95": 1566.11
+            },
+            "samples_per_second": {
+              "median": 2008.2855572528565,
+              "p95": 2135.880442141521
+            },
+            "validation_allocation_pack_us": {
+              "median": 155.041,
+              "p95": 160.82504999999998
+            },
+            "receive_clear_us": {
+              "median": 17.856,
+              "p95": 18.894
+            },
+            "host_dma_window_us": {
+              "median": 735.5350000000001,
+              "p95": 785.7060499999999
+            },
+            "parse_statistics_us": {
+              "median": 504.28049999999996,
+              "p95": 517.4047499999999
+            },
+            "api_inside_us": {
+              "median": 1463.367,
+              "p95": 1534.0492
+            },
+            "pl_transaction_cycles": {
+              "median": 629.0,
+              "p95": 629.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        }
+      },
+      "api_median_reduction_percent": 12.577725809387207,
+      "api_p95_reduction_percent": 11.69995972086969
+    },
+    {
+      "mode": "batch",
+      "N": 8,
+      "variants": {
+        "A": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1712.8555000000001,
+              "p95": 1777.4484499999999
+            },
+            "samples_per_second": {
+              "median": 4670.5632941341555,
+              "p95": 4916.843650106733
+            },
+            "validation_allocation_pack_us": {
+              "median": 157.4355,
+              "p95": 163.0177
+            },
+            "receive_clear_us": {
+              "median": 18.087,
+              "p95": 19.095049999999997
+            },
+            "host_dma_window_us": {
+              "median": 947.354,
+              "p95": 997.7612999999999
+            },
+            "parse_statistics_us": {
+              "median": 508.744,
+              "p95": 536.7040499999998
+            },
+            "api_inside_us": {
+              "median": 1683.362,
+              "p95": 1747.2078
+            },
+            "pl_transaction_cycles": {
+              "median": 1489.0,
+              "p95": 1489.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        },
+        "B": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1502.17,
+              "p95": 1569.6970999999999
+            },
+            "samples_per_second": {
+              "median": 5325.628943903298,
+              "p95": 5663.367195233177
+            },
+            "validation_allocation_pack_us": {
+              "median": 157.4385,
+              "p95": 162.0319
+            },
+            "receive_clear_us": {
+              "median": 18.114,
+              "p95": 19.038
+            },
+            "host_dma_window_us": {
+              "median": 737.061,
+              "p95": 789.9601
+            },
+            "parse_statistics_us": {
+              "median": 508.55550000000005,
+              "p95": 528.8392999999999
+            },
+            "api_inside_us": {
+              "median": 1472.1815000000001,
+              "p95": 1538.43255
+            },
+            "pl_transaction_cycles": {
+              "median": 1489.0,
+              "p95": 1489.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        }
+      },
+      "api_median_reduction_percent": 12.30024949565215,
+      "api_p95_reduction_percent": 11.68817863606677
+    },
+    {
+      "mode": "batch",
+      "N": 16,
+      "variants": {
+        "A": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1731.855,
+              "p95": 1804.5233999999998
+            },
+            "samples_per_second": {
+              "median": 9238.648733914037,
+              "p95": 9762.46579723555
+            },
+            "validation_allocation_pack_us": {
+              "median": 164.34750000000003,
+              "p95": 170.6546
+            },
+            "receive_clear_us": {
+              "median": 18.462,
+              "p95": 19.42325
+            },
+            "host_dma_window_us": {
+              "median": 953.0395000000001,
+              "p95": 1011.94615
+            },
+            "parse_statistics_us": {
+              "median": 513.7,
+              "p95": 526.4146499999999
+            },
+            "api_inside_us": {
+              "median": 1701.702,
+              "p95": 1774.85915
+            },
+            "pl_transaction_cycles": {
+              "median": 2865.0,
+              "p95": 2865.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        },
+        "B": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1516.315,
+              "p95": 1578.1162
+            },
+            "samples_per_second": {
+              "median": 10551.897214663226,
+              "p95": 11182.222670350557
+            },
+            "validation_allocation_pack_us": {
+              "median": 162.7575,
+              "p95": 167.09019999999998
+            },
+            "receive_clear_us": {
+              "median": 18.4595,
+              "p95": 19.44125
+            },
+            "host_dma_window_us": {
+              "median": 739.5605,
+              "p95": 785.08205
+            },
+            "parse_statistics_us": {
+              "median": 512.8335,
+              "p95": 535.59825
+            },
+            "api_inside_us": {
+              "median": 1485.5345,
+              "p95": 1547.65065
+            },
+            "pl_transaction_cycles": {
+              "median": 2865.0,
+              "p95": 2865.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        }
+      },
+      "api_median_reduction_percent": 12.445614673283846,
+      "api_p95_reduction_percent": 12.54664805122504
+    },
+    {
+      "mode": "batch",
+      "N": 42,
+      "variants": {
+        "A": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1759.5365000000002,
+              "p95": 1823.5087
+            },
+            "samples_per_second": {
+              "median": 23869.922586605142,
+              "p95": 25170.758127925605
+            },
+            "validation_allocation_pack_us": {
+              "median": 181.75,
+              "p95": 187.46985
+            },
+            "receive_clear_us": {
+              "median": 19.305500000000002,
+              "p95": 20.39465
+            },
+            "host_dma_window_us": {
+              "median": 945.332,
+              "p95": 998.51275
+            },
+            "parse_statistics_us": {
+              "median": 528.5,
+              "p95": 569.9116999999998
+            },
+            "api_inside_us": {
+              "median": 1729.1460000000002,
+              "p95": 1793.2714
+            },
+            "pl_transaction_cycles": {
+              "median": 7337.0,
+              "p95": 7337.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        },
+        "B": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1596.1605,
+              "p95": 1665.7154499999997
+            },
+            "samples_per_second": {
+              "median": 26313.143322045493,
+              "p95": 27874.37401333693
+            },
+            "validation_allocation_pack_us": {
+              "median": 180.967,
+              "p95": 186.9934
+            },
+            "receive_clear_us": {
+              "median": 19.2,
+              "p95": 20.36255
+            },
+            "host_dma_window_us": {
+              "median": 782.836,
+              "p95": 832.1172999999999
+            },
+            "parse_statistics_us": {
+              "median": 529.8015,
+              "p95": 553.3120999999996
+            },
+            "api_inside_us": {
+              "median": 1565.3739999999998,
+              "p95": 1634.5621999999998
+            },
+            "pl_transaction_cycles": {
+              "median": 7337.0,
+              "p95": 7337.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        }
+      },
+      "api_median_reduction_percent": 9.285172544019415,
+      "api_p95_reduction_percent": 8.653276510279351
+    },
+    {
+      "mode": "batch",
+      "N": 48,
+      "variants": {
+        "A": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1772.49,
+              "p95": 1835.63345
+            },
+            "samples_per_second": {
+              "median": 27080.54774511549,
+              "p95": 28611.08046558142
+            },
+            "validation_allocation_pack_us": {
+              "median": 186.913,
+              "p95": 193.1627
+            },
+            "receive_clear_us": {
+              "median": 19.395,
+              "p95": 20.5443
+            },
+            "host_dma_window_us": {
+              "median": 947.771,
+              "p95": 1002.4523
+            },
+            "parse_statistics_us": {
+              "median": 533.4670000000001,
+              "p95": 546.9001499999998
+            },
+            "api_inside_us": {
+              "median": 1742.1149999999998,
+              "p95": 1804.6822000000002
+            },
+            "pl_transaction_cycles": {
+              "median": 8369.0,
+              "p95": 8369.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        },
+        "B": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1610.0659999999998,
+              "p95": 1681.551
+            },
+            "samples_per_second": {
+              "median": 29812.442491588998,
+              "p95": 31625.976733163083
+            },
+            "validation_allocation_pack_us": {
+              "median": 187.0335,
+              "p95": 192.63585
+            },
+            "receive_clear_us": {
+              "median": 19.6385,
+              "p95": 20.7543
+            },
+            "host_dma_window_us": {
+              "median": 785.377,
+              "p95": 837.5572
+            },
+            "parse_statistics_us": {
+              "median": 533.6234999999999,
+              "p95": 576.1132999999999
+            },
+            "api_inside_us": {
+              "median": 1579.337,
+              "p95": 1650.8708
+            },
+            "pl_transaction_cycles": {
+              "median": 8369.0,
+              "p95": 8369.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        }
+      },
+      "api_median_reduction_percent": 9.163606000598046,
+      "api_p95_reduction_percent": 8.393966126516172
+    },
+    {
+      "mode": "batch",
+      "N": 128,
+      "variants": {
+        "A": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1988.2105000000001,
+              "p95": 2064.89905
+            },
+            "samples_per_second": {
+              "median": 64379.50184857523,
+              "p95": 67803.2450973291
+            },
+            "validation_allocation_pack_us": {
+              "median": 244.994,
+              "p95": 253.69889999999995
+            },
+            "receive_clear_us": {
+              "median": 23.133499999999998,
+              "p95": 24.4228
+            },
+            "host_dma_window_us": {
+              "median": 1034.421,
+              "p95": 1099.4511
+            },
+            "parse_statistics_us": {
+              "median": 595.202,
+              "p95": 618.8636999999999
+            },
+            "api_inside_us": {
+              "median": 1954.6460000000002,
+              "p95": 2030.2496999999998
+            },
+            "pl_transaction_cycles": {
+              "median": 22129.0,
+              "p95": 22129.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        },
+        "B": {
+          "stats": {
+            "api_wall_us": {
+              "median": 1827.1685,
+              "p95": 1937.78385
+            },
+            "samples_per_second": {
+              "median": 70053.74711144302,
+              "p95": 73955.6811216714
+            },
+            "validation_allocation_pack_us": {
+              "median": 244.0015,
+              "p95": 269.91384999999997
+            },
+            "receive_clear_us": {
+              "median": 23.175,
+              "p95": 24.8889
+            },
+            "host_dma_window_us": {
+              "median": 876.323,
+              "p95": 944.6852
+            },
+            "parse_statistics_us": {
+              "median": 594.236,
+              "p95": 645.9425
+            },
+            "api_inside_us": {
+              "median": 1793.7035,
+              "p95": 1901.5051499999997
+            },
+            "pl_transaction_cycles": {
+              "median": 22129.0,
+              "p95": 22129.0
+            },
+            "compute_cycles": {
+              "median": 216.0,
+              "p95": 216.0
+            }
+          },
+          "samples": 400
+        }
+      },
+      "api_median_reduction_percent": 8.09984657057189,
+      "api_p95_reduction_percent": 6.156000701341791
+    }
+  ],
+  "software_only": true,
+  "hardware_artifacts_identical": true,
+  "model_rtl_identical": true,
+  "hardware_evidence_reused": "/home/ding/vivado_project/Lab8_AX7020_trials/ps_api_v2/evidence/hardware",
+  "resources": {
+    "lut": 14299.0,
+    "ff": 18905.0,
+    "bram36_equivalent": 56.0,
+    "dsp": 212.0,
+    "slice": 5791.0
+  },
+  "core_cycles": 216,
+  "batch_ii_simulation_reused": 172,
+  "board_clock": {
+    "raw_slcr": {
+      "0x100": "0x28000",
+      "0x104": "0x20000",
+      "0x108": "0x1e000",
+      "0x10c": "0x3f",
+      "0x170": "0x100700"
+    },
+    "ps_reference_hz": 33333333.0,
+    "pll_source_offset": "0x108",
+    "pll_feedback": 30,
+    "divisor0": 7,
+    "divisor1": 1,
+    "register_derived_hz": 142857141.42857143,
+    "pynq_reported_mhz_assuming_50mhz": 214.285714,
+    "scope": "Register-derived clock with specified board crystal; tick estimates use host monotonic time; no instrument measurement",
+    "tick_estimates_hz": [
+      142780599.85459414,
+      142832462.81674325,
+      142845210.25200418
+    ]
+  },
+  "functional_acceptance_pass": true,
+  "course_accuracy": "42/42",
+  "course_feature_values": 6804,
+  "dma_faults": [
+    {
+      "name": "real_receive_pending_timeout",
+      "pass": true,
+      "exception": "DMA timeout: MM2S=0x1002, S2MM=0x1000",
+      "elapsed_seconds": 0.05411977299991122,
+      "status_before_reset": {
+        "send": "0x1002",
+        "recv": "0x1000"
+      }
+    },
+    {
+      "name": "real_s2mm_length_error",
+      "pass": true,
+      "exception": "DMA error: MM2S=0x1001, S2MM=0x5011",
+      "status_before_reset": {
+        "send": "0x1001",
+        "recv": "0x5011"
+      },
+      "physical_rx_capacity": 168,
+      "advertised_receive_bytes": 8,
+      "packet_bytes": 162
+    }
+  ],
+  "host_tests": 12,
+  "stress": {
+    "name": "continuous_120_seconds",
+    "pass": true,
+    "elapsed_seconds": 120.00280619099976,
+    "transactions": 31784,
+    "samples": 3228862,
+    "feature_values": 102870,
+    "errors": 0,
+    "batch_sizes": [
+      1,
+      2,
+      3,
+      8,
+      16,
+      42,
+      48,
+      128,
+      256,
+      512
+    ],
+    "buffers": {
+      "tx": {
+        "physical_address": "0x38045000",
+        "nbytes": 520,
+        "end_exclusive": "0x38045208"
+      },
+      "rx": {
+        "physical_address": "0x38046000",
+        "nbytes": 168,
+        "end_exclusive": "0x380460a8"
+      },
+      "batch_tx": {
+        "physical_address": "0x38080000",
+        "nbytes": 262152,
+        "end_exclusive": "0x380c0008"
+      },
+      "batch_rx": {
+        "physical_address": "0x38049000",
+        "nbytes": 4096,
+        "end_exclusive": "0x3804a000"
+      }
+    },
+    "note": "N>42 repeats course inputs; not new accuracy samples"
+  },
+  "parent_and_baselines_protected": true,
+  "current_selection_preserved": true,
+  "power_measured": false,
+  "new_implementation_run": false,
+  "maximum_batch_16383_board_tested": false,
+  "scope": "New AX7020 software A/B and board functional/reliability validation. Identical RTL/model/bit/hwh; prior routed resources/timing reused, not newly implemented."
+}

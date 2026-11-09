@@ -1,0 +1,2 @@
+dma_parent PASS DMA SCHEDULE samples=42 values=6804 total_cycles=7423 errors=0
+dma_candidate PASS DMA SCHEDULE samples=42 values=6804 total_cycles=7423 errors=0

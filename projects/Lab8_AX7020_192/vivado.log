@@ -1,0 +1,140 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Oct 11 21:28:45 2026
+# Process ID         : 218037
+# Current directory  : /home/ding/vivado_project/Lab8_AX7020_192
+# Command line       : vivado -mode batch -source tools/verify_checkpoint.tcl
+# Log file           : /home/ding/vivado_project/Lab8_AX7020_192/vivado.log
+# Journal file       : /home/ding/vivado_project/Lab8_AX7020_192/vivado.jou
+# Running On         : Yilong
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 2210.361 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 24443 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 24443 MB
+# Available Virtual  : 12911 MB
+#-----------------------------------------------------------
+source tools/verify_checkpoint.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# set_param general.maxThreads 2
+# open_checkpoint $root/results/final_routed.dcp
+Command: open_checkpoint /home/ding/vivado_project/Lab8_AX7020_192/results/final_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1561.773 ; gain = 0.000 ; free physical = 3186 ; free virtual = 11973
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1776.070 ; gain = 0.000 ; free physical = 2955 ; free virtual = 11743
+INFO: [Netlist 29-17] Analyzing 4217 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1900.031 ; gain = 8.492 ; free physical = 2832 ; free virtual = 11619
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2536.008 ; gain = 0.000 ; free physical = 2278 ; free virtual = 11065
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2536.008 ; gain = 0.000 ; free physical = 2278 ; free virtual = 11065
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2536.008 ; gain = 0.000 ; free physical = 2278 ; free virtual = 11065
+Read placeStorage: Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.46 . Memory (MB): peak = 2551.008 ; gain = 15.000 ; free physical = 2270 ; free virtual = 11058
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2551.008 ; gain = 0.000 ; free physical = 2270 ; free virtual = 11058
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2572.344 ; gain = 21.336 ; free physical = 2247 ; free virtual = 11035
+Read Physdb Files: Time (s): cpu = 00:00:00.86 ; elapsed = 00:00:00.77 . Memory (MB): peak = 2572.344 ; gain = 36.336 ; free physical = 2247 ; free virtual = 11035
+Restored from archive | CPU: 0.910000 secs | Memory: 33.587326 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.88 ; elapsed = 00:00:00.79 . Memory (MB): peak = 2572.344 ; gain = 44.273 ; free physical = 2247 ; free virtual = 11035
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2590.164 ; gain = 0.000 ; free physical = 2237 ; free virtual = 11024
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 375 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 64 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 308 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 3 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+open_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2598.199 ; gain = 1102.473 ; free physical = 2237 ; free virtual = 11024
+# set maxpath [get_timing_paths -delay_type max -max_paths 1]
+# set minpath [get_timing_paths -delay_type min -max_paths 1]
+# set wns [get_property SLACK $maxpath]
+# set whs [get_property SLACK $minpath]
+# if {$wns<0 || $whs<0} {error "Saved checkpoint timing failed: $wns/$whs"}
+# set clock_period [get_property PERIOD [get_clocks clk_fpga_0]]
+# if {$clock_period != 7.0} {error "Unexpected clock period $clock_period"}
+# report_drc -file $root/results/checkpoint_drc.rpt
+Command: report_drc -file /home/ding/vivado_project/Lab8_AX7020_192/results/checkpoint_drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/vivado/2025.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/ding/vivado_project/Lab8_AX7020_192/results/checkpoint_drc.rpt.
+report_drc completed successfully
+WARNING: [Vivado_Tcl 4-49] No violations matched 'SEVERITY == Error || SEVERITY == {Critical Warning}'.
+# set fatal_drc [get_drc_violations -filter {SEVERITY == Error || SEVERITY == {Critical Warning}}]
+# if {[llength $fatal_drc]} {error "Fatal DRC: $fatal_drc"}
+WARNING: [Vivado_Tcl 4-49] No violations matched 'NAME =~ DPBU-1*'.
+# set ce_bufg [get_drc_violations -filter {NAME =~ DPBU-1*}]
+# if {[llength $ce_bufg]} {error "Unexpected control-net clock buffers: $ce_bufg"}
+# report_route_status -file $root/results/route_status.rpt
+# set route_status [report_route_status -return_string]
+# if {![regexp {# of routable nets[. ]*: *([0-9]+)} $route_status -> routable]} {error "Route total missing"}
+# if {![regexp {# of fully routed nets[. ]*: *([0-9]+)} $route_status -> fully_routed]} {error "Route complete count missing"}
+# if {![regexp {# of nets with routing errors[. ]*: *([0-9]+)} $route_status -> route_errors]} {error "Route errors count missing"}
+# if {$routable != $fully_routed || $route_errors != 0} {error "Incomplete routing"}
+# if {[llength [get_clocks]] != 1} {error "Unexpected additional clock"}
+# source $root/tools/audit_dsp.tcl
+## set out [open $root/results/dsp_registers.txt w]
+## set total [get_cells -hier -filter {REF_NAME == DSP48E1}]
+## if {[llength $total] != 212} {error "Total DSP count mismatch"}
+## set counts [dict create]
+## foreach {layer count} {fc1 192 fc2 16 fc3 4} {
+##  set cells [get_cells -hier -filter "REF_NAME == DSP48E1 && NAME =~ *u_${layer}*"]
+##  puts $out "[string toupper $layer] DSP count: [llength $cells]"
+##  if {[llength $cells] != $count} {error "${layer} DSP count mismatch"}
+##  foreach cell $cells {
+##   if {[get_property USE_MULT $cell] ne "MULTIPLY"} {error "DSP multiplier disabled: $cell"}
+##   set key "$layer AREG=[get_property AREG $cell] BREG=[get_property BREG $cell] MREG=[get_property MREG $cell] PREG=[get_property PREG $cell]"
+##   dict incr counts $key
+##  }
+## }
+## dict for {key n} $counts {puts $out "$n cells: $key"}
+## puts $out "Total DSP count: [llength $total]"
+## puts $out "All 212 DSP USE_MULT=MULTIPLY; multiplier RTL unchanged; adder pipeline independently verified."
+## close $out
+## set f [open $root/results/dsp_audit.json w]
+## puts $f {{"pass":true,"fc1":192,"fc2":16,"fc3":4,"total":212,"all_use_mult_multiply":true,"multiply_rtl_changed":false}}
+## close $f
+## set tree_ff [get_cells -hier -filter {NAME =~ *u_fc1*tree* && (REF_NAME == FDRE || REF_NAME == FDSE || REF_NAME == FDCE || REF_NAME == FDPE)}]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ *u_fc1*tree* && REF_NAME =~ SRL*}'.
+## set tree_srl [get_cells -hier -filter {NAME =~ *u_fc1*tree* && REF_NAME =~ SRL*}]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ *u_fc1*tree*s0_reg*}'.
+## set s0 [get_cells -hier -filter {NAME =~ *u_fc1*tree*s0_reg*}]
+## if {[llength $s0] != 0} {error "Old first-stage tree registers unexpectedly retained"}
+## set f [open $root/results/tree_register_audit.json w]
+## puts $f "{\"pass\":true,\"tree_ff\":[llength $tree_ff],\"tree_srl_primitives\":[llength $tree_srl],\"old_first_stage_registers\":0}"
+## close $f
+# source $root/tools/audit_fc2.tcl
+## set fc2_ffs [get_cells -hier -filter {NAME =~ *u_fc2* && (REF_NAME == FDRE || REF_NAME == FDSE || REF_NAME == FDCE || REF_NAME == FDPE)}]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ *u_fc2* && (NAME =~ *even_acc* || NAME =~ *odd_acc* || NAME =~ *merge_low* || NAME =~ *merge_a* || NAME =~ *merge_b* || NAME =~ *parity_local*)}'.
+## set old_acc [get_cells -hier -filter {NAME =~ *u_fc2* && (NAME =~ *even_acc* || NAME =~ *odd_acc* || NAME =~ *merge_low* || NAME =~ *merge_a* || NAME =~ *merge_b* || NAME =~ *parity_local*)}]
+## if {[llength $old_acc]} {error "Old split accumulation unexpectedly retained"}
+## set acc [get_cells -hier -filter {NAME =~ *u_fc2*acc_reg* && (REF_NAME == FDRE || REF_NAME == FDSE || REF_NAME == FDCE || REF_NAME == FDPE)}]
+## set snapshot [get_cells -hier -filter {NAME =~ *u_fc2*snapshot_reg* && (REF_NAME == FDRE || REF_NAME == FDSE || REF_NAME == FDCE || REF_NAME == FDPE)}]
+## if {![llength $acc] || ![llength $snapshot]} {error "Accumulator or required snapshot missing"}
+## set f [open $root/results/fc2_register_audit.json w]
+## puts $f "{\"pass\":true,\"fc2_ff\":[llength $fc2_ffs],\"accumulator_ff\":[llength $acc],\"snapshot_ff\":[llength $snapshot],\"old_split_accumulation_cells\":0}"
+## close $f
+# set out [open $root/results/checkpoint_verified.json w]
+# puts $out "{\"pass\":true,\"wns_ns\":$wns,\"whs_ns\":$whs,\"period_ns\":$clock_period,\"error_or_critical_drc\":0,\"control_buffer_warnings\":0}"
+# close $out
+# exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 21:29:03 2026...

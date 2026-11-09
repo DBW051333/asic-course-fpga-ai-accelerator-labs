@@ -1,0 +1,71 @@
+{
+  "scope": "AX7020 board run",
+  "label_display_names": {
+    "0": "异常",
+    "1": "正常"
+  },
+  "samples": 42,
+  "correct": 42,
+  "accuracy": 1.0,
+  "reference_classification_mismatches": 0,
+  "feature_values_checked": 6804,
+  "feature_mismatches": 0,
+  "clock_hz": 142857141.42857143,
+  "clock_evidence": {
+    "raw_slcr": {
+      "0x100": "0x28000",
+      "0x104": "0x20000",
+      "0x108": "0x1e000",
+      "0x10c": "0x3f",
+      "0x170": "0x100700"
+    },
+    "ps_reference_hz": 33333333.0,
+    "pll_source_offset": "0x108",
+    "pll_feedback": 30,
+    "divisor0": 7,
+    "divisor1": 1,
+    "register_derived_hz": 142857141.42857143,
+    "pynq_reported_mhz_assuming_50mhz": 214.285714,
+    "scope": "Register-derived clock with specified board crystal; tick estimates use host monotonic time; no instrument measurement",
+    "tick_estimates_hz": [
+      142791610.0390153,
+      142828982.7641341,
+      142843052.3297504
+    ]
+  },
+  "buffers": {
+    "tx": {
+      "physical_address": "0x38045000",
+      "nbytes": 520,
+      "end_exclusive": "0x38045208"
+    },
+    "rx": {
+      "physical_address": "0x38046000",
+      "nbytes": 168,
+      "end_exclusive": "0x380460a8"
+    }
+  },
+  "hardware_completed_jobs": 42,
+  "hardware_errors": 0,
+  "feature_readback_outside_inference_timing": true,
+  "timing": {
+    "compute_us": {
+      "min": 1.5120000151200002,
+      "median": 1.5120000151200002,
+      "mean": 1.5120000151200002,
+      "max": 1.5120000151200002
+    },
+    "pl_transaction_us": {
+      "min": 1.9950000199500002,
+      "median": 1.9950000199500002,
+      "mean": 2.0046666867133336,
+      "max": 2.2400000224000003
+    },
+    "ps_end_to_end_us": {
+      "min": 911.696,
+      "median": 928.571,
+      "mean": 965.076380952381,
+      "max": 2310.194
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "pass": true,
+  "files_verified": 69,
+  "archive_sha256": "7b30eee6c4ff007df3dc41641c9538e865b088c1c21c76a19124eff6798ca01b",
+  "remote": "/home/xilinx/jupyter_notebooks/Lab8_AX7020_ps_api_v3",
+  "measured_driver_unchanged": true,
+  "package_matches_host": true
+}

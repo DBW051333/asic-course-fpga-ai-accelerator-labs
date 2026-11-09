@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "scope": "RTL AXIS/AXI-Lite + real NPU; DMA/PS not simulated",
+  "summary": [
+    "BATCH count=42 gaps=0 cycles=7340",
+    "BATCH count=1 gaps=0 cycles=288",
+    "BATCH count=3 gaps=1 cycles=655",
+    "BATCH count=48 gaps=1 cycles=9929",
+    "PASS BATCH INTEGRATED samples=94 values=15228 min_ii=172 max_outstanding=8",
+    "SUMMARY CE=1 PREFETCH=1 jobs=48 correct=42/42 values=7776 feature_packets=50 output_words=1313 compute_cycles=216..216 feature_cycles_total=1899 stalls=4379 input_full=9748 input_empty=1216 credit_full=634 errors=0"
+  ],
+  "log": "/home/ding/vivado_project/Lab8_AX7020_trials/platform_v1/simulation/axis/xsim.console.log"
+}

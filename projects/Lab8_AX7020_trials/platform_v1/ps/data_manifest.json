@@ -1,0 +1,47 @@
+{
+  "samples": 42,
+  "input_shape": [
+    42,
+    512
+  ],
+  "feature_shape": [
+    42,
+    162
+  ],
+  "dtype": "int8",
+  "expected_correct": 42,
+  "clock_hz": 142857132,
+  "rules": "signed arithmetic shift 10/9/8; ReLU before narrowing on FC1/FC2; wrap low 8 bits; tie class 0",
+  "layer_ranges": [
+    [
+      0,
+      75
+    ],
+    [
+      0,
+      77
+    ],
+    [
+      -84,
+      54
+    ]
+  ],
+  "weight_scales": [
+    2048,
+    1024,
+    256
+  ],
+  "architecture": {
+    "fc1_lanes": 192,
+    "fc1_dsp_lanes": 192,
+    "expected_compute_cycles": 216,
+    "source_baseline": "lab8_128_resource_v1",
+    "fc1_schedule": "3x64 dense chunks, 171 issue cycles",
+    "fc1_input_chunks": 8,
+    "fc1_subarrays": 3,
+    "fc1_subarray_lanes": 64
+  },
+  "batch_command": 3,
+  "batch_output_bytes_per_sample": 8,
+  "batch_features": "last completed sample"
+}

@@ -1,0 +1,16 @@
+PASS overlay_registers
+PASS first_sample
+PASS scalar42_all_layers
+PASS batch_1
+PASS batch_3
+PASS batch_8
+PASS batch_16
+PASS batch_42
+PASS batch_48
+PASS batch_128
+Traceback (most recent call last):
+  File "/home/xilinx/jupyter_notebooks/Lab8_AX7020_192/acceptance.py", line 46, in <module>
+    assert received==1 and int(n.rx[0])==0xE3
+AssertionError
+
+EXIT 1

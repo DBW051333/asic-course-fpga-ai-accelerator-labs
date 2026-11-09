@@ -1,0 +1,1156 @@
+{
+  "board": "AX7020",
+  "started_utc": "2026-10-12T04:08:11Z",
+  "platform": "Linux-5.15.19-xilinx-v2022.1-armv7l-with-glibc2.35",
+  "hashes": {
+    "prototype1_driver.py": "a0060bb81fc0a7465d8010a01cd0934e35b974e0b8d46b6acbaee2a186a9c686",
+    "parent.bit": "f3ade434ba98868ad7d8c61e81194b65c08b1fe825f24e78df3eeed8b923f16c",
+    "fault_dma.py": "79f3f02e55d97dd3dc78a13291f3b305b5183a8f82fd99ae900314bc572b92b5",
+    "lab8_driver.py": "a618d9b944790ef591439aa737c1bcb88fabb7240f9e3a3aa04c625c44feae65",
+    "prototype2_driver.py": "a13301ec0d1cd3ea7b75f94289ca7e85967fe02b18bc05babf9c7fd5ae9758ad",
+    "board_suite.py": "6f7ad58db1e631b82a6224b7ad8ca93c8416cd658c11e2696328e3bb908ed536",
+    "platform_probe.py": "d2f31f8f2eb739e1010b55932419911dde47441e2cf4b7dff938aa119edb1002",
+    "run_batch.py": "fb7cbdb5ac5c2df927d7dd798f682748f4f9a4deff295bdeb885763f0c4e6585",
+    "benchmark_api.py": "cf44170a889410408306780e543596973109a7aa56591914e27ffaefedc5add2",
+    "lab8.bit": "577610777a84885b3884ef1a79915812109c631ef38f313f46d1f70604a70d6f",
+    "features.bin": "1a4a19b4c04171ce28fa9cfd0fca60d7251df3f7f5086b6de5384c6b3b7502fe",
+    "ax7020_runtime.py": "e4e588c3c1b8355d5d20cb0f98df1a7fc5add02ab0bbb044403d364a475dbc93",
+    "compare_api.py": "22ec670cc459b2c374f5eae430bd7caec37240349e209327d3ea1c6adc05a485",
+    "run_lab8.py": "66bbe0a3446d1d7159854f1c3ac68b8200efcda573785e411ef40374c36c56f0",
+    "inputs.bin": "08df59209e898de144179cbd176176fc2d54e11c99744963bc8a49b38667b129",
+    "parent.hwh": "a8a05bea7ccc11f5279e9144eb7cfdbc32eca07c2378e37fdc44f393305cbe1e",
+    "parse_microbench.py": "99ee71900ff579d2a452fcc74a58d40345c89a3c0d9ce828d2fd3c3f09762adc",
+    "lab8.hwh": "1afda0d69eeb062b1132bbbcb19e3db8aacdc8ce82135ecb51aa7fdf5a36c726",
+    "predictions.bin": "8c17790b7a4b4bc692b768359ba2e1293a4bdb49c292250033e20d1ff047a60a",
+    "profile_api.py": "908997dbea8dea3eaa3e906bd602916be73c518e80e6953c4fa73fd53f27ad3d",
+    "acceptance.py": "afd6717d64e5312a4a4dd21ed813fb6296f2c3da44254b28c83be0f8d93b25ec",
+    "labels.bin": "8c17790b7a4b4bc692b768359ba2e1293a4bdb49c292250033e20d1ff047a60a",
+    "parent_driver.py": "99c1ca9878dfb33dda7cf6653dd1511598993a76826f4bd1b0e66aca97af855d",
+    "stress_api.py": "5dcd0d9fb2b426ed10d1789fb3cb293f99b4701528d2c2349c0462a4b3936c44"
+  },
+  "phases": [
+    {
+      "name": "overlay_registers",
+      "pass": true,
+      "signature": "0x4c414238",
+      "buffers": {
+        "tx": {
+          "physical_address": "0x38045000",
+          "nbytes": 520,
+          "end_exclusive": "0x38045208"
+        },
+        "rx": {
+          "physical_address": "0x38046000",
+          "nbytes": 168,
+          "end_exclusive": "0x380460a8"
+        }
+      },
+      "dma_registers": "RegisterMap {\n  MM2S_DMACR = Register(RS=1, Reset=0, Keyhole=0, Cyclic_BD_Enable=0, IOC_IrqEn=0, Dly_IrqEn=0, Err_IrqEn=0, IRQThreshold=1, IRQDelay=0),\n  MM2S_DMASR = Register(Halted=0, Idle=0, SGIncld=0, DMAIntErr=0, DMASlvErr=0, DMADecErr=0, SGIntErr=0, SGSlvErr=0, SGDecErr=0, IOC_Irq=0, Dly_Irq=0, Err_Irq=0, IRQThresholdSts=0, IRQDelaySts=0),\n  MM2S_CURDESC = Register(Current_Descriptor_Pointer=0),\n  MM2S_CURDESC_MSB = Register(Current_Descriptor_Pointer=0),\n  MM2S_TAILDESC = Register(Tail_Descriptor_Pointer=0),\n  MM2S_TAILDESC_MSB = Register(Tail_Descriptor_Pointer=0),\n  MM2S_SA = Register(Source_Address=0),\n  MM2S_SA_MSB = Register(Source_Address=0),\n  MM2S_LENGTH = Register(Length=0),\n  SG_CTL = Register(SG_CACHE=0, SG_USER=0),\n  S2MM_DMACR = Register(RS=1, Reset=0, Keyhole=0, Cyclic_BD_Enable=0, IOC_IrqEn=0, Dly_IrqEn=0, Err_IrqEn=0, IRQThreshold=1, IRQDelay=0),\n  S2MM_DMASR = Register(Halted=0, Idle=0, SGIncld=0, DMAIntErr=0, DMASlvErr=0, DMADecErr=0, SGIntErr=0, SGSlvErr=0, SGDecErr=0, IOC_Irq=0, Dly_Irq=0, Err_Irq=0, IRQThresholdSts=0, IRQDelaySts=0),\n  S2MM_CURDESC = Register(Current_Descriptor_Pointer=0),\n  S2MM_CURDESC_MSB = Register(Current_Descriptor_Pointer=0),\n  S2MM_TAILDESC = Register(Tail_Descriptor_Pointer=0),\n  S2MM_TAILDESC_MSB = Register(Tail_Descriptor_Pointer=0),\n  S2MM_DA = Register(Destination_Address=0),\n  S2MM_DA_MSB = Register(Destination_Address=0),\n  S2MM_LENGTH = Register(Length=0)\n}"
+    },
+    {
+      "name": "first_sample",
+      "pass": true,
+      "result": {
+        "prediction": 0,
+        "compute_cycles": 216,
+        "compute_us": 1.2960000129600002,
+        "pl_transaction_cycles": 285,
+        "pl_transaction_us": 1.7100000171000003,
+        "ps_end_to_end_us": 1035.125,
+        "host_dma_window_us": 1035.125,
+        "validation_allocation_pack_us": 238.308,
+        "receive_clear_us": 72.113,
+        "parse_statistics_us": 112.644,
+        "api_inside_us": 1520.061
+      }
+    },
+    {
+      "name": "scalar42_all_layers",
+      "pass": true,
+      "samples": 42,
+      "feature_values": 6804,
+      "errors": 0,
+      "completed": 42,
+      "raw": [
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 928.198,
+          "host_dma_window_us": 928.198,
+          "validation_allocation_pack_us": 182.658,
+          "receive_clear_us": 37.08,
+          "parse_statistics_us": 111.864,
+          "api_inside_us": 1311.544
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 760.102,
+          "host_dma_window_us": 760.102,
+          "validation_allocation_pack_us": 118.074,
+          "receive_clear_us": 19.332,
+          "parse_statistics_us": 106.554,
+          "api_inside_us": 1051.576
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 733.025,
+          "host_dma_window_us": 733.025,
+          "validation_allocation_pack_us": 110.009,
+          "receive_clear_us": 18.762,
+          "parse_statistics_us": 103.95,
+          "api_inside_us": 1010.938
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 728.537,
+          "host_dma_window_us": 728.537,
+          "validation_allocation_pack_us": 109.272,
+          "receive_clear_us": 18.426,
+          "parse_statistics_us": 104.693,
+          "api_inside_us": 1005.178
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 731.351,
+          "host_dma_window_us": 731.351,
+          "validation_allocation_pack_us": 109.29,
+          "receive_clear_us": 17.945,
+          "parse_statistics_us": 103.104,
+          "api_inside_us": 1005.952
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 737.969,
+          "host_dma_window_us": 737.969,
+          "validation_allocation_pack_us": 107.04,
+          "receive_clear_us": 17.418,
+          "parse_statistics_us": 104.322,
+          "api_inside_us": 1012.559
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 738.31,
+          "host_dma_window_us": 738.31,
+          "validation_allocation_pack_us": 105.66,
+          "receive_clear_us": 17.46,
+          "parse_statistics_us": 103.032,
+          "api_inside_us": 1010.086
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 748.019,
+          "host_dma_window_us": 748.019,
+          "validation_allocation_pack_us": 107.927,
+          "receive_clear_us": 18.768,
+          "parse_statistics_us": 103.416,
+          "api_inside_us": 1023.586
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 733.427,
+          "host_dma_window_us": 733.427,
+          "validation_allocation_pack_us": 107.628,
+          "receive_clear_us": 17.526,
+          "parse_statistics_us": 105.125,
+          "api_inside_us": 1008.904
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 733.87,
+          "host_dma_window_us": 733.87,
+          "validation_allocation_pack_us": 107.016,
+          "receive_clear_us": 17.676,
+          "parse_statistics_us": 103.452,
+          "api_inside_us": 1006.678
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 326,
+          "pl_transaction_us": 1.9560000195600002,
+          "ps_end_to_end_us": 783.617,
+          "host_dma_window_us": 783.617,
+          "validation_allocation_pack_us": 107.993,
+          "receive_clear_us": 17.544,
+          "parse_statistics_us": 105.216,
+          "api_inside_us": 1060.684
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 737.999,
+          "host_dma_window_us": 737.999,
+          "validation_allocation_pack_us": 107.034,
+          "receive_clear_us": 17.862,
+          "parse_statistics_us": 103.571,
+          "api_inside_us": 1010.278
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 739.0,
+          "host_dma_window_us": 739.0,
+          "validation_allocation_pack_us": 106.668,
+          "receive_clear_us": 17.478,
+          "parse_statistics_us": 103.272,
+          "api_inside_us": 1010.872
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 728.801,
+          "host_dma_window_us": 728.801,
+          "validation_allocation_pack_us": 107.453,
+          "receive_clear_us": 17.544,
+          "parse_statistics_us": 104.526,
+          "api_inside_us": 1003.468
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 746.008,
+          "host_dma_window_us": 746.008,
+          "validation_allocation_pack_us": 110.976,
+          "receive_clear_us": 18.324,
+          "parse_statistics_us": 104.658,
+          "api_inside_us": 1025.806
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 733.432,
+          "host_dma_window_us": 733.432,
+          "validation_allocation_pack_us": 108.228,
+          "receive_clear_us": 17.82,
+          "parse_statistics_us": 104.844,
+          "api_inside_us": 1009.594
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 731.633,
+          "host_dma_window_us": 731.633,
+          "validation_allocation_pack_us": 107.634,
+          "receive_clear_us": 18.036,
+          "parse_statistics_us": 105.372,
+          "api_inside_us": 1007.249
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 798.424,
+          "host_dma_window_us": 798.424,
+          "validation_allocation_pack_us": 108.354,
+          "receive_clear_us": 17.88,
+          "parse_statistics_us": 105.552,
+          "api_inside_us": 1074.886
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 739.337,
+          "host_dma_window_us": 739.337,
+          "validation_allocation_pack_us": 108.473,
+          "receive_clear_us": 17.784,
+          "parse_statistics_us": 104.37,
+          "api_inside_us": 1015.51
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 737.723,
+          "host_dma_window_us": 737.723,
+          "validation_allocation_pack_us": 107.868,
+          "receive_clear_us": 17.184,
+          "parse_statistics_us": 104.022,
+          "api_inside_us": 1011.892
+        },
+        {
+          "prediction": 0,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 732.178,
+          "host_dma_window_us": 732.178,
+          "validation_allocation_pack_us": 107.418,
+          "receive_clear_us": 17.988,
+          "parse_statistics_us": 104.214,
+          "api_inside_us": 1007.722
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 743.735,
+          "host_dma_window_us": 743.735,
+          "validation_allocation_pack_us": 109.889,
+          "receive_clear_us": 18.972,
+          "parse_statistics_us": 105.48,
+          "api_inside_us": 1023.934
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 732.239,
+          "host_dma_window_us": 732.239,
+          "validation_allocation_pack_us": 109.248,
+          "receive_clear_us": 17.922,
+          "parse_statistics_us": 104.051,
+          "api_inside_us": 1008.508
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 730.978,
+          "host_dma_window_us": 730.978,
+          "validation_allocation_pack_us": 108.438,
+          "receive_clear_us": 17.598,
+          "parse_statistics_us": 105.93,
+          "api_inside_us": 1008.394
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 739.109,
+          "host_dma_window_us": 739.109,
+          "validation_allocation_pack_us": 109.236,
+          "receive_clear_us": 18.48,
+          "parse_statistics_us": 105.324,
+          "api_inside_us": 1016.693
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 732.592,
+          "host_dma_window_us": 732.592,
+          "validation_allocation_pack_us": 107.304,
+          "receive_clear_us": 18.042,
+          "parse_statistics_us": 103.044,
+          "api_inside_us": 1006.582
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 731.009,
+          "host_dma_window_us": 731.009,
+          "validation_allocation_pack_us": 105.96,
+          "receive_clear_us": 17.231,
+          "parse_statistics_us": 103.92,
+          "api_inside_us": 1002.274
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 732.425,
+          "host_dma_window_us": 732.425,
+          "validation_allocation_pack_us": 106.47,
+          "receive_clear_us": 17.988,
+          "parse_statistics_us": 174.402,
+          "api_inside_us": 1076.542
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 737.902,
+          "host_dma_window_us": 737.902,
+          "validation_allocation_pack_us": 106.374,
+          "receive_clear_us": 17.652,
+          "parse_statistics_us": 104.658,
+          "api_inside_us": 1010.95
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 737.777,
+          "host_dma_window_us": 737.777,
+          "validation_allocation_pack_us": 108.365,
+          "receive_clear_us": 17.658,
+          "parse_statistics_us": 102.9,
+          "api_inside_us": 1011.49
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 735.011,
+          "host_dma_window_us": 735.011,
+          "validation_allocation_pack_us": 107.304,
+          "receive_clear_us": 17.058,
+          "parse_statistics_us": 104.039,
+          "api_inside_us": 1007.284
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 738.778,
+          "host_dma_window_us": 738.778,
+          "validation_allocation_pack_us": 110.088,
+          "receive_clear_us": 17.994,
+          "parse_statistics_us": 105.162,
+          "api_inside_us": 1018.486
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 739.259,
+          "host_dma_window_us": 739.259,
+          "validation_allocation_pack_us": 108.258,
+          "receive_clear_us": 18.126,
+          "parse_statistics_us": 105.12,
+          "api_inside_us": 1014.605
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 314,
+          "pl_transaction_us": 1.8840000188400001,
+          "ps_end_to_end_us": 732.485,
+          "host_dma_window_us": 732.485,
+          "validation_allocation_pack_us": 108.162,
+          "receive_clear_us": 17.526,
+          "parse_statistics_us": 102.69,
+          "api_inside_us": 1005.598
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 787.21,
+          "host_dma_window_us": 787.21,
+          "validation_allocation_pack_us": 105.894,
+          "receive_clear_us": 17.742,
+          "parse_statistics_us": 103.542,
+          "api_inside_us": 1061.026
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 735.971,
+          "host_dma_window_us": 735.971,
+          "validation_allocation_pack_us": 109.986,
+          "receive_clear_us": 17.97,
+          "parse_statistics_us": 104.856,
+          "api_inside_us": 1013.555
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 737.566,
+          "host_dma_window_us": 737.566,
+          "validation_allocation_pack_us": 108.384,
+          "receive_clear_us": 16.824,
+          "parse_statistics_us": 104.886,
+          "api_inside_us": 1011.814
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 730.583,
+          "host_dma_window_us": 730.583,
+          "validation_allocation_pack_us": 106.584,
+          "receive_clear_us": 18.156,
+          "parse_statistics_us": 104.874,
+          "api_inside_us": 1005.292
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 739.097,
+          "host_dma_window_us": 739.097,
+          "validation_allocation_pack_us": 109.104,
+          "receive_clear_us": 17.484,
+          "parse_statistics_us": 104.027,
+          "api_inside_us": 1015.36
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 736.024,
+          "host_dma_window_us": 736.024,
+          "validation_allocation_pack_us": 108.192,
+          "receive_clear_us": 17.028,
+          "parse_statistics_us": 104.16,
+          "api_inside_us": 1010.788
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 738.119,
+          "host_dma_window_us": 738.119,
+          "validation_allocation_pack_us": 107.723,
+          "receive_clear_us": 18.108,
+          "parse_statistics_us": 102.528,
+          "api_inside_us": 1012.222
+        },
+        {
+          "prediction": 1,
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 744.263,
+          "host_dma_window_us": 744.263,
+          "validation_allocation_pack_us": 112.152,
+          "receive_clear_us": 17.97,
+          "parse_statistics_us": 105.563,
+          "api_inside_us": 1025.26
+        }
+      ]
+    },
+    {
+      "name": "batch_1",
+      "pass": true,
+      "repeated_batches": 3,
+      "classes_scores_and_last_features": true,
+      "buffers": {
+        "tx": {
+          "physical_address": "0x38045000",
+          "nbytes": 520,
+          "end_exclusive": "0x38045208"
+        },
+        "rx": {
+          "physical_address": "0x38046000",
+          "nbytes": 168,
+          "end_exclusive": "0x380460a8"
+        },
+        "batch_tx": {
+          "physical_address": "0x38047000",
+          "nbytes": 520,
+          "end_exclusive": "0x38047208"
+        },
+        "batch_rx": {
+          "physical_address": "0x38048000",
+          "nbytes": 8,
+          "end_exclusive": "0x38048008"
+        }
+      },
+      "raw": [
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 857.302,
+          "samples_per_second": 1166.4500957655528,
+          "host_dma_window_us": 857.302,
+          "validation_allocation_pack_us": 3001.885,
+          "receive_clear_us": 39.012,
+          "parse_statistics_us": 249.714,
+          "api_inside_us": 4205.063
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 844.864,
+          "samples_per_second": 1183.6224528444816,
+          "host_dma_window_us": 844.864,
+          "validation_allocation_pack_us": 165.228,
+          "receive_clear_us": 17.712,
+          "parse_statistics_us": 229.47,
+          "api_inside_us": 1308.466
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 285,
+          "pl_transaction_us": 1.7100000171000003,
+          "ps_end_to_end_us": 730.198,
+          "samples_per_second": 1369.491562562483,
+          "host_dma_window_us": 730.198,
+          "validation_allocation_pack_us": 158.202,
+          "receive_clear_us": 18.612,
+          "parse_statistics_us": 217.032,
+          "api_inside_us": 1174.702
+        }
+      ]
+    },
+    {
+      "name": "batch_3",
+      "pass": true,
+      "repeated_batches": 3,
+      "classes_scores_and_last_features": true,
+      "buffers": {
+        "tx": {
+          "physical_address": "0x38045000",
+          "nbytes": 520,
+          "end_exclusive": "0x38045208"
+        },
+        "rx": {
+          "physical_address": "0x38046000",
+          "nbytes": 168,
+          "end_exclusive": "0x380460a8"
+        },
+        "batch_tx": {
+          "physical_address": "0x38049000",
+          "nbytes": 1544,
+          "end_exclusive": "0x38049608"
+        },
+        "batch_rx": {
+          "physical_address": "0x3804a000",
+          "nbytes": 24,
+          "end_exclusive": "0x3804a018"
+        }
+      },
+      "raw": [
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 629,
+          "pl_transaction_us": 3.7740000377400005,
+          "ps_end_to_end_us": 776.273,
+          "samples_per_second": 3864.619792263804,
+          "host_dma_window_us": 776.273,
+          "validation_allocation_pack_us": 3640.475,
+          "receive_clear_us": 35.124,
+          "parse_statistics_us": 252.617,
+          "api_inside_us": 4760.415
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 629,
+          "pl_transaction_us": 3.7740000377400005,
+          "ps_end_to_end_us": 741.725,
+          "samples_per_second": 4044.6257035963463,
+          "host_dma_window_us": 741.725,
+          "validation_allocation_pack_us": 163.704,
+          "receive_clear_us": 19.53,
+          "parse_statistics_us": 226.998,
+          "api_inside_us": 1204.42
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 629,
+          "pl_transaction_us": 3.7740000377400005,
+          "ps_end_to_end_us": 728.627,
+          "samples_per_second": 4117.333011266395,
+          "host_dma_window_us": 728.627,
+          "validation_allocation_pack_us": 162.047,
+          "receive_clear_us": 18.492,
+          "parse_statistics_us": 221.489,
+          "api_inside_us": 1182.519
+        }
+      ]
+    },
+    {
+      "name": "batch_8",
+      "pass": true,
+      "repeated_batches": 3,
+      "classes_scores_and_last_features": true,
+      "buffers": {
+        "tx": {
+          "physical_address": "0x38045000",
+          "nbytes": 520,
+          "end_exclusive": "0x38045208"
+        },
+        "rx": {
+          "physical_address": "0x38046000",
+          "nbytes": 168,
+          "end_exclusive": "0x380460a8"
+        },
+        "batch_tx": {
+          "physical_address": "0x3804c000",
+          "nbytes": 4104,
+          "end_exclusive": "0x3804d008"
+        },
+        "batch_rx": {
+          "physical_address": "0x38047000",
+          "nbytes": 64,
+          "end_exclusive": "0x38047040"
+        }
+      },
+      "raw": [
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 1489,
+          "pl_transaction_us": 8.934000089340001,
+          "ps_end_to_end_us": 799.175,
+          "samples_per_second": 10010.323145744049,
+          "host_dma_window_us": 799.175,
+          "validation_allocation_pack_us": 4096.822,
+          "receive_clear_us": 34.776,
+          "parse_statistics_us": 258.263,
+          "api_inside_us": 5246.882
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 1489,
+          "pl_transaction_us": 8.934000089340001,
+          "ps_end_to_end_us": 816.13,
+          "samples_per_second": 9802.359918150294,
+          "host_dma_window_us": 816.13,
+          "validation_allocation_pack_us": 169.938,
+          "receive_clear_us": 18.756,
+          "parse_statistics_us": 258.09,
+          "api_inside_us": 1320.238
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 1489,
+          "pl_transaction_us": 8.934000089340001,
+          "ps_end_to_end_us": 729.059,
+          "samples_per_second": 10973.048820465834,
+          "host_dma_window_us": 729.059,
+          "validation_allocation_pack_us": 164.777,
+          "receive_clear_us": 18.63,
+          "parse_statistics_us": 237.816,
+          "api_inside_us": 1201.605
+        }
+      ]
+    },
+    {
+      "name": "batch_16",
+      "pass": true,
+      "repeated_batches": 3,
+      "classes_scores_and_last_features": true,
+      "buffers": {
+        "tx": {
+          "physical_address": "0x38045000",
+          "nbytes": 520,
+          "end_exclusive": "0x38045208"
+        },
+        "rx": {
+          "physical_address": "0x38046000",
+          "nbytes": 168,
+          "end_exclusive": "0x380460a8"
+        },
+        "batch_tx": {
+          "physical_address": "0x38048000",
+          "nbytes": 8200,
+          "end_exclusive": "0x3804a008"
+        },
+        "batch_rx": {
+          "physical_address": "0x3804b000",
+          "nbytes": 128,
+          "end_exclusive": "0x3804b080"
+        }
+      },
+      "raw": [
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 2865,
+          "pl_transaction_us": 17.190000171900003,
+          "ps_end_to_end_us": 844.792,
+          "samples_per_second": 18939.573291413744,
+          "host_dma_window_us": 844.792,
+          "validation_allocation_pack_us": 7141.949,
+          "receive_clear_us": 31.722,
+          "parse_statistics_us": 273.984,
+          "api_inside_us": 8345.733
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 2903,
+          "pl_transaction_us": 17.41800017418,
+          "ps_end_to_end_us": 698.674,
+          "samples_per_second": 22900.5229906938,
+          "host_dma_window_us": 698.674,
+          "validation_allocation_pack_us": 165.0,
+          "receive_clear_us": 18.708,
+          "parse_statistics_us": 253.866,
+          "api_inside_us": 1184.728
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 2865,
+          "pl_transaction_us": 17.190000171900003,
+          "ps_end_to_end_us": 749.507,
+          "samples_per_second": 21347.365668366005,
+          "host_dma_window_us": 749.507,
+          "validation_allocation_pack_us": 158.406,
+          "receive_clear_us": 17.484,
+          "parse_statistics_us": 261.263,
+          "api_inside_us": 1237.084
+        }
+      ]
+    },
+    {
+      "name": "batch_42",
+      "pass": true,
+      "repeated_batches": 3,
+      "classes_scores_and_last_features": true,
+      "buffers": {
+        "tx": {
+          "physical_address": "0x38045000",
+          "nbytes": 520,
+          "end_exclusive": "0x38045208"
+        },
+        "rx": {
+          "physical_address": "0x38046000",
+          "nbytes": 168,
+          "end_exclusive": "0x380460a8"
+        },
+        "batch_tx": {
+          "physical_address": "0x38050000",
+          "nbytes": 21512,
+          "end_exclusive": "0x38055408"
+        },
+        "batch_rx": {
+          "physical_address": "0x38047000",
+          "nbytes": 336,
+          "end_exclusive": "0x38047150"
+        }
+      },
+      "raw": [
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 7337,
+          "pl_transaction_us": 44.022000440220005,
+          "ps_end_to_end_us": 784.607,
+          "samples_per_second": 53529.983800807284,
+          "host_dma_window_us": 784.607,
+          "validation_allocation_pack_us": 8404.892,
+          "receive_clear_us": 32.592,
+          "parse_statistics_us": 348.011,
+          "api_inside_us": 9624.894
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 7337,
+          "pl_transaction_us": 44.022000440220005,
+          "ps_end_to_end_us": 773.951,
+          "samples_per_second": 54267.00139931339,
+          "host_dma_window_us": 773.951,
+          "validation_allocation_pack_us": 195.599,
+          "receive_clear_us": 20.172,
+          "parse_statistics_us": 338.063,
+          "api_inside_us": 1378.959
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 7337,
+          "pl_transaction_us": 44.022000440220005,
+          "ps_end_to_end_us": 749.477,
+          "samples_per_second": 56039.07791700079,
+          "host_dma_window_us": 749.477,
+          "validation_allocation_pack_us": 181.974,
+          "receive_clear_us": 18.708,
+          "parse_statistics_us": 334.859,
+          "api_inside_us": 1336.642
+        }
+      ]
+    },
+    {
+      "name": "batch_48",
+      "pass": true,
+      "repeated_batches": 3,
+      "classes_scores_and_last_features": true,
+      "buffers": {
+        "tx": {
+          "physical_address": "0x38045000",
+          "nbytes": 520,
+          "end_exclusive": "0x38045208"
+        },
+        "rx": {
+          "physical_address": "0x38046000",
+          "nbytes": 168,
+          "end_exclusive": "0x380460a8"
+        },
+        "batch_tx": {
+          "physical_address": "0x38048000",
+          "nbytes": 24584,
+          "end_exclusive": "0x3804e008"
+        },
+        "batch_rx": {
+          "physical_address": "0x3804f000",
+          "nbytes": 384,
+          "end_exclusive": "0x3804f180"
+        }
+      },
+      "raw": [
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 8369,
+          "pl_transaction_us": 50.21400050214,
+          "ps_end_to_end_us": 784.955,
+          "samples_per_second": 61150.00222942716,
+          "host_dma_window_us": 784.955,
+          "validation_allocation_pack_us": 4217.002,
+          "receive_clear_us": 34.062,
+          "parse_statistics_us": 372.995,
+          "api_inside_us": 5464.904
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 8369,
+          "pl_transaction_us": 50.21400050214,
+          "ps_end_to_end_us": 761.368,
+          "samples_per_second": 63044.41479021971,
+          "host_dma_window_us": 761.368,
+          "validation_allocation_pack_us": 196.428,
+          "receive_clear_us": 20.874,
+          "parse_statistics_us": 360.438,
+          "api_inside_us": 1391.074
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 8369,
+          "pl_transaction_us": 50.21400050214,
+          "ps_end_to_end_us": 752.525,
+          "samples_per_second": 63785.256303777285,
+          "host_dma_window_us": 752.525,
+          "validation_allocation_pack_us": 185.897,
+          "receive_clear_us": 19.992,
+          "parse_statistics_us": 353.207,
+          "api_inside_us": 1361.811
+        }
+      ]
+    },
+    {
+      "name": "batch_128",
+      "pass": true,
+      "repeated_batches": 3,
+      "classes_scores_and_last_features": true,
+      "buffers": {
+        "tx": {
+          "physical_address": "0x38045000",
+          "nbytes": 520,
+          "end_exclusive": "0x38045208"
+        },
+        "rx": {
+          "physical_address": "0x38046000",
+          "nbytes": 168,
+          "end_exclusive": "0x380460a8"
+        },
+        "batch_tx": {
+          "physical_address": "0x38060000",
+          "nbytes": 65544,
+          "end_exclusive": "0x38070008"
+        },
+        "batch_rx": {
+          "physical_address": "0x38047000",
+          "nbytes": 1024,
+          "end_exclusive": "0x38047400"
+        }
+      },
+      "raw": [
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 22129,
+          "pl_transaction_us": 132.77400132774002,
+          "ps_end_to_end_us": 895.619,
+          "samples_per_second": 142917.91487228387,
+          "host_dma_window_us": 895.619,
+          "validation_allocation_pack_us": 5187.092,
+          "receive_clear_us": 40.074,
+          "parse_statistics_us": 627.484,
+          "api_inside_us": 6809.825
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 22129,
+          "pl_transaction_us": 132.77400132774002,
+          "ps_end_to_end_us": 845.932,
+          "samples_per_second": 151312.3986325142,
+          "host_dma_window_us": 845.932,
+          "validation_allocation_pack_us": 250.566,
+          "receive_clear_us": 22.566,
+          "parse_statistics_us": 496.211,
+          "api_inside_us": 1668.459
+        },
+        {
+          "compute_cycles": 216,
+          "compute_us": 1.2960000129600002,
+          "pl_transaction_cycles": 22129,
+          "pl_transaction_us": 132.77400132774002,
+          "ps_end_to_end_us": 843.472,
+          "samples_per_second": 151753.7037388319,
+          "host_dma_window_us": 843.472,
+          "validation_allocation_pack_us": 239.1,
+          "receive_clear_us": 22.878,
+          "parse_statistics_us": 489.281,
+          "api_inside_us": 1649.433
+        }
+      ]
+    },
+    {
+      "name": "malformed_packet_and_reset_recovery",
+      "pass": true,
+      "received": 1,
+      "error_state": {
+        "0x8": 0,
+        "0x10": 780,
+        "0x14": 1,
+        "0x28": 227,
+        "0x2c": 1
+      },
+      "recovery_prediction": 0
+    },
+    {
+      "name": "overlay_reload_recovery",
+      "pass": true,
+      "samples": 42,
+      "errors": 0
+    }
+  ],
+  "pass": true,
+  "power_measured": false,
+  "clock": {
+    "raw_slcr": {
+      "0x100": "0x28000",
+      "0x104": "0x20000",
+      "0x108": "0x1e000",
+      "0x10c": "0x3f",
+      "0x170": "0x200300"
+    },
+    "ps_reference_hz": 33333333.0,
+    "pll_source_offset": "0x108",
+    "pll_feedback": 30,
+    "divisor0": 3,
+    "divisor1": 2,
+    "register_derived_hz": 166666665.0,
+    "pynq_reported_mhz_assuming_50mhz": 250.0,
+    "scope": "Register-derived clock with specified board crystal; tick estimates use host monotonic time; no instrument measurement",
+    "tick_estimates_hz": [
+      166585779.79357615,
+      166630390.40533277,
+      166648393.1748018
+    ]
+  },
+  "malformed_response": {
+    "received": 1,
+    "code": 227
+  },
+  "pynq": "3.0.1",
+  "python": "3.10.4"
+}

@@ -1,0 +1,22 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Oct 20 19:55:04 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/core_sim/xsim_script.tcl
+# xsim {core_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+EVENT FC1_LAST 146
+EVENT FC2_LAST 180
+EVENT FC3_LAST 200
+PASS CORE samples=48 values=7776 start_to_done_cycles=200..200
+$finish called at time : 92092 ns : File "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/simulation/core/tb.sv" Line 24
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:17 . Memory (MB): peak = 1415.645 ; gain = 0.000 ; free physical = 10629 ; free virtual = 16295
+exit
+INFO: xsimkernel Simulation Memory Usage: 289828 KB (Peak: 351784 KB), Simulation CPU Usage: 17950 ms
+INFO: [Common 17-206] Exiting xsim at Tue Oct 20 19:55:24 2026...

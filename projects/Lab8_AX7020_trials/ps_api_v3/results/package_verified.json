@@ -1,0 +1,7 @@
+{
+  "pass": true,
+  "archive": "/home/ding/vivado_project/Lab8_AX7020_trials/ps_api_v3/deploy/lab8_ax7020_ps_api_v3.tar.gz",
+  "sha256": "7b30eee6c4ff007df3dc41641c9538e865b088c1c21c76a19124eff6798ca01b",
+  "files_verified": 70,
+  "measured_identities_match": true
+}

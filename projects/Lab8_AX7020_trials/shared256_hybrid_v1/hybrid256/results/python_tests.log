@@ -1,0 +1,10 @@
+test_all_course_samples (__main__.Tests.test_all_course_samples) ... ok
+test_bad_received_length (__main__.Tests.test_bad_received_length) ... ok
+test_full_reporting_program (__main__.Tests.test_full_reporting_program) ... ok
+test_invalid_inputs (__main__.Tests.test_invalid_inputs) ... ok
+test_timeout_resets_and_recovers (__main__.Tests.test_timeout_resets_and_recovers) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.018s
+
+OK

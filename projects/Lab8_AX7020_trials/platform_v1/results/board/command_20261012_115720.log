@@ -1,0 +1,9 @@
+PASS N 42 {'api_wall_us': 1450.6485, 'host_dma_window_us': 807.851, 'validation_allocation_pack_us': 183.909, 'parse_statistics_us': 355.14250000000004, 'pl_transaction_us': 51.359000513590004, 'pl_transaction_cycles': 7337.0}
+PASS N 128 {'api_wall_us': 1764.037, 'host_dma_window_us': 891.527, 'validation_allocation_pack_us': 250.8985, 'parse_statistics_us': 509.4625, 'pl_transaction_us': 154.90300154903002, 'pl_transaction_cycles': 22129.0}
+PASS N 512 {'api_wall_us': 2769.7885, 'host_dma_window_us': 1398.7604999999999, 'validation_allocation_pack_us': 543.1645, 'parse_statistics_us': 696.3145, 'pl_transaction_us': 617.2390061723901, 'pl_transaction_cycles': 88177.0}
+PASS N 1024 {'api_wall_us': 4115.0535, 'host_dma_window_us': 2059.96, 'validation_allocation_pack_us': 985.835, 'parse_statistics_us': 921.3525, 'pl_transaction_us': 1233.68701233687, 'pl_transaction_cycles': 176241.0}
+PASS N 2048 {'api_wall_us': 6631.978, 'host_dma_window_us': 3307.4545, 'validation_allocation_pack_us': 1834.981, 'parse_statistics_us': 1319.144, 'pl_transaction_us': 2466.58302466583, 'pl_transaction_cycles': 352369.0}
+PASS N 4096 {'api_wall_us': 11510.5845, 'host_dma_window_us': 5737.264999999999, 'validation_allocation_pack_us': 3540.149, 'parse_statistics_us': 2057.113, 'pl_transaction_us': 4932.37504932375, 'pl_transaction_cycles': 704625.0}
+PASS PS/DDR AUDIT
+
+EXIT 0

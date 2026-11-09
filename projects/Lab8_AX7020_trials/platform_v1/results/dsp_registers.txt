@@ -1,0 +1,9 @@
+FC1 DSP count: 192
+FC2 DSP count: 16
+FC3 DSP count: 4
+192 cells: fc1 AREG=2 BREG=2 MREG=1 PREG=1
+15 cells: fc2 AREG=2 BREG=2 MREG=0 PREG=1
+1 cells: fc2 AREG=2 BREG=1 MREG=0 PREG=1
+4 cells: fc3 AREG=1 BREG=1 MREG=1 PREG=1
+Total DSP count: 212
+All 212 DSP USE_MULT=MULTIPLY; multiplier RTL unchanged; adder pipeline independently verified.

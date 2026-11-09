@@ -1,0 +1,9 @@
+PASS block 0 A
+PASS block 1 P1
+PASS block 2 B
+PASS block 3 B
+PASS block 4 P1
+PASS block 5 A
+PASS AX7020 COMPARISON
+
+EXIT 0

@@ -1,0 +1,15 @@
+PASS overlay_registers
+PASS first_sample
+PASS scalar42_all_layers
+PASS batch_1
+PASS batch_3
+PASS batch_8
+PASS batch_16
+PASS batch_42
+PASS batch_48
+PASS batch_128
+PASS malformed_packet_and_reset_recovery
+PASS overlay_reload_recovery
+PASS AX7020 LAB8 ACCEPTANCE
+
+EXIT 0

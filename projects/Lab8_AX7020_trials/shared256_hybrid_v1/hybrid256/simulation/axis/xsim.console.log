@@ -1,0 +1,21 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Oct 20 19:56:34 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/lab8_sim/xsim_script.tcl
+# xsim {lab8_sim} -wdb {lab8.wdb} -autoloadwcfg -tclbatch {run.tcl}
+Time resolution is 1 ps
+source run.tcl
+## run all
+SUMMARY CE=1 PREFETCH=1 jobs=48 correct=42/42 values=7776 feature_packets=50 output_words=1106 compute_cycles=201..201 feature_cycles_total=1756 stalls=1122 input_full=0 input_empty=1162 credit_full=67 errors=0
+PASS LAB8 AXIS AXILITE
+$finish called at time : 119175 ns : File "/home/ding/vivado_project/Lab8_AX7020_trials/shared256_hybrid_v1/hybrid256/tb/tb_lab8.sv" Line 176
+run: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:21 . Memory (MB): peak = 1455.473 ; gain = 8.004 ; free physical = 9171 ; free virtual = 15006
+## quit
+INFO: xsimkernel Simulation Memory Usage: 299156 KB (Peak: 353108 KB), Simulation CPU Usage: 21260 ms
+INFO: [Common 17-206] Exiting xsim at Tue Oct 20 19:56:56 2026...

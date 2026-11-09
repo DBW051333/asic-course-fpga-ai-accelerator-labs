@@ -1,0 +1,16 @@
+{
+  "boot_files": {
+    "BOOT.BIN": "90ab01e2f1f6325f79081bac8030fc782fbedd1f7225163291ff3dfbd349c0f8",
+    "boot.py": "e9923f79ce47b451a23bfc6cbee8e6fad3c3a1f30c715c681b23321854722a70",
+    "boot.scr": "7013e14923fbe461c4ecd745214fcafcb0ffaddb10865f9135cd8624637359f4",
+    "image.ub": "db24a90449dcb8d9ec51bd4fb102b7f1044636a8c0bec1d8fd68b0b3f71161d2",
+    "REVISION": "64a1d35f67bb165218f33d796c44e2048ae416dd6163678b7a4fd7b3508cf2d7"
+  },
+  "pass": true,
+  "files_verified": 55,
+  "archive_sha256": "5a9b9ff798245731f9943e861f17ced466141cfdb4bda119777a9b6e8a35d027",
+  "boot_files_unchanged": true,
+  "remote": "/home/xilinx/jupyter_notebooks/Lab8_AX7020_platform_v1",
+  "measured_driver_unchanged": true,
+  "package_matches_host": true
+}

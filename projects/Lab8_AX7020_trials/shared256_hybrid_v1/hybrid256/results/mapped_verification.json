@@ -1,0 +1,22 @@
+{
+  "pass": true,
+  "samples": 8,
+  "feature_values": 1296,
+  "sample_indices": [
+    0,
+    7,
+    14,
+    21,
+    28,
+    35,
+    42,
+    47
+  ],
+  "summary": [
+    "EVENT FC1_LAST 146",
+    "EVENT FC2_LAST 180",
+    "EVENT FC3_LAST 200",
+    "PASS CORE samples=8 values=1296 start_to_done_cycles=200..200"
+  ],
+  "scope": "post-route functional core netlist with AMD UNISIM primitives; no timing delays"
+}

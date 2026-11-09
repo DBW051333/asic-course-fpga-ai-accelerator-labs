@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/home/xilinx/jupyter_notebooks/Lab8_AX7020_192/acceptance.py", line 20, in <module>
+    with Lab8NPU(R/'lab8.bit') as n:
+  File "/home/xilinx/jupyter_notebooks/Lab8_AX7020_192/lab8_driver.py", line 13, in __init__
+    overlay = Overlay(str(bitfile))
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/overlay.py", line 319, in __init__
+    self.device.set_bitfile_name(self.bitfile_name)
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/pl_server/device.py", line 118, in set_bitfile_name
+    self.parser = self.get_bitfile_metadata(self.bitfile_name)
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/pl_server/embedded_device.py", line 690, in get_bitfile_metadata
+    parser = _get_bitstream_handler(bitfile_name).get_parser(partial=partial)
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/pl_server/embedded_device.py", line 268, in get_parser
+    parser = RuntimeMetadataParser(Metadata(input=self._filepath))
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynqmetadata/frontends/metadata.py", line 45, in Metadata
+    raise UnknownInputFileExtension(f"{input} is not a valid input")
+pynqmetadata.frontends.metadata.UnknownInputFileExtension: /home/xilinx/jupyter_notebooks/Lab8_AX7020_192/lab8.bit is not a valid input
+
+EXIT 1

@@ -1,0 +1,54 @@
+{
+  "pass": true,
+  "driver_sha256": "a618d9b944790ef591439aa737c1bcb88fabb7240f9e3a3aa04c625c44feae65",
+  "phases": [
+    {
+      "name": "real_receive_pending_timeout",
+      "pass": true,
+      "exception": "DMA timeout: MM2S=0x1002, S2MM=0x1000",
+      "elapsed_seconds": 0.05390268000337528,
+      "status_before_reset": {
+        "send": "0x1002",
+        "recv": "0x1000"
+      }
+    },
+    {
+      "name": "real_s2mm_length_error",
+      "pass": true,
+      "exception": "DMA error: MM2S=0x1001, S2MM=0x5011",
+      "status_before_reset": {
+        "send": "0x1001",
+        "recv": "0x5011"
+      },
+      "physical_rx_capacity": 168,
+      "advertised_receive_bytes": 8,
+      "packet_bytes": 162
+    }
+  ],
+  "clock": {
+    "raw_slcr": {
+      "0x100": "0x28000",
+      "0x104": "0x20000",
+      "0x108": "0x1e000",
+      "0x10c": "0x3f",
+      "0x170": "0x200300"
+    },
+    "ps_reference_hz": 33333333.0,
+    "pll_source_offset": "0x108",
+    "pll_feedback": 30,
+    "divisor0": 3,
+    "divisor1": 2,
+    "register_derived_hz": 166666665.0,
+    "pynq_reported_mhz_assuming_50mhz": 250.0,
+    "scope": "Register-derived clock with specified board crystal; tick estimates use host monotonic time; no instrument measurement",
+    "tick_estimates_hz": [
+      166590116.16618162,
+      166633773.12796175,
+      166651753.7362052
+    ]
+  },
+  "last_fault_status": {
+    "send": "0x1001",
+    "recv": "0x5011"
+  }
+}

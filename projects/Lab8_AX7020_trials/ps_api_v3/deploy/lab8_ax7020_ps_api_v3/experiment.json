@@ -1,0 +1,35 @@
+{
+  "project_id": "lab8_ax7020_ps_api_v3",
+  "direct_parent_id": "lab8_ax7020_ps_api_v2",
+  "direct_parent_root": "/home/ding/vivado_project/Lab8_AX7020_trials/ps_api_v2",
+  "source_baseline": "lab8_128_resource_v1",
+  "date": "2026-10-12",
+  "target_board": "AX7020",
+  "hardware_reused": true,
+  "target_clock_hz": 142857132,
+  "fc1_lanes": 192,
+  "primary_metric": "batch N=42 full external API median, same board alternating parent/candidate",
+  "minimum_reduction_percent": 5,
+  "initial_budget": "Two response decoding/validation prototypes; no RTL, clock, model or DMA completion changes",
+  "secondary_metrics": "scalar1 and batch1/2/3/8/16/48/128 median/P95; investigate >5% regression",
+  "status": "verified",
+  "default_changed": false,
+  "changes": [
+    "Fixed-record <BbbBI decode validates class, signed-score consistency, tie-to-zero, all padding at N<=48",
+    "Little-endian uint64 mask merges invalid class and padding checks for N>48; result scores/predictions remain writable copies",
+    "Four live NPU statistics reads and all v2 DMA operations preserved"
+  ],
+  "pilot": "results/board/pilot_valid.json",
+  "summary": "/home/ding/vivado_project/Lab8_AX7020_trials/ps_api_v3/results/optimization_summary.json",
+  "hypothesis": "N42 response parse/statistics approximately 530us; eliminate repeated validation and copy overhead for expected >=80us full API saving",
+  "decoder_switch_N": 48,
+  "additional_budget": "Integration of the two measured prototypes into one fixed N48 crossover, plus boundary49 and large256/512 formal API coverage",
+  "verification": {
+    "host": "passed",
+    "board_acceptance": "passed",
+    "AB_full_API": "passed",
+    "stress_120s": "passed",
+    "real_dma_fault_recovery": "passed",
+    "hardware": "unchanged; prior implementation evidence reused"
+  }
+}

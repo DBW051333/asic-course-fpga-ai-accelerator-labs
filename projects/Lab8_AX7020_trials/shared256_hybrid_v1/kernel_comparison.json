@@ -1,0 +1,45 @@
+{
+  "scope": "36 independent packed25/24x8 lanes, registered common inputs/outputs; three CE-enabled multiplier cycles, II=1; routed OOC register-to-register timing only; 7ns xc7z020clg400-2",
+  "correctness": {
+    "triples": 16744448,
+    "weight_domain": "all signed INT8 weight pairs whose B=65536*w1+w0 fits signed24",
+    "activation_domain": "all signed INT8",
+    "random_ce_stalls": true,
+    "pass": true
+  },
+  "kernels": {
+    "generic25": {
+      "lut": 6867,
+      "ff": 4680,
+      "dsp": 0,
+      "carry4": 1152,
+      "wns_ns": 1.116,
+      "whs_ns": 0.036,
+      "unrouted": 0,
+      "route_errors": 0
+    },
+    "booth24": {
+      "lut": 3780,
+      "ff": 6372,
+      "dsp": 0,
+      "carry4": 1152,
+      "wns_ns": 2.082,
+      "whs_ns": 0.098,
+      "unrouted": 0,
+      "route_errors": 0
+    },
+    "packed_sparse": {
+      "lut": 2880,
+      "ff": 5292,
+      "dsp": 0,
+      "carry4": 864,
+      "wns_ns": 2.327,
+      "whs_ns": 0.098,
+      "unrouted": 0,
+      "route_errors": 0
+    }
+  },
+  "selected": "packed_sparse",
+  "lut_saving_vs_generic_percent": 58.0602883355177,
+  "lut_saving_vs_booth24_percent": 23.809523809523814
+}

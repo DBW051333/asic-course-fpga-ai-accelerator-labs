@@ -1,0 +1,22 @@
+{
+  "pass": true,
+  "samples": 96,
+  "values": 15552,
+  "fc1_full_precision_values": 12288,
+  "random_ce_stalls": true,
+  "between_sample_reset": true,
+  "aborted_job_reset_offsets_cycles": [
+    37,
+    155,
+    190
+  ],
+  "observed_max_absolute_accumulator": [
+    3190528,
+    140085,
+    31724
+  ],
+  "summary": [
+    "CE stalls=2757",
+    "PASS CORE samples=96 values=15552 start_to_done_cycles=212..258"
+  ]
+}

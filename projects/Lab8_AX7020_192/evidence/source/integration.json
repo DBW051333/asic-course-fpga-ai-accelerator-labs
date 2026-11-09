@@ -1,0 +1,38 @@
+{
+  "project_id": "lab8_integrated_192",
+  "date": "2026-10-11",
+  "source_baseline": "lab8_128_resource_v1",
+  "direct_source_project": "/home/ding/vivado_project/Lab8_optimization_trials/fc2_192_single_acc",
+  "lineage": [
+    "fc1_192_groups3",
+    "fc1_192_dsp_pipeline_trim",
+    "fc1_192_dense_schedule",
+    "fc1_192_batch_integrated",
+    "fc1_192_input_lutram",
+    "fc1_192_tree_retimed",
+    "fc2_192_single_acc"
+  ],
+  "included": [
+    "192-lane DSP FC1",
+    "DSP pipeline trimming",
+    "171-cycle dense issue schedule",
+    "dual input banks and batch sample overlap",
+    "FC1 input LUTRAM",
+    "retimed adder tree",
+    "FC2 single21-bit accumulator with cycle alignment"
+  ],
+  "excluded": [
+    "dual-clock ingress experiment",
+    "single-sample early start below5% gain",
+    "chunk-major prototype",
+    "unintegrated batch prototype"
+  ],
+  "clock_hz": 142857132,
+  "period_ns": 7.0,
+  "rtl_changes": "Only absolute data path relocation; functional RTL identical to direct source",
+  "target_board": "PYNQ-Z2",
+  "ax7020_migrated": false,
+  "current_default_changed": false,
+  "status": "verified",
+  "summary": "/home/ding/vivado_project/Lab8_integrated_192/results/summary.json"
+}
